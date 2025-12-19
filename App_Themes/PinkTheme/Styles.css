@@ -1,0 +1,2643 @@
+
+
+BODY
+{
+	font-weight: normal;
+	word-spacing: normal;
+	text-transform: none;
+	letter-spacing: normal;
+	background-color: white;
+}
+.clsCalPanel
+{
+	border-style: solid;
+	padding: 2 2 2 2;
+	margin: 2 2 2 2;
+	width: auto;
+	height: auto; /*vertical-align:middle;*/
+	text-align: left;
+	border-color: rgb(245,184,245);
+	background-color: WhiteSmoke;
+	border-width: thin;
+}
+.clsCal
+{
+	background-color :whitesmoke;
+	border-color:White;
+	border-style:solid;
+	border-width:thin;
+	padding:2 2 2 2;
+	font-family: Verdana;
+	font-size: 8pt;
+	color: Black;
+	font-weight: 300;	
+	height:136px;
+	width:156px;
+		}
+		
+.clsCalDayHeader
+{
+	background-color: rgb(245,184,245);
+	font-family: Verdana;
+	font-size: 8pt;
+	color: White;
+	font-weight:bold;
+	}
+.clsComboBoxMediumSize
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 325px;
+	font-size: 8pt;
+	font-style: normal;
+}
+.clsTextBoxRightAlignSmall1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 60px;
+	text-align: right;
+}
+	.clsTextBoxMultilineOpening
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 48px;
+	width: 886px;
+}
+	.clsTextBoxMultilineTask
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 50px;
+	width: 576px;
+}
+	.clsTextBoxMultilineDefectAction
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 50px;
+	width: 886px;
+}
+	.clsTextBoxMultilineDefectActionAuto
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 50px;
+	width: 100%;
+}		
+
+.clsTextBoxRemark
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 890px;
+}		
+.clsCalSelectedDay
+{
+	font-weight: bold;
+	color: black;
+	background-color: lightsalmon;
+}
+		
+.clsCalTodayDay
+{
+	background-color: brown;
+	font-weight: bold;
+	color:White;
+	
+}
+
+.clsListBox
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 80px;
+	width: 624px;
+	color: black;
+}
+
+
+.clsCalWeekendDay
+{
+	background-color:Silver;
+}
+	
+.clstablecompaniesout
+{
+	background-color: White;
+	width: 325;
+	border: 0px none;
+	height: auto;
+}
+
+.clsImageLine
+{
+	background-color: Gray;
+	width: 100%;
+	height: 2;
+}
+.clsMenu
+{
+	width: 100%;
+}
+
+.clsTable
+{
+	color: rgb(0,0,0);
+	left: 8px;
+	width: 72px;
+	position: absolute;
+	top: 8px;
+	width: 72;
+	border: 0px none;
+}
+
+.clstabletd
+{
+	height: 4;
+	border-color: rgb(245,184,245);
+}
+
+.clsMessageTable
+{
+	width: 100%;
+	height: 100%;
+	background-color: White;
+}
+
+.clssubtitle
+{
+	font-family: Verdana;
+	font-weight: 500;
+	color: red;
+/*	font-size: 11pt; */
+	font-size: 9pt;
+}
+
+.clsMsgHead
+{
+	font-family: Verdana;
+	/* font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: bold;
+	position: relative;
+	text-align: left;
+	vertical-align: Top;
+	color: BLACK;
+}
+.clsMsgText
+{
+	font-family: Verdana;
+	/* font-size: 8pt; */
+	font-size: 8pt;
+	position: relative;
+	text-align: left;
+	text-justify: auto;
+	vertical-align: Top;
+	height: 60;
+	color: BLACK;
+}
+
+.clstd
+{
+	height: 33;
+	width: 921;
+	border-color: rgb(245,184,245);
+}
+
+.clscol
+{
+	width: 20%;
+}
+
+.clsButtonMessage
+{
+	border: solid thin;
+	border-color: rgb(245,184,245);
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 8pt;
+	font-weight: bold;
+	color: Black;
+	height: auto;
+	width: 80px;
+}
+.clstableloginout
+{
+	border: solid thin Gray;
+	background-color: Transparent;
+	width: 50%;
+	height: auto;
+	background-color: WhiteSmoke;
+	border-color: rgb(245,184,245);
+}
+
+.clstablemain
+{
+	border: 0px none;
+	width: 100%;
+	height: 100%;
+	background-color: Transparent;
+}
+
+.clstable1
+{
+	border: none;
+	padding: 0 0 0 0;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	color: rgb(0,0,0);
+	border-color: rgb(245,184,245);
+	background-color: Transparent;
+}
+
+.clstablelistout
+{
+	border-style: solid;
+	padding: 2 2 2 2;
+	margin: 2 2 2 2;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: auto; /*vertical-align:middle;*/
+	text-align: left;
+	border-color: rgb(245,184,245);
+	background-color: WhiteSmoke;
+	border-width:thin ;
+	
+}
+
+.clstablelistin
+{
+	background-color: WhiteSmoke;
+	left: 0;
+	top: 0;
+	vertical-align: top;
+	width: 100%;
+	height: auto;
+}
+
+.clstablecell
+{
+	background-color: transparent;
+	width: 85px;
+	height: 21px;
+
+}
+
+.clsLabelHeader
+{
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 8pt;
+	width: auto;
+	position: relative;
+	vertical-align: bottom;
+	font-weight: BOLD;
+	color: BLACK;
+}
+.clsLabelHeader1
+{
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 8pt;
+	width: 128px;
+	position: relative;
+	vertical-align: bottom;
+	font-weight: BOLD;
+	color: BLACK;
+}
+.clsLabelHeaderNew
+{
+	font-family: Tahoma;
+	/*font-size: 9pt;*/
+	font-size:7pt;
+	width: auto;
+	position: relative;
+	vertical-align: bottom;
+	font-weight: BOLD;
+	color: BLACK;
+}
+.clsLabelHeaderItem
+{
+	font-family: Verdana;
+	/*font-size: 10pt; */
+	font-size: 8pt;
+	width: 170px;
+	position: relative;
+	vertical-align: bottom;
+	font-weight: BOLD;
+	color: BLACK;
+}
+.clsHeaderTableOut
+{
+	width: 100%;
+}
+.clsHeaderTableOutAuto
+{
+	width: Auto;
+}
+.clsLabelStar
+{
+	font-family: Verdana;
+	font-size:10pt;
+	width: 8px;
+	color:Red;
+	font-style: normal;
+}
+
+.clsLabel
+{
+	font-family: Verdana;
+	/* font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: 96px;
+	font-style: normal;
+} 
+/*/================== Prashant*/
+.clsLabelRight
+{
+	font-family: Verdana;
+	/* font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align:left ;
+	width: 80px;
+	font-style: normal;
+}
+
+.clsLabelRights
+{
+	font-family: Verdana;
+	/* font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color:#0198e1 ;
+	text-align:right;
+	width:auto ;
+	font-style:normal; 
+}
+
+.clsLabelTime
+{
+	font-family: Verdana;
+	 font-size: 7pt;
+     font-weight: 500;
+	color:#0198e1 ;
+	text-align:left;
+	width:auto ;
+	font-style:normal; 
+}
+
+.clsoutline
+{
+	
+
+	padding: 2 2 2 2;
+	margin: 2 2 2 2 ;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: auto;
+	text-align: left;
+	background-color: White;
+	/*
+border-style:solid;
+	border-width:thin ;
+border-color: rgb(245,184,245);
+background-image:url('images\aircraft10.bmp');
+	background-image:url('images\aircraft2.jpg');
+	background-image:url('images\aircraft3.jpg');
+	 background-image:url('images\aircraft5.bmp'); */
+}
+
+.clsoutlineNew
+{
+	border:thin solid rgb(245,184,245); padding:2; margin:2; left: 0;
+	top: 0;
+	width: auto;
+	height: auto;
+	text-align: left;
+	background-color: White;
+	background-image:url('images/aircraft8.jpg');
+	/*background-image:url('images\aircraft2.jpg');
+	background-image:url('images\aircraft3.jpg');
+	 background-image:url('images\aircraft5.bmp'); */
+}
+.clstitleLeft
+{
+	background: rgb(245,184,245);
+	font-family: Verdana;
+	font-size: 12pt;
+	color: White;
+	text-align: left;
+
+}
+
+/*/==================*/
+
+.clsLabelLeft
+{
+	font-family: Verdana;
+	/* font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color:#0198e1 ;
+	text-align:left;
+	width:auto ;
+	font-style:normal; 
+	}
+/*===================*/
+.clsLabelAuto
+{
+	font-family: Verdana;
+	/* font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: auto;
+	color:Red  ;
+}
+
+.clsLabel1
+{
+	font-family: Verdana;
+	/* font-size: 9pt; */
+	font-size: 7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: 96px;
+	font-style: normal;
+}
+.clsLabelAuto1
+{
+	font-family: Verdana;
+	/* font-size: 9pt; */
+	font-size: 7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: auto;
+}
+
+.clsLabelMedium
+{
+	font-family: Verdana;
+	/*font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: 48px;
+	font-style: normal;
+}
+.clsLabelMedium1
+{
+	font-family: Verdana;
+	/*font-size: 9pt;*/
+	font-size: 7pt;
+	 
+	font-weight:500;
+	color:BLACK;
+	text-align:left;
+	width: 120px;
+	font-style: normal;
+	
+}
+.clsLabelMedium2
+{
+	font-family: Verdana;
+	/*font-size: 9pt;*/
+	 font-size: 7pt;
+	font-weight:500;
+	color:BLACK;
+	text-align:left;
+	width: 50px;
+	font-style: normal;
+	
+}
+.clsLabelButton
+{
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	width: 130px;
+	height: 22px;
+	border: 1px;
+	border-color: rgb(245,184,245);
+	font-style: normal;
+	background-color: Gainsboro;
+	text-align: center;
+}
+
+.clsLabelButton1
+{
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	width: 105px;
+	height: 22px;
+	border: 1px;
+	border-color: rgb(245,184,245);
+	font-style: normal;
+	background-color: Gainsboro;
+	text-align: center;
+}
+
+.clsLabelButtonLong
+{
+	font-family: Verdana;
+	/*font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	width: 170px;
+	height: 22px;
+	border: 1px;
+	border-color: rgb(245,184,245);
+	font-style: normal;
+	background-color: Gainsboro;
+	text-align: center;
+}
+
+
+.clsInvalidLabel
+{
+	font-family: Verdana;
+	font-weight: 500;
+	font-size: 10;
+	color: red;
+	text-align: left;
+	width: auto;
+}
+
+.clstitle1
+{
+	background: rgb(245,184,245);
+	font-family: Verdana;
+	/*font-size: 14pt; */
+	font-size: 12pt;
+	color: White;
+	font-weight: 500;
+	width :100%;
+	display:inline-block;
+}
+
+.clstitle2
+{
+	background: rgb(245,184,245);
+	font-family: Verdana;
+	/*font-size: 14pt; */
+	font-size: 8pt;
+	color: White;
+	width: 100%;
+	position: relative;
+	vertical-align: middle;
+	font-weight: BOLD;
+}
+
+
+/*   Hereafter all are changed directly with 2 pts */
+.clssubtitle1
+{
+	font-family: Verdana;
+	font-size: 7pt;
+	font-weight: 500;
+	color: BLACK;
+}
+
+.clsGridLog
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color:Black;
+	font-weight: 300;
+	vertical-align: top;
+	width: auto;
+	height: auto;
+	border-color : rgb(245,184,245);
+ }
+.clsGrid
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color:Black;
+	font-weight: 300;
+	vertical-align: top;
+	width: 100%;
+	height: auto;
+	border-color : rgb(245,184,245);
+ }
+.clsdgHeader
+{
+	background-color: rgb(245,184,245);
+	font-family: Verdana;
+	font-size: 8pt;
+	color: White;
+	font-weight: BOLD;
+}
+.clsdgHeaderInfo
+{
+	background-color: rgb(245,184,245);
+	font-family: Verdana;
+	font-size: 7pt;
+	color: White;
+	font-weight: BOLD;
+}
+.clsdgItem
+{
+	background-color:White;
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	font-weight: 500;
+}
+.clsdgItemInfo
+{
+	background-color:White;
+	font-family: Verdana;
+	font-size: 7pt;
+	color: BLACK;
+	font-weight: 500;
+}
+.clsdgAltItem
+{
+	background-color:#f2f2f2;
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	font-weight: 500;
+}
+
+.clsTextBox
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 185px;
+	color: BLACK;
+}
+.clsTextBox2
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 225px;
+	color: BLACK;
+}
+.clsTextBox3
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 275px;
+	color: BLACK;
+}
+.clsTextBoxAuto
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	color: BLACK;
+	width: 250px;
+}
+.clsTextBoxFixWidth
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 275px;
+	color: black;
+}
+.clsTextBoxMultiLine
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 185px;
+	color: black;
+}
+.clsTextBoxMultiLine2
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 225px;
+	color: black;
+}
+.clsTextBoxMultiLine3
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 275px;
+	color: black;
+}
+.clsTextBoxMultiLineAuto
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 250px;
+	color: black;
+}
+.clsTextBoxLong1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 570;
+	color: black;
+}
+.clsTextBoxLongCenterText
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 570;
+	color: black;
+	text-align:center;
+}
+.clsTextBoxRightAlignMedium
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 140px;
+	text-align: right;
+}
+.clsTextBoxMultiLine1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 370px;
+	color: black;
+}
+.clsTextBoxMultiLineMedium
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 275px;
+	color: black;
+}
+.clsTextBoxMultiLineLong
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 185px;
+	color: black;
+}
+
+.clsTextBoxMultiLineLong1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 580px;
+	color: black;
+}
+.clsTextBoxRightAlign
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	background-color: WhiteSmoke;
+	color: BLACK;
+	height: 23px;
+	width: 185px;
+	text-align: right;
+}
+clsTextBoxSmallRightAlign
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	background-color: WhiteSmoke;
+	color: BLACK;
+	height: 23px;
+	width: 185px;
+	text-align: right;
+}
+.clsTextBoxRightAlign1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 185px;
+	text-align: right;
+}
+.clsTextBoxRightAlignSmall
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 80px;
+	text-align: right;
+}
+.clsTextBoxRightAlignQty
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 47px;
+	text-align: right;
+}
+.clsTextBoxMedium
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 75px;
+	color: black;
+}
+.clsTextBoxDate
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 136px;
+}
+
+.clsTextBox1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 370px;
+}
+.clsTextBoxLong
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 23px;
+	width: 100%;
+	color: black;
+}
+.clsTextBoxMultiLineLong
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 100%;
+	color: black;
+}
+.clsTextBoxSmall
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 85px;
+}
+
+.clsTextBoxMegaSmall
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 40px;
+	text-align: right;
+}
+
+.clsTextBoxAmd
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 50px;
+}
+.clsComboBox1
+{
+	font-family: Verdana;
+	background-color:White;
+	color:BLACK;
+	height:23px;	
+	width : 160px;	
+	font-size: 8pt;
+	font-style: normal; 
+    border-color : rgb(0,0,0);
+ }
+
+
+.clsComboBoxsmall
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 20px;
+	width: 75px;
+	font-size: 8pt;
+	font-style: normal;
+	border-style: solid;
+	border-width: 1pt;
+}
+.clsComboBoxMedium
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 20px;
+	width: 90px;
+	font-size: 8pt;
+	font-style: normal;
+	border-style: solid;
+	border-width: 1pt;
+}
+
+.clsComboBox
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 185px;
+	font-size: 8pt;
+	font-style: normal;
+}
+.clsComboBox2
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 225px;
+	font-size: 8pt;
+	font-style: normal;
+}
+
+.clsComboBox3
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 275px;
+	font-size: 8pt;
+	font-style: normal;
+}
+.clsComboBoxLong1
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 250px;
+	font-size: 8pt;
+	font-style: normal;
+}
+.clsComboBoxDate
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 140px;
+	font-size: 8pt;
+	font-style: normal;
+}
+.clsComboBoxDouble
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 275px;
+	font-size: 8pt;
+	font-style: normal;
+}
+.clsComboBoxLong
+{
+	font-family: Verdana;
+	background-color: white;
+	color: BLACK;
+	height: 23px;
+	width: 100%;
+	font-size: 8pt;
+	font-style: normal;
+	border-style: solid;
+	border-width: 1pt;
+}
+
+.clsButton
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 90px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonLong
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 135px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonLong1
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 105px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonLinkLong
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 250px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonPlus
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 30px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonGrid
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-width: 1pt;
+	height: auto;
+	width: 21px;
+}
+/*--------------------------*/
+.clsButtonGrid1
+{
+	background: Red;
+	font-size: 12pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-width: 1pt;
+	
+	width: 21px;
+	
+	}
+/*--------------------------*/
+.clsButtonVeryLong
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 170px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	
+	color: Black;
+}
+.clsHyperlink1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: Blue;
+	font-weight: normal;
+	text-decoration: none;
+	cursor:hand;
+}
+
+.clsButtonImg
+{
+	height: 30px;
+	width: 30px;
+	cursor: hand;
+}
+
+.clsSelectButton
+{
+	height: 23px;
+	width: 30px;
+}
+
+.clsheaderRight
+{
+	font-family: Verdana;
+	font-size: 6pt;
+	text-align: center;
+	vertical-align: bottom;
+	color: Black;
+	font-weight: 500;
+}
+
+.clsPanel1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: Black;
+	font-weight: 500;
+	background-color: WhiteSmoke;
+	width: auto;
+}
+
+.clsCalender1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: Black;
+	font-weight: 500;
+	width: 185;
+	border-collapse: collapse;
+	table-layout: fixed;
+	cursor: default;
+}
+
+.clsCheckBox
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: auto;
+}
+
+.clsHyperlinkheader1
+{
+	font-family: Verdana;
+	font-size: 6pt;
+	color: BLACK;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.clsValidationSummary
+{
+	font-family: Verdana;
+	font-size : 6pt;
+	font-weight :bold ;
+	color:Red;
+	text-align:left;
+	width: auto;
+	background-color :Transparent; 
+}
+
+.clsfooterRight
+{
+	font-family: Verdana;
+	font-size: 7pt;
+	text-align: right;
+	color: Black;
+	font-weight: 500;
+}
+
+.clsfooterLeft
+{
+	font-family: Verdana;
+	font-size: 7pt;
+	text-align: left;
+	color: Black;
+	font-weight: 500;
+}
+
+
+.clsWidth
+{
+	font-family: Verdana;
+	font-size: 6pt;
+	font-weight: 500;
+	color: black;
+	width: 112px;
+}
+
+.clsRadioButton
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: Auto;
+	font-style: normal;
+}
+
+A:active
+{
+	color: rgb(1,3,104);
+}
+
+A:hover
+{
+	color: rgb(245,184,245);
+}
+
+A:visited
+{
+	color: Gray;
+}
+
+A:link
+{
+	color: Blue;
+}
+/*Added by Saylee */
+.clsLabelHeaderWidth
+{
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 8pt;
+	width: 270px;
+	position: relative;
+	vertical-align: bottom;
+	font-weight: BOLD;
+	color: BLACK;
+}
+.clsLinkButton
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: Blue;
+	font-weight: normal;
+	text-decoration: underline;
+}
+/*--------*/
+
+
+
+/*New addition by Rupali*/
+.clsCalPanelNew
+{
+	border-style: solid;
+	padding: 2 2 2 2;
+	margin: 2 2 2 2;
+	width: auto;
+	height: auto; /*vertical-align:middle;*/
+	text-align: left;
+	border-color: rgb(245,184,245);
+	background-color: WhiteSmoke;
+	border-width: thin;
+}
+
+.clsCalNew
+{
+	background-color :whitesmoke;
+	border-color:White;
+	border-style:solid;
+	border-width:thin;
+	padding:2 2 2 2;
+	font-family: Tahoma;
+	font-size:7pt;
+	color: Black;
+	font-weight: 300;	
+	height:136px;
+	width:156px;
+		}
+		
+
+.clsCalDayHeaderNew
+{
+	background-color: rgb(245,184,245);
+	font-family: Tahoma;
+	font-size:7pt;
+	color: White;
+	font-weight:bold;
+	}
+
+.clsComboBoxMediumSizeNew
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 325px;
+	font-size:7pt;
+	font-style: normal;
+}
+
+.clsTextBoxRightAlignSmall1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 60px;
+	text-align: right;
+}
+
+	.clsTextBoxMultilineOpeningNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 48px;
+	width: 886px;
+}
+
+	.clsTextBoxMultilineTaskNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 50px;
+	width: 576px;
+}
+
+	.clsTextBoxMultilineDefectActionNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 50px;
+	width: 886px;
+}
+	
+	.clsTextBoxMultilineDefectActionAutoNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 50px;
+	width: 100%;
+}		
+
+.clsCalSelectedDayNew
+{
+	font-weight: bold;
+	color: black;
+	background-color: lightsalmon;
+}	
+
+.clsCalTodayDayNew
+{
+	background-color: brown;
+	font-weight: bold;
+	color:White;
+	}
+
+
+.clsListBoxNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 80px;
+	width: 624px;
+	color: black;
+}
+
+
+
+.clsCalWeekendDayNew
+{
+	background-color:Silver;
+}
+
+.clstablecompaniesoutNew
+{
+	background-color: White;
+	width: 325;
+	border: 0px none;
+	height: auto;
+}
+
+
+.clsImageLineNew
+{
+	background-color: Gray;
+	width: 100%;
+	height: 2;
+}
+
+.clsMenuNew
+{
+	width: 100%;
+}
+
+.clsTableNew
+{
+	color: rgb(0,0,0);
+	left: 8px;
+	width: 72px;
+	position: absolute;
+	top: 8px;
+	width: 72;
+	border: 0px none;
+}
+
+
+.clstabletdNew
+{
+	height: 4;
+	border-color: rgb(245,184,245);
+}
+
+.clsMessageTableNew
+{
+	width: 100%;
+	height: 100%;
+	background-color: White;
+}
+
+.clssubtitleNew
+{
+	font-family: Tahoma;
+	font-weight: 500;
+	color: red;
+/*	font-size: 11pt; */
+	font-size: 8pt;
+}
+
+.clsMsgHeadNew
+{
+	font-family: Tahoma;
+	/* font-size: 9pt; */
+	font-size:7pt;
+	font-weight: bold;
+	position: relative;
+	text-align: left;
+	vertical-align: Top;
+	color: BLACK;
+}
+
+.clsMsgTextNew
+{
+	font-family: Tahoma;
+	/* font-size:7pt; */
+	font-size:7pt;
+	position: relative;
+	text-align: left;
+	text-justify: auto;
+	vertical-align: Top;
+	height: 60;
+	color: BLACK;
+}
+
+.clstdNew
+{
+	height: 33;
+	width: 921;
+	border-color: rgb(245,184,245);
+}
+
+.clscolNew
+{
+	width: 20%;
+}
+
+.clsButtonMessageNew
+{
+	border: solid thin;
+	border-color: rgb(245,184,245);
+	font-family: Tahoma;
+	/*font-size: 9pt;*/
+	font-size:7pt;
+	font-weight: bold;
+	color: Black;
+	height: auto;
+	width: 80px;
+}
+
+.clstableloginoutNew
+{
+	border: solid thin Gray;
+	background-color: Transparent;
+	width: 50%;
+	height: auto;
+	background-color: WhiteSmoke;
+	border-color: rgb(245,184,245);
+}
+
+.clstablemainNew
+{
+	border: 0px none;
+	width: 100%;
+	height: 100%;
+	background-color: Transparent;
+}
+
+.clstable1New
+{
+	border: none;
+	padding: 0 0 0 0;
+	width: 100%;
+	left: 0px;
+	top: 0px;
+	color: rgb(0,0,0);
+	border-color: rgb(245,184,245);
+	background-color: Transparent;
+}
+
+.clstablelistoutNew
+{
+	border-style: solid;
+	padding: 2 2 2 2;
+	margin: 2 2 2 2;
+	left: 0;
+	top: 0;
+	width: auto;
+	height: auto; /*vertical-align:middle;*/
+	text-align: left;
+	border-color: rgb(245,184,245);
+	background-color: WhiteSmoke;
+	border-width: thin;
+}
+
+.clstablelistinNew
+{
+	background-color: WhiteSmoke;
+	left: 0;
+	top: 0;
+	vertical-align: top;
+	width: 100%;
+	height: auto;
+}
+
+.clstablecellNew
+{
+	background-color: transparent;
+	width: 85px;
+	height: 21px;
+}
+
+
+.clsLabelHeaderNew
+{
+	font-family: Tahoma;
+	/*font-size: 9pt;*/
+	font-size:7pt;
+	width: auto;
+	position: relative;
+	vertical-align: bottom;
+	font-weight: BOLD;
+	color: BLACK;
+}
+
+.clsLabelHeaderItemNew
+{
+	font-family: Tahoma;
+	/*font-size: 9pt; */
+	font-size:7pt;
+	width: 170px;
+	position: relative;
+	vertical-align: bottom;
+	font-weight: BOLD;
+	color: BLACK;
+}
+
+.clsHeaderTableOutNew
+{
+	width: 100%;
+}
+
+.clsHeaderTableOutAutoNew
+{
+	width: Auto;
+}
+
+.clsLabelStarNew
+{
+	font-family: Tahoma;
+	font-size:9pt;
+	width: 8px;
+	color:Red;
+	font-style: normal;
+}
+
+
+.clsLabelNew
+{
+	font-family: Tahoma;
+	/* font-size: 9pt; */
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: 96px;
+	font-style: normal;
+}
+
+.clsLabelAutoNew
+{
+	font-family: Tahoma;
+	/* font-size: 9pt; */
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: auto;
+}
+
+.clsLabel1New
+{
+	font-family: Tahoma;
+	/* font-size: 8pt; */
+	font-size: 7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: 96px;
+	font-style: normal;
+}
+
+.clsLabelAuto1New
+{
+	font-family: Tahoma;
+	/* font-size: 8pt; */
+	font-size: 7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: auto;
+}
+
+.clsLabelMediumNew
+{
+	font-family: Tahoma;
+	/*font-size: 9pt; */
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: 48px;
+	font-style: normal;
+}
+
+.clsLabelMedium1New
+{
+	font-family: Tahoma;
+	/*font-size: 8pt;*/
+	font-size: 7pt;
+	 
+	font-weight:500;
+	color:BLACK;
+	text-align:left;
+	width: 120px;
+	font-style: normal;
+	
+}
+
+.clsLabelMedium2New
+{
+	font-family: Tahoma;
+	/*font-size: 8pt;*/
+	 font-size: 7pt;
+	font-weight:500;
+	color:BLACK;
+	text-align:left;
+	width: 50px;
+	font-style: normal;
+	
+}
+
+.clsLabelButtonNew
+{
+	font-family: Tahoma;
+	/*font-size: 9pt;*/
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	width: 130px;
+	height: 22px;
+	border: 1px;
+	border-color: rgb(245,184,245);
+	font-style: normal;
+	background-color: Gainsboro;
+	text-align: center;
+}
+
+
+.clsLabelButton1New
+{
+	font-family: Tahoma;
+	/*font-size: 9pt;*/
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	width: 105px;
+	height: 22px;
+	border: 1px;
+	border-color: rgb(245,184,245);
+	font-style: normal;
+	background-color: Gainsboro;
+	text-align: center;
+}
+
+.clsLabelButtonLongNew
+{
+	font-family: Tahoma;
+	/*font-size: 9pt; */
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	width: 170px;
+	height: 22px;
+	border: 1px;
+	border-color: rgb(245,184,245);
+	font-style: normal;
+	background-color: Gainsboro;
+	text-align: center;
+}
+
+
+.clsInvalidLabelNew
+{
+	font-family: Tahoma;
+	font-weight: 500;
+	font-size: 10;
+	color: red;
+	text-align: left;
+	width: auto;
+}
+
+.clstitle1New
+{
+	background: rgb(245,184,245);
+	font-family: Tahoma;
+	/*font-size: 14pt; */
+	font-size: 10pt;
+	color: White;
+	font-weight: 500;
+	width: 100%;
+}
+
+.clstitle2New
+{
+	background: rgb(245,184,245);
+	font-family: Tahoma;
+	/*font-size: 14pt; */
+	font-size:7pt;
+	color: White;
+	width: 100%;
+	position: relative;
+	vertical-align: middle;
+	font-weight: BOLD;
+}
+
+/*   Hereafter all are changed directly with 2 pts */
+
+.clssubtitle1New
+{
+	font-family: Tahoma;
+	font-size: 7pt;
+	font-weight: 500;
+	color: BLACK;
+}
+
+
+ .clsGridLogNew
+{
+	font-family: Tahoma;
+	font-size:8pt;
+	color:Black;
+	font-weight: 300;
+	vertical-align: top;
+	width: auto;
+	height: auto;
+	border-color : rgb(245,184,245);
+ }
+
+ .clsGridNew
+{
+font-family: Verdana;
+	font-size: 7pt;
+	color:Black;
+	font-weight: 300;
+	vertical-align: top;
+	width: 100%;
+	height: auto;
+	border-color : rgb(245,184,245);
+
+ }
+
+.clsdgHeaderNew
+{
+	background-color: rgb(245,184,245);
+	font-family: Tahoma;
+	font-size:7pt;
+	color: White;
+	font-weight: BOLD;
+}
+
+.clsdgHeaderInfoNew
+{
+	background-color: rgb(245,184,245);
+	font-family: Tahoma;
+	font-size: 7pt;
+	color: White;
+	font-weight: BOLD;
+}
+
+.clsdgItemNew
+{
+	background-color:White;
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	font-weight: 500;
+}
+
+.clsdgItemInfonew
+{
+	background-color:White;
+	font-family: Tahoma;
+	font-size: 7pt;
+	color: BLACK;
+	font-weight: 500;
+}
+
+.clsdgAltItemNew
+{
+	background-color:#f2f2f2;
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	font-weight: 500;
+}
+
+
+.clsTextBoxNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 185px;
+	color: BLACK;
+}
+
+.clsTextBox2New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 225px;
+	color: BLACK;
+}
+
+.clsTextBox3New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 275px;
+	color: BLACK;
+}
+
+.clsTextBoxAutoNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	color: BLACK;
+	width: 250px;
+}
+
+.clsTextBoxFixWidthNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 275px;
+	color: black;
+}
+
+.clsTextBoxMultiLineNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 185px;
+	color: black;
+}
+
+.clsTextBoxMultiLine2New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 225px;
+	color: black;
+}
+
+.clsTextBoxMultiLine3New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 275px;
+	color: black;
+}
+
+.clsTextBoxMultiLineAutoNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 250px;
+	color: black;
+}
+
+.clsTextBoxLong1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 570;
+	color: black;
+}
+.clsTextBoxLongCenterTextNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 570;
+	color: black;
+	text-align:center;
+}
+.clsTextBoxRightAlignMediumNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 110px;
+	text-align: right;
+}
+.clsTextBoxMultiLine1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 370px;
+	color: black;
+}
+.clsTextBoxMultiLineMediumNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 275px;
+	color: black;
+}
+.clsTextBoxMultiLineLongNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 185px;
+	color: black;
+}
+.clsTextBoxRightAlignNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	background-color: WhiteSmoke;
+	color: BLACK;
+	height: 15px;
+	width: 185px;
+	text-align: right;
+}
+clsTextBoxSmallRightAlignNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	background-color: WhiteSmoke;
+	color: BLACK;
+	height: 15px;
+	width: 185px;
+	text-align: right;
+}
+.clsTextBoxRightAlign1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 185px;
+	text-align: right;
+}
+.clsTextBoxRightAlignSmallNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 80px;
+	text-align: right;
+}
+.clsTextBoxRightAlignQtyNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 47px;
+	text-align: right;
+}
+.clsTextBoxMediumNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 75px;
+	color: black;
+}
+.clsTextBoxDateNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 85px;
+}
+
+.clsTextBox1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 370px;
+}
+.clsTextBoxLongNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 15px;
+	width: 100%;
+	color: black;
+}
+.clsTextBoxMultiLineLongNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	height: 46px;
+	width: 100%;
+	color: black;
+}
+.clsTextBoxSmallNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 85px;
+}
+
+.clsTextBoxMegaSmallNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 40px;
+	text-align: right;
+}
+
+.clsTextBoxAmdNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: BLACK;
+	height: 15px;
+	width: 50px;
+}
+.clsComboBox1New
+{
+	font-family: Tahoma;
+	background-color:White;
+	color:BLACK;
+	height:15px;	
+	width : 160px;	
+	font-size:7pt;
+	font-style: normal; 
+    border-color : rgb(0,0,0);
+ }
+
+
+.clsComboBoxsmallNew
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 20px;
+	width: 75px;
+	font-size:7pt;
+	font-style: normal;
+	border-style: solid;
+	border-width: 1pt;
+}
+.clsComboBoxMediumNew
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 20px;
+	width: 90px;
+	font-size:7pt;
+	font-style: normal;
+	border-style: solid;
+	border-width: 1pt;
+}
+
+.clsComboBoxNew
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 185px;
+	font-size:7pt;
+	font-style: normal;
+}
+.clsComboBoxMediumNew
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 150px;
+	font-size:7pt;
+	font-style: normal;
+}
+.clsComboBox2New
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 225px;
+	font-size:7pt;
+	font-style: normal;
+}
+
+.clsComboBox3New
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 275px;
+	font-size:7pt;
+	font-style: normal;
+}
+.clsComboBoxLong1New
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 250px;
+	font-size:7pt;
+	font-style: normal;
+}
+.clsComboBoxDateNew
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 140px;
+	font-size:7pt;
+	font-style: normal;
+}
+.clsComboBoxDoubleNew
+{
+	font-family: Tahoma;
+	background-color: White;
+	color: BLACK;
+	height: 15px;
+	width: 275px;
+	font-size:7pt;
+	font-style: normal;
+}
+.clsComboBoxLongNew
+{
+	font-family: Tahoma;
+	background-color: white;
+	color: BLACK;
+	height: 15px;
+	width: 100%;
+	font-size:7pt;
+	font-style: normal;
+	border-style: solid;
+	border-width: 1pt;
+}
+
+.clsButtonNew
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 90px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButton1New
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 45px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonLongNew
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 140px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonLong1New
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 105px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonLinkLongNew
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 250px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonPlusNew
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 30px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsButtonGridNew
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-width: 1pt;
+	height: auto;
+	width: 21px;
+}
+
+.clsButtonVeryLongNew
+{
+	font-size:7pt;
+	font-family: Tahoma;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 170px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsHyperlink1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: Blue;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+.clsButtonImgNew
+{
+	height: 30px;
+	width: 30px;
+	cursor: hand;
+}
+
+.clsSelectButtonNew
+{
+	height: 15px;
+	width: 30px;
+}
+
+.clsheaderRightNew
+{
+	font-family: Tahoma;
+	font-size: 6pt;
+	text-align: center;
+	vertical-align: bottom;
+	color: Black;
+	font-weight: 500;
+}
+
+.clsPanel1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: Black;
+	font-weight: 500;
+	background-color: WhiteSmoke;
+	width: auto;
+}
+
+.clsCalender1New
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	color: Black;
+	font-weight: 500;
+	width: 185;
+	border-collapse: collapse;
+	table-layout: fixed;
+	cursor: default;
+}
+
+.clsCheckBoxNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: auto;
+}
+
+.clsHyperlinkheader1New
+{
+	font-family: Tahoma;
+	font-size: 6pt;
+	color: BLACK;
+	font-weight: 500;
+	text-decoration: none;
+}
+
+.clsValidationSummaryNew
+{
+	font-family: Tahoma;
+	font-size : 6pt;
+	font-weight :bold ;
+	color:Red;
+	text-align:left;
+	width: auto;
+	background-color :Transparent; 
+}
+
+.clsfooterRightNew
+{
+	font-family: Tahoma;
+	font-size: 7pt;
+	text-align: right;
+	color: Black;
+	font-weight: 500;
+}
+
+.clsfooterLeftNew
+{
+	font-family: Tahoma;
+	font-size: 7pt;
+	text-align: left;
+	color: Black;
+	font-weight: 500;
+}
+
+
+.clsWidthNew
+{
+	font-family: Tahoma;
+	font-size: 6pt;
+	font-weight: 500;
+	color: black;
+	width: 112px;
+}
+
+.clsRadioButtonNew
+{
+	font-family: Tahoma;
+	font-size:7pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: Auto;
+	font-style: normal;
+}
+
+/*--------*/
+/*Added by Amrita on 18-Jun-2009 for Log Transferring in FDTL */
+.clstablelistoutForFDTL
+{
+	border-style: solid;
+	padding: 2 2 2 2;
+	margin: 2 2 2 2;
+	left: 0;
+	top: 0;
+	width:300;
+	height:160;
+	text-align: left;
+	border-color: rgb(245,184,245);
+	background-color: WhiteSmoke;
+	border-width: thin;
+}
+/*Added by Saylee on 11-Mar-2010 */
+.clsLabelLong
+{
+	font-family: Verdana;
+	/* font-size: 10pt; */
+	font-size: 8pt;
+	font-weight: 500;
+	color: BLACK;
+	text-align: left;
+	width: 108px;
+	font-style: normal;
+}
+.clsTextBoxLongForAuditDesc
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	height: 46px;
+	width: 875px;
+	color: black;
+}
+.clsTextBoxMultilineTask1
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 50px;
+	width: 870px;
+}
+.clsComboBoxLong2
+{
+	font-family: Verdana;
+	background-color: White;
+	color: BLACK;
+	height: 23px;
+	width: 340px;
+	font-size: 8pt;
+	font-style: normal;
+}
+.clsButtonLong2         /*   Added By Prashant 5-May-2010 */
+{
+	font-size: 8pt;
+	font-family: Verdana;
+	font-style: normal;
+	font-weight: 500;
+	border-style: solid;
+	border-width: 1pt;
+	height: auto;
+	width: 190px;
+	background-color: Gainsboro;
+	border-color: rgb(245,184,245);
+	color: Black;
+}
+.clsTextBoxDateControl     /*   Added By Utkarsh For Date Control */
+
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 150px;
+}
+
+.clsTextBoxTextSearch     /*   Added By Utkarsh For Date Control */
+
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: BLACK;
+	height: 23px;
+	width: 250px;
+}
+.clsFieldSet        /*   Added By Utkarsh For FieldSet Control */
+{
+	font-family: Verdana;
+	font-size: 8pt;
+	color: Black;
+	font-weight: 500;
+	border-style: solid;
+	padding: 2 2 2 2;
+	margin: 2 2 2 2;
+	width: auto;
+	height: auto; /*vertical-align:middle;*/
+	text-align: left;
+	border-color: rgb(245,184,245);
+	background-color: WhiteSmoke;
+	border-width: 1.8;
+} 
+.clsAlertLabel     /*   Added By Utkarsh For Alert Message Popup Control */
+{
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 9pt;
+	color: BLACK;
+	position: relative;
+	text-align: left;
+	text-justify: auto;
+	vertical-align: Top;
+}
+.clsTitleAlertLabel     /*   Added By Utkarsh For Alert Message Popup Control */
+{
+	font-family: Verdana;
+	/*font-size: 10pt;*/
+	font-size: 10pt;
+	font-weight:bold;
+	color: Red;
+	position: relative;
+	text-align:left;
+	text-justify: auto;
+	vertical-align:middle;
+}

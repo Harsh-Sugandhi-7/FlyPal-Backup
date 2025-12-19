@@ -1,0 +1,314 @@
+<html>
+<head>
+  <script language="javascript">
+  <!--
+  function CloseNav() {
+    if ((top.right.location == null) || (top.right.location == undefined) || (typeof(top.right.location.href) != "string") || (top.right.location.href == ""))
+      top.location="FlyPalInventoryHelp.html";
+    else
+      top.location=top.right.location;
+  }
+  function IndexListOnChange() { //Listbox select -> Put selected text into Entry field
+    var iSelect = document.getElementById("indexcontainer").selectedIndex;
+    var text = document.getElementById("indexcontainer").item(iSelect).text;
+    //Remove leading spaces - &#160; &nbsp; %A0 -- Finding it hard to remove Non-breaking space. JScript does not see %A0 as White space
+    text = escape(text);    text = text.replace(/^(%A0)+/g, "");
+    text = unescape(text);  text = text.replace(/^\s+/g, "");
+    document.getElementById("IndexEntry").value = text;
+  }
+  function IndexEntryOnKeyUp() { //text typed -> select closest listbox entry 
+    var oList = document.getElementById("indexcontainer"); 
+    var ListLen = oList.length; 
+    var iCurSel = oList.selectedIndex; 
+    var text = document.getElementById("IndexEntry").value.toUpperCase(); 
+    var TextLen = text.length; 
+    for (var i = 0; i < ListLen; i++) { 
+      var listitem = oList.item(i).text.substr(0, TextLen).toUpperCase(); 
+      if (listitem == text) { 
+        if (i != iCurSel) { 
+          var iPos = i + oList.size - 1; 
+          if(ListLen > iPos) 
+            oList.selectedIndex = iPos; 
+          else 
+            oList.selectedIndex = ListLen-1; 
+          oList.selectedIndex = i; 
+        } 
+        break; 
+      } 
+    } 
+    return(true); //do not gobble keypress 
+  } 
+  function OpenSelected() {  //Dblclick list item -> open item
+    var iSelect = document.getElementById("indexcontainer").selectedIndex;
+    if (iSelect >= 0) {
+      var URL = document.getElementById("indexcontainer").item(iSelect).value;
+      if (URL.length > 0) top.right.location = URL;  //right pane has name "right"
+    }
+  }
+  function KeyDownEvent(event) {
+    if ((event.which && event.which==13) || (event.keyCode && event.keyCode==13)) {
+      OpenSelected();
+      IndexListOnChange();  //update entry field to list box selected text
+      return(false);        //gobble text
+      } else return(true);
+  }
+
+  function GetFrameWidth() { 
+    var x = 300; 
+    if (self.innerHeight) // all except Explorer 
+	x = self.innerWidth; 
+    else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+	x = document.documentElement.clientWidth; 
+    else if (document.body) // other Explorers 
+	x = document.body.clientWidth; 
+    return(x); 
+  } 
+
+  function GetFrameHeight() { 
+    var y = 400; 
+    if (self.innerHeight) // all except Explorer 
+      y = self.innerHeight; 
+    else if (document.documentElement && document.documentElement.clientWidth) // Explorer 6 Strict Mode 
+      y = document.documentElement.clientHeight; 
+    else if (document.body) // other Explorers 
+      y = document.body.clientHeight; 
+    return(y); 
+  } 
+
+  function resizeIndex() {
+    var indexDiv = document.getElementById("indexcontainer");
+    var xTop = indexDiv.offsetTop;
+    indexDiv.style.width = GetFrameWidth() - 10; //working with 5px each side
+    var HH = GetFrameHeight(); 
+    if (HH -  xTop > 0)
+      indexDiv.style.height = HH -  xTop;
+  }
+  -->
+  </script>
+
+
+<meta HTTP-EQUIV=REFRESH>
+<title>Index</title>
+<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5" />
+
+  <style>
+  .docstyle
+  {
+    font-size: 85%;
+    font-family: verdana,arial,sans-serif;
+  }
+  </style>
+
+</head>
+
+<body id="docBody" BGCOLOR="activeborder" style="color: Black; margin: 5px 0px 0px 0px;" onload="resizeIndex()" onresize="resizeIndex()">
+
+
+<div style="display: inline; white-space: nowrap; margin: 0px 0px 0px 5px;">
+<input
+ TYPE="button" VALUE="CONTENT" ONCLICK="javascript:location='hh_toc.htm';"
+ NAME="HelpTopics"><input
+ TYPE="button" VALUE="INDEX" ONCLICK="javascript:location='hh_index.htm';"
+ NAME="Index" style=" color: #1E90FF;"><input
+ TYPE="button" VALUE="SEARCH" ONCLICK="javascript:location='hh_search.htm';"
+ NAME="Search">&nbsp;&nbsp;<input
+ TYPE="button" VALUE="X" ONCLICK="javascript:CloseNav()"
+ NAME="Close">
+</div>
+
+
+  <div style="margin: 11px 0px 0px 0px; padding: 0px 5px 0px 5px;">
+     <input type="text" id="IndexEntry" class="docstyle"
+       style="width:100%;"
+       onkeydown="javascript:return(KeyDownEvent(event));"
+       onkeyup="javascript:return(IndexEntryOnKeyUp());">
+  </div>
+
+<div style="margin: 5px 0px 0px 0px; padding: 0px 5px 0px 5px;">
+<select id="indexcontainer" name="IndexListbox" class="docstyle"
+  style="width:200; height:200;"
+  size="500"
+  onchange="javascript:IndexListOnChange();"
+  ondblclick="javascript:OpenSelected();return(true);"
+  onkeydown="javascript:return(KeyDownEvent(event));">
+<option value="SystemRequirment.html">System Requirement</option>
+<option value="UsingFlyPal.html">Getting Started</option>
+<option value="Master.html">Master</option>
+<option value="Requisition.html">Requisition</option>
+<option value="OtherCharge.html">Other Charge</option>
+<option value="AddNewPurchaseOtherCharge.html">Add New Other Charge</option>
+<option value="EditPurchaseOtherCharge.html">Edit Other Charge</option>
+<option value="DeletePurchaseOtherCharge.html">Delete Other Charge</option>
+<option value="InspectionKit.htm">Inspection Kit Report</option>
+<option value="SearchPurchaseOtherCharge.html">Search Other Charge</option>
+<option value="AddEditDeleteOtherChargeItem.html">Add/Delete Invoice Item</option>
+<option value="EnquiryRegister.html">Enquiry Register</option>
+<option value="QuotationRegister.html">Quotation Register</option>
+<option value="SalesOrderRegister.html">Sales Order Register</option>
+<option value="RequisitionRegister.html">Requisition Register</option>
+<option value="AddEditDeleteOC.html">Add/Edit/Delete Invoice Charge</option>
+<option value="AddNewRequisition.html">Add New Requisition</option>
+<option value="EditRequisition.html">Edit Requisition</option>
+<option value="DeleteRequisition.html">Delete Requisition</option>
+<option value="SearchRequisition.html">Search Requisition</option>
+<option value="AddEditDeleteRequisitionItem.html">Add/Edit/Delete Requisition Item</option>
+<option value="AddDeleteAircraft.html">Add/Delete Aircraft</option>
+<option value="AddDeleteModel.html">Add/Delete Model</option>
+<option value="Enquiry.html">Enquiry</option>
+<option value="AddNewEnquiry.html">Add New Enquiry</option>
+<option value="EditEnquiry.html">Edit Enquiry</option>
+<option value="DeleteEnquiry.html">Delete Enquiry</option>
+<option value="SearchEnquiry.html">Search Enquiry</option>
+<option value="AddEditDeleteEnquiryItem.html">Add/Edit/Delete Enquiry Item</option>
+<option value="AddDeleteEnquiryTerm.html">Add/Delete Enquiry Term</option>
+<option value="AddEditDeleteEnquiryTerm.html">Add/Edit/Delete Term</option>
+<option value="Quotation.html">Quotation</option>
+<option value="AddNewQuotation.html">Add New Quotation</option>
+<option value="EditQuotation.html">Edit Quotation</option>
+<option value="DeleteQuotation.html">Delete Quotation</option>
+<option value="SearchQuotation.html">Search Quotation</option>
+<option value="AddEditDeleteQuotationItem.html">Add/Edit/Delete Quotation Item</option>
+<option value="AddEditDeleteQuotationTermList.html">Add/Delete Quotation Term</option>
+<option value="AddEditDeleteQuotationTerm.html">Add/Edit/Delete Term</option>
+<option value="AddEditDeleteQuotationCharge.html">Add/Edit/Delete Quotation Charge</option>
+<option value="AddEditDeleteQuotation.html">Add/Edit/Delete Charge</option>
+<option value="SalesOrder.html">Sales Order</option>
+<option value="AddNewSalesOrder.html">Add New Sales Order</option>
+<option value="EditSalesOrder.html">Edit Sales Order</option>
+<option value="DeleteSalesOrder.html">Delete Sales Order</option>
+<option value="SearchSalesOrder.html">Search Sales Order</option>
+<option value="AddEditDeleteSalesOrderItem.html">Add/Edit/Delete Sales Order Item</option>
+<option value="AddEditDeleteSalesOrderTermList.html">Add/Delete Sales Order Term</option>
+<option value="AddEditDeleteSalesOrderTerm.html">Add/Edit/Delete Term</option>
+<option value="AddEditDeleteSalesOrderCharge.html">Add/Edit/Delete Sales Order Charge</option>
+<option value="AddEditDeleteSalesOrder.html">Add/Edit/Delete Charge</option>
+<option value="Aircraft.html">Aircraft</option>
+<option value="AddNewAircraft.html">Add New Aircraft</option>
+<option value="EditAircraft.html">Edit Aircraft</option>
+<option value="MaintenanceInvoice.html">Maintenance Invoice</option>
+<option value="AddNewMaintenanceInvoice.html">Add New Maintenance Invoice</option>
+<option value="AlternatePart.html">Alternate Part</option>
+<option value="Quarantine.html">Quarantine-Store Stock</option>
+<option value="MinLevelItems.html">Min Level Items</option>
+<option value="StoreBalance.html">Store Balance</option>
+<option value="ExpiryStockBalance.html">Expiry Stock Balance</option>
+<option value="CurddlingReport.html">Curddling Report</option>
+<option value="KitReport.html">Kit Report</option>
+<option value="AircraftwiseConsumptionReport.html">Aircraftwise Consumption Report</option>
+<option value="StockUtilizationReport.html">Stock Utilization Report</option>
+<option value="BenchCheck.html">Bench Check</option>
+<option value="PartList.html">Part List</option>
+<option value="Order.html">Order</option>
+<option value="Receipt.html">Receipt</option>
+<option value="Issue.html">Issue</option>
+<option value="BinCard.html">Bin-Card</option>
+<option value="AddNewAlternatePart.html">Add New Alternate Part</option>
+<option value="Reports.html">Reports</option>
+<option value="Registers.html">Registers</option>
+<option value="Analysis.html">Analysis</option>
+<option value="Reminders.html">Reminders</option>
+<option value="Report.html">Report</option>
+<option value="OrderRegister.html">Order Register</option>
+<option value="ReceiptRegister.html">Receipt Register</option>
+<option value="IssueRegister.html">Issue Register</option>
+<option value="MaintenanceInvoiceRegister.html">Maintenance Invoice Register</option>
+<option value="OrderHistory.html">Order History</option>
+<option value="ValuationAnalysis.html">Valuation Analysis</option>
+<option value="LeadTimeAnalysis.html">Lead Time Analysis</option>
+<option value="PendingOrder.html">Pending Order</option>
+<option value="PendingPayments.html">Pending Payments</option>
+<option value="PendingReturnable.html">Pending Returnable</option>
+<option value="DeleteAlternatePart.html">Delete Alternate Part</option>
+<option value="SearchAlternatePart.html">Search Alternate Part</option>
+<option value="ExpiryDate.html">Expiry Date</option>
+<option value="EditMaintenanceInvoice.html">Edit Maintenance Invoice</option>
+<option value="DeleteMaintenanceInvoice.html">Delete Maintenance Invoice</option>
+<option value="SearchMaintenanceInvoice.html">Search Maintenace Invoice</option>
+<option value="Payment.html">Payment</option>
+<option value="AddNewPayment.html">Add New Payment</option>
+<option value="EditPayment.html">Edit Payment</option>
+<option value="DeletePayment.html">Delete Payment</option>
+<option value="AddEditDeletePaymentItem.html">Add/Edit/Delete Payment Item</option>
+<option value="ReceiptCumInvoice.html">Receipt Cum Invoice</option>
+<option value="AddNewReceiptCumInvoice.html">Add New Receipt Cum Invoice</option>
+<option value="EditReceiptCumInvoice.html">Edit Receipt Cum Invoice</option>
+<option value="DeleteReceiptCumInvoice.html">Delete Receipt Cum Invoice</option>
+<option value="AddEditDeleteReceiptCumInvoiceItem.html">Add/Edit/Delete Receipt Cum Invoice Item</option>
+<option value="AddEditDeleteReceiptCumInvoiceCharge.html">Add/Edit/Delete Receipt Cum Invoice Charge</option>
+<option value="AddEditDeleteReceiptCumInvoiceName.html">Add/Edit/Delete Charge</option>
+<option value="DeleteAircraft.html">Delete Aircraft</option>
+<option value="Currency.html">Currency</option>
+<option value="AlternateNumber.html">Opening Balance</option>
+<option value="AddNewAlternateNumber.html">Add New Opening Balance</option>
+<option value="DeleteAlternateNumber.html">Delete Opening Balance</option>
+<option value="EditAlternateNumber.html">Edit Opening Balance</option>
+<option value="AddNewCurrency.html">Add New Currency</option>
+<option value="EditCurrency.html">Edit Currency</option>
+<option value="DeleteCurrency.html">Delete Currency</option>
+<option value="Item.html">Part</option>
+<option value="SearchItem.html">Search Part</option>
+<option value="AddNewItem.html">Add New Part</option>
+<option value="EditItem.html">Edit Part</option>
+<option value="DeleteItem.html">Delete Part</option>
+<option value="ItemDetails.html">Part Details</option>
+<option value="ItemInformation.html">Part Information</option>
+<option value="AddEditDeleteNomenclature.html">Add/Edit/Delete Nomenclature</option>
+<option value="AddEditDeleteUnit.html">Add/Edit/Delete Unit</option>
+<option value="AddEditDeleteCategory.html">Add/Edit/delete Category</option>
+<option value="ApplicableFor.html">Applicable For</option>
+<option value="AddEditDeleteModel.html">Add/Edit/Delete Model</option>
+<option value="Kit.html">Inspection Kit</option>
+<option value="SearchKit.html">Search Inspection Kit</option>
+<option value="AddNewKit.html">Add New Inspection Kit</option>
+<option value="EditKit.html">Edit Inspection Kit</option>
+<option value="DeleteKit.html">Delete Inspedtion Kit</option>
+<option value="AddEditDeleteKitItem.html">Add/Edit/Delete Kit Item</option>
+<option value="Store.html">Store</option>
+<option value="AddNewStore.html">Add New Store</option>
+<option value="EditStore.html">Edit Store</option>
+<option value="DeleteStore.html">Delete Store</option>
+<option value="AddEditDeleteLocation.html">Add/Edit/Delete Location</option>
+<option value="Vendor.html">Vendor</option>
+<option value="SearchVendor.html">Search vendor</option>
+<option value="AddNewVendor.html">Add New Vendor</option>
+<option value="EditVendor.html">Edit Vendor</option>
+<option value="DeleteVendor.html">Delete Vendor</option>
+<option value="AddEditDeleteCity.html">Add/Edit/Delete City</option>
+<option value="AddEditDeleteCountry.html">Add/Edit/Delete Country</option>
+<option value="Entries.html">Entries</option>
+<option value="PurchaseOrder.html">Purchase Order</option>
+<option value="SearchPurchaseOrder.html">Search Purchase Order</option>
+<option value="AddNewPurchaseOrder.html">Add New Purchase Order</option>
+<option value="EditPurchaseOrder.html">Edit Purchase Order</option>
+<option value="DeletePurchaseOrder.html">Delete Purchase Order</option>
+<option value="AddEditDeleteOrderItem.html">Add/Edit/Delete Order Item</option>
+<option value="AddDeleteOrderTerm.html">Add/Delete Order Term</option>
+<option value="GoodsReceipt.html">Goods Receipt</option>
+<option value="SearchGoodsReceipt.html">Search Goods Receipt</option>
+<option value="AddNewGoodsReceipt.html">Add New Goods Receipt</option>
+<option value="EditGoodsReceipt.html">Edit Goods Receipt</option>
+<option value="DeleteGoodsReceipt.html">Delete Goods Receipt</option>
+<option value="AddEditDeleteReceiptItem.html">Add/Edit/Delete Receipt Item</option>
+<option value="GoodsIssue.html">Goods Issue</option>
+<option value="SearchGoodsIssue.html">Search Goods Issue</option>
+<option value="AddNewGoodsIssue.html">Add New Goods Issue</option>
+<option value="EditGoodsIssue.html">Edit Goods Issue</option>
+<option value="DeleteGoodsIssue.html">Delete Goods Issue</option>
+<option value="AddEditDeleteIssueItem.html">Add/Edit/Delete Issue Item</option>
+<option value="AddDeleteTermsList.html">Add/Delete Terms</option>
+<option value="PurchaseInvoice.html">Purchase Invoice</option>
+<option value="SearchPurchaseInvoice.html">Search Purchase Invoice</option>
+<option value="AddNewPurchaseInvoice.html">Add New Purchase Invoice</option>
+<option value="EditPurchaseInvoice.html">Edit Purchase Invoice</option>
+<option value="DeletePurchaseInvoice.html">Delete Purchase Invoice</option>
+<option value="AddEditDeleteInvoiceItem.html">Add/Edit/Delete Invoice Item</option>
+<option value="AddEditDeleteInvoiceCharge.html">Add/Edit/Delete Invoice Charge</option>
+<option value="UserManager.html">User Manager</option>
+<option value="AddEditDeleteName.html">Add/Edit/Delete Charge</option>
+<option value="AddEditDeleteUser.html">Add/Edit/Delete User</option>
+<option value="AddEditDeleteRole.html">Add/Edit/Delete Role</option>
+</select>
+</div>
+
+</body>
+</html>

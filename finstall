@@ -1,0 +1,304 @@
+<%@ Register TagPrefix="obout" Namespace="OboutInc.Calendar" Assembly="obout_Calendar_Pro_Net" %>
+<%@ Register TagPrefix="uc1" TagName="SICalendar" Src="SICalendar.ascx" %>
+<%@ Page Language="vb" AutoEventWireup="false" Codebehind="wfAssemblyStatus.aspx.vb" Inherits="Flypal.wfAssemblyStatus" %>
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN"> 
+<HTML>
+	<HEAD runat ="server" >
+		<title>Assembly Status</title>
+		<script language="javascript" src="VALIDATEFUNCTIONS.js"></script>
+		
+		<meta content="True" name="vs_showGrid">
+		<meta content="Microsoft Visual Studio .NET 7.1" name="GENERATOR">
+		<meta content="Visual Basic .NET 7.1" name="CODE_LANGUAGE">
+		<meta content="JavaScript" name="vs_defaultClientScript">
+		<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+		<!-- #include file=LocalFunction.htm --><LINK    type="text/css" rel="stylesheet">
+	</HEAD>
+	<body bottomMargin="5" leftMargin="5" topMargin="5" rightMargin="5" MS_POSITIONING="GridLayout">
+		<form id="Form1" method="post" runat="server">
+			<TABLE class="clstablelistout" id="tblMain">
+				<tr>
+					<td><asp:panel id="pnlMain" Cssclass="clspnl1" Runat="server">
+							<TABLE class="clsTablelistin" id="tblinner">
+								<TR>
+									<TD colSpan="5">
+										<asp:label id="lblTitle" runat="server" Cssclass="clstitle1"> Assembly Status</asp:label></TD>
+								</TR>
+								<TR>
+									<TD colSpan="5">
+										<asp:ValidationSummary id="Validationsummary2" Runat="server" Cssclass="clsValidationSummary" HeaderText="Fill Up The Following Fields"></asp:ValidationSummary>
+										<asp:RequiredFieldValidator id="rfvModel" runat="server" CssClass="clslabelauto" ErrorMessage="Model Required"
+											ControlToValidate="cmbModel" Display="None"></asp:RequiredFieldValidator>
+										<asp:RequiredFieldValidator id="rfvSerialNo" runat="server" CssClass="clslabelauto" ErrorMessage="Serial No Required"
+											ControlToValidate="txtSerialNo" Display="None"></asp:RequiredFieldValidator>
+										<asp:CustomValidator id="cvModelList" runat="server" CssClass="clsLabelAuto" ErrorMessage="Select Model From List."
+											ControlToValidate="cmbModel" Display="None" OnServerValidate="CustomValidate"></asp:CustomValidator>
+										<asp:RequiredFieldValidator id="rfvATAChapter" runat="server" CssClass="clslabelauto" ErrorMessage="ATA Chapter Required"
+											ControlToValidate="cmbATAChapter" Display="None"></asp:RequiredFieldValidator>
+										<asp:CustomValidator id="cvATAChapter" runat="server" CssClass="clsLabelAuto" ErrorMessage="Select ATA Chapter From List."
+											ControlToValidate="cmbATAChapter" Display="None" OnServerValidate="CustomValidate"></asp:CustomValidator></TD>
+								</TR>
+								<TR>
+									<TD colSpan="5">
+										<TABLE id="Table2">
+											<TR>
+												<TD>
+													<asp:Label id="lblAssemblyStatus" runat="server" CssClass="clsLabelButton" ToolTip="Current page os Assembly Status">Assembly Status</asp:Label></TD>
+												<TD>
+													<asp:Button id="btnComponentList" Runat="server" CssClass="clsButtonLong" ToolTip="Click to open Component List of Assembly"
+														Text="Component List"></asp:Button></TD>
+												<TD>
+													<asp:Button id="btnServiceList" Runat="server" CssClass="clsButtonLong" ToolTip="Click to open the Service List of Assembly"
+														Text="Service List"></asp:Button></TD>
+												<TD>
+													<asp:button id="btnInspectionList" tabIndex="0" runat="server" CssClass="clsButtonLong" ToolTip="Click to open the Inspection list of Assembly"
+														Text="Inspection List"></asp:button></TD>
+												<TD>
+													<asp:Button id="btnModificationList" Runat="server" CssClass="clsButtonLong" ToolTip="Click to open the Modification List of Assembly"
+														Text="Directives"></asp:Button></TD>
+												<TD>
+													<asp:Button id="btnParameters" Runat="server" CssClass="clsButtonLong" ToolTip="Click to open the Parameters List of Assembly"
+														Text="Parameters"></asp:Button></TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR>
+									<TD align="left" colSpan="3">
+										<asp:label id="lblAssemblyDetailsCaption" runat="server" Cssclass="clsLabelHeader">Model and Serial No. of []</asp:label></TD>
+									<TD align="left" colSpan="2">
+										<asp:label id="lblTSN" runat="server" Cssclass="clsLabelHeader">Since New Values as on []</asp:label></TD>
+								</TR>
+								<TR>
+									<TD>
+										<asp:Label id="lblStarATA" runat="server" CssClass="clsLabelStar">*</asp:Label></TD>
+									<TD>
+										<asp:Label id="lblATAChapter" runat="server" CssClass="clsLabel">ATA Chapter</asp:Label></TD>
+									<TD>
+										<TABLE id="Table8" cellSpacing="0" cellPadding="0">
+											<TR>
+												<TD>
+													<asp:DropDownList id=cmbATAChapter runat="server" CssClass="clsComboBox" Enabled="<%# mAssemblyStatus.EnablePanel %>" DataTextField="ATAChapter" DataValueField="ID" SelectedValue="<%# mAssemblyStatus.ATAID %>">
+													</asp:DropDownList></TD>
+												<TD>
+													<asp:Button id="ImgBtnATAChapter" runat="server" CssClass="clsButtonGrid" ToolTip=" Add New ATA Chapter  to the list"
+														Text="..." CausesValidation="False"></asp:Button></TD>
+											</TR>
+										</TABLE>
+									</TD>
+									<TD vAlign="top" align="left" colSpan="2" rowSpan="5">
+										<TABLE>
+											<TR>
+												<TD>
+													<asp:datagrid id="dgCurrentMachineValue" runat="server" Cssclass="clsGrid" AutoGenerateColumns="False"
+														PageSize="3">
+														<AlternatingItemStyle CssClass="clsdgAltItem"></AlternatingItemStyle>
+														<ItemStyle CssClass="clsdgItem"></ItemStyle>
+														<HeaderStyle CssClass="clsdgHeader"></HeaderStyle>
+														<Columns>
+															<asp:BoundColumn Visible="False" DataField="ID" HeaderText="ID"></asp:BoundColumn>
+															<asp:BoundColumn DataField="PeriodName" HeaderText="Periods"></asp:BoundColumn>
+															<asp:TemplateColumn HeaderText="Engine">
+																<ItemTemplate>
+																	<asp:TextBox id=txtCurrentAssemblyValue runat="server" CssClass="clsTextBoxRightAlignSmall" Text='<%# iif(mAssemblyStatus.Assembly.Model.AssemblyTypeID=1,DataBinder.Eval(Container.DataItem,"rptAssemblyCurrentValue"),DataBinder.Eval(Container.DataItem,"AssemblyCurrentValueFormatted")) %>' ReadOnly="<%# mAssemblyStatus.HasLogCount %>">
+																	</asp:TextBox>
+																	<asp:Button id="btnCurrentValue" runat="server" CssClass="clsButtonGrid" Text="..." CommandName="CurrentValue"></asp:Button>
+																	<asp:CustomValidator id="cvCurrentAssemblyValue" runat="server" ControlToValidate="txtCurrentAssemblyValue"
+																		Display="None" OnServerValidate="CustomValidate1"></asp:CustomValidator>
+																</ItemTemplate>
+															</asp:TemplateColumn>
+															<asp:BoundColumn DataField="MachineCurrentValueFormatted" ReadOnly="True" HeaderText="Airframe"></asp:BoundColumn>
+															<asp:ButtonColumn Text="Remove" HeaderText="Remove" CommandName="Delete"></asp:ButtonColumn>
+														</Columns>
+														<PagerStyle NextPageText="Next" PrevPageText="Prev" HorizontalAlign="Right"></PagerStyle>
+													</asp:datagrid></TD>
+												<TD vAlign="top" align="left" rowSpan="5">
+													<asp:Button id="btnAddPeriod" runat="server" CssClass="clsButtonGrid" ToolTip="Click to Add Period"
+														Text="..."></asp:Button></TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD>
+										<asp:Label id="lblManufacturer" runat="server" CssClass="clsLabel">Manufacturer </asp:Label></TD>
+									<TD>
+										<asp:TextBox id=txtManufacturer runat="server" CssClass="clsTextBox" ToolTip="Enter Manufacturer's Name" Text="<%# mAssemblyStatus.Assembly.Model.Manufacturer.Name %>" BackColor="#E0E0E0" ReadOnly="True" MaxLength="50">
+										</asp:TextBox></TD>
+								</TR>
+								<TR>
+									<TD>
+										<asp:Label id="lblStarModel" runat="server" CssClass="clsLabelStar">*</asp:Label></TD>
+									<TD>
+										<asp:Label id="lblModel" runat="server" CssClass="clsLabel">Model </asp:Label></TD>
+									<TD>
+										<TABLE cellSpacing="0" cellPadding="0">
+											<TR>
+												<TD>
+													<asp:DropDownList id=cmbModel runat="server" CssClass="clsComboBox" Enabled="<%# mAssemblyStatus.IsModelEnabled or  mAssemblyStatus.EnablePanel %>" DataTextField="ModelName" DataValueField="ID" SelectedValue="<%# mAssemblyStatus.Assembly.ModelID %>" AutoPostBack="True">
+													</asp:DropDownList></TD>
+												<TD>
+													<asp:Button id="imgbtnModel" runat="server" CssClass="clsButtonGrid" ToolTip=" Add New Model to the list"
+														Text="..." CausesValidation="False"></asp:Button></TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR>
+									<TD>
+										<asp:Label id="lblStarSerialNo" runat="server" CssClass="clsLabelStar">*</asp:Label></TD>
+									<TD>
+										<asp:Label id="lblSerialNo" runat="server" CssClass="clsLabel">Serial No. </asp:Label></TD>
+									<TD align="left">
+										<asp:TextBox id=txtSerialNo runat="server" CssClass="clsTextBox" ToolTip="Enter Serial Number" Text="<%# mAssemblyStatus.Assembly.SerialNo %>" ReadOnly="<%# not  mAssemblyStatus.EnablePanel %>" MaxLength="50">
+										</asp:TextBox></TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD>
+										<asp:Label id="lblPosition" runat="server" CssClass="clsLabel">Position </asp:Label></TD>
+									<TD align="left">
+										<asp:TextBox id=txtPosition runat="server" CssClass="clsTextBox" ToolTip="Enter Position" Text="<%# mAssemblyStatus.Position %>" ReadOnly="<%# not  mAssemblyStatus.EnablePanel %>" MaxLength="25">
+										</asp:TextBox></TD>
+								</TR>
+								<TR>
+									<TD colSpan="3">
+										<asp:label id="lblInstallationValueCaption" runat="server" Cssclass="clsLabelHeader">Installation Information of []</asp:label></TD>
+									<TD colSpan="2">
+										<asp:label id="lblValuesAtInstallation" runat="server" Cssclass="clsLabelHeader">Values at Installation</asp:label></TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD>
+										<asp:Label id="lblAsOnDate" runat="server" CssClass="clsLabel">Installed On </asp:Label></TD>
+									<TD>
+										<TABLE id="Table4" cellSpacing="0" cellPadding="0">
+											<TR>
+												<TD>
+													<uc1:SICalendar id="calFromDate" runat="server"></uc1:SICalendar></TD>
+											</TR>
+										</TABLE>
+									</TD>
+									<TD vAlign="top" colSpan="2" rowSpan="3">
+										<TABLE>
+											<TR>
+												<TD>
+													<asp:datagrid id="dgInstallationValue" runat="server" Cssclass="clsGrid" AutoGenerateColumns="False"
+														PageSize="3">
+														<AlternatingItemStyle CssClass="clsdgAltItem"></AlternatingItemStyle>
+														<ItemStyle CssClass="clsdgItem"></ItemStyle>
+														<HeaderStyle CssClass="clsdgHeader"></HeaderStyle>
+														<Columns>
+															<asp:BoundColumn DataField="PeriodName" HeaderText="Periods"></asp:BoundColumn>
+															<asp:TemplateColumn HeaderText="Engine">
+																<ItemTemplate>
+																	<asp:TextBox id=txtAssemblyInstallationValue runat="server" CssClass="clsTextBoxRightAlignSmall" Text='<%# DataBinder.Eval(Container.DataItem,"AssemblyInstallationValueFormatted") %>' ReadOnly="<%# Not mAssemblyStatus.EnablePanel %>">
+																	</asp:TextBox>
+																	<asp:Button id="btnInstallationAssemblyValues" runat="server" CssClass="clsButtonGrid" Text="..."
+																		CommandName="InstallationValue"></asp:Button>
+																	<asp:CustomValidator id="cvAssemblyInstallationValue" runat="server" Display="None" ControlToValidate="txtAssemblyInstallationValue"
+																		OnServerValidate="CustomValidate1"></asp:CustomValidator>
+																</ItemTemplate>
+															</asp:TemplateColumn>
+															<asp:TemplateColumn HeaderText="Airframe">
+																<ItemTemplate>
+																	<asp:TextBox id=txtMachineInstallationValue runat="server" CssClass="clsTextBoxRightAlignSmall" Text='<%# DataBinder.Eval(Container.DataItem,"MachineInstallationValueFormatted") %>' ReadOnly="<%# Not mAssemblyStatus.EnablePanel %>">
+																	</asp:TextBox>
+																	<asp:Button id="btnMachineInstallationValue" runat="server" CssClass="clsButtonGrid" Text="..."
+																		CommandName="MachineInstallationValue"></asp:Button>
+																	<asp:CustomValidator id="cvMachineInstallationValue" runat="server" Display="None" ControlToValidate="txtMachineInstallationValue"
+																		OnServerValidate="CustomValidate1"></asp:CustomValidator>
+																</ItemTemplate>
+															</asp:TemplateColumn>
+														</Columns>
+														<PagerStyle NextPageText="Next" PrevPageText="Prev" HorizontalAlign="Right"></PagerStyle>
+													</asp:datagrid></TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD>
+										<asp:Label id="lblWorkOrNo" runat="server" CssClass="clsLabel">Work Order No. </asp:Label></TD>
+									<TD>
+										<asp:TextBox id=txtWorkOrdNo runat="server" CssClass="clsTextBox" ToolTip="Enter Work Order Number" Text="<%# mAssemblyStatus.InstallationWONo %>" ReadOnly="<%# Not mAssemblyStatus.EnablePanel %>" MaxLength="25">
+										</asp:TextBox></TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD>
+										<asp:Label id="lblNote" runat="server" CssClass="clsLabel">Note </asp:Label></TD>
+									<TD>
+										<asp:TextBox id=txtNote runat="server" CssClass="clsTextBoxMultiLineAuto" ToolTip="Enter Note" Text="<%# mAssemblyStatus.InstallationRemark %>" ReadOnly="<%# Not mAssemblyStatus.EnablePanel %>" MaxLength="500" TextMode="MultiLine">
+										</asp:TextBox>
+										<asp:CustomValidator id="cvInstallationRemark" runat="server" CssClass="clsLabelAuto" ErrorMessage="Installation remark too long."
+											ControlToValidate="txtNote" Display="None"></asp:CustomValidator></TD>
+								</TR>
+								<TR>
+									<TD colSpan="5">
+										<asp:label id="lblDocumentationValueCaption" runat="server" Cssclass="clsLabelHeader">Document Information of []</asp:label></TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD>
+										<asp:Label id="lblSourceDoc" runat="server" CssClass="clsLabel">Source Doc.</asp:Label></TD>
+									<TD>
+										<asp:TextBox id=txtSourceDoc runat="server" CssClass="clsTextBoxMultiline" ToolTip="Enter Source Doc." Text="<%# mAssemblyStatus.SourceDoc %>" MaxLength="500" TextMode="MultiLine">
+										</asp:TextBox></TD>
+									<TD>
+										<asp:Label id="lblRevisionNo" runat="server" CssClass="clsLabel">Revision No.</asp:Label></TD>
+									<TD>
+										<asp:TextBox id=txtRevisionNo runat="server" CssClass="clsTextBox" ToolTip="Enter Revision No." Text="<%# mAssemblyStatus.RevisionNo %>" MaxLength="50">
+										</asp:TextBox></TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD>
+										<asp:Label id="lblBookNo" runat="server" CssClass="clsLabel">Book No.</asp:Label></TD>
+									<TD>
+										<asp:TextBox id=txtBookNo runat="server" CssClass="clsTextBox" ToolTip="Enter Book No." Text="<%# mAssemblyStatus.BookNo %>" MaxLength="25">
+										</asp:TextBox></TD>
+									<TD>
+										<asp:Label id="lblPageNo" runat="server" CssClass="clsLabel">Page No.</asp:Label></TD>
+									<TD>
+										<asp:TextBox id=txtPageNo runat="server" CssClass="clsTextBox" ToolTip="Enter Page No." Text="<%# mAssemblyStatus.PageNo %>" MaxLength="25">
+										</asp:TextBox></TD>
+								</TR>
+								<TR>
+									<TD></TD>
+									<TD></TD>
+									<TD></TD>
+									<TD></TD>
+									<TD></TD>
+								</TR>
+								<TR>
+									<TD vAlign="top" align="right"></TD>
+									<TD vAlign="top" align="right" colSpan="4">
+										<TABLE id="Table1" cellSpacing="0">
+											<TR>
+												<TD></TD>
+												<TD>
+													<asp:Button id="btnAddNew" Runat="server" CssClass="clsButton" ToolTip="Click to add a new Record"
+														Text="Add New" CausesValidation="False" Visible="False"></asp:Button></TD>
+												<TD>
+													<asp:Button id="btnSave" Runat="server" CssClass="clsButton" ToolTip="Click to save the page"
+														Text="Save"></asp:Button></TD>
+												<TD>
+													<asp:Button id="btnPrint" Runat="server" CssClass="clsButton" ToolTip="Click to Print the Page"
+														Text="Print"></asp:Button></TD>
+												<TD>
+													<asp:Button id="btnBack" Runat="server" CssClass="clsButton" ToolTip="Back to Previous Page"
+														Text="Back" CausesValidation="False"></asp:Button></TD>
+											</TR>
+										</TABLE>
+									</TD>
+								</TR>
+							</TABLE>
+						</asp:panel></td>
+				</tr>
+			</TABLE>
+		</form>
+	</body>
+</HTML>

@@ -1,0 +1,894 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<HTML>
+<HEAD>
+<meta name="GENERATOR" content="Microsoft&reg; HTML Help Workshop 4.1">
+<!-- Sitemap 1.0 -->
+</HEAD>
+<BODY>
+<OBJECT type="text/site properties">
+	<param name="FrameName" value="right">
+</OBJECT>
+<UL>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="System Requirement">
+		<param name="Local" value="SystemRequirment.html">
+		<param name="URL" value="SystemRequirment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Getting Started">
+		<param name="Local" value="UsingFlyPal.html">
+		<param name="URL" value="UsingFlyPal.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Master">
+		<param name="Local" value="Master.html">
+		<param name="URL" value="Master.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Requisition">
+		<param name="Local" value="Requisition.html">
+		<param name="URL" value="Requisition.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Other Charge">
+		<param name="Local" value="OtherCharge.html">
+		<param name="URL" value="OtherCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Other Charge">
+		<param name="Local" value="AddNewPurchaseOtherCharge.html">
+		<param name="URL" value="AddNewPurchaseOtherCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Other Charge">
+		<param name="Local" value="EditPurchaseOtherCharge.html">
+		<param name="URL" value="EditPurchaseOtherCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Other Charge">
+		<param name="Local" value="DeletePurchaseOtherCharge.html">
+		<param name="URL" value="DeletePurchaseOtherCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inspection Kit Report">
+		<param name="Local" value="InspectionKit.htm">
+		<param name="URL" value="InspectionKit.htm">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Other Charge">
+		<param name="Local" value="SearchPurchaseOtherCharge.html">
+		<param name="URL" value="SearchPurchaseOtherCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Invoice Item">
+		<param name="Local" value="AddEditDeleteOtherChargeItem.html">
+		<param name="URL" value="AddEditDeleteOtherChargeItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Enquiry Register">
+		<param name="Local" value="EnquiryRegister.html">
+		<param name="URL" value="EnquiryRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Quotation Register">
+		<param name="Local" value="QuotationRegister.html">
+		<param name="URL" value="QuotationRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sales Order Register">
+		<param name="Local" value="SalesOrderRegister.html">
+		<param name="URL" value="SalesOrderRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Requisition Register">
+		<param name="Local" value="RequisitionRegister.html">
+		<param name="URL" value="RequisitionRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Invoice Charge">
+		<param name="Local" value="AddEditDeleteOC.html">
+		<param name="URL" value="AddEditDeleteOC.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Requisition">
+		<param name="Local" value="AddNewRequisition.html">
+		<param name="URL" value="AddNewRequisition.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Requisition">
+		<param name="Local" value="EditRequisition.html">
+		<param name="URL" value="EditRequisition.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Requisition">
+		<param name="Local" value="DeleteRequisition.html">
+		<param name="URL" value="DeleteRequisition.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Requisition">
+		<param name="Local" value="SearchRequisition.html">
+		<param name="URL" value="SearchRequisition.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Requisition Item">
+		<param name="Local" value="AddEditDeleteRequisitionItem.html">
+		<param name="URL" value="AddEditDeleteRequisitionItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Aircraft">
+		<param name="Local" value="AddDeleteAircraft.html">
+		<param name="URL" value="AddDeleteAircraft.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Model">
+		<param name="Local" value="AddDeleteModel.html">
+		<param name="URL" value="AddDeleteModel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Enquiry">
+		<param name="Local" value="Enquiry.html">
+		<param name="URL" value="Enquiry.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Enquiry">
+		<param name="Local" value="AddNewEnquiry.html">
+		<param name="URL" value="AddNewEnquiry.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Enquiry">
+		<param name="Local" value="EditEnquiry.html">
+		<param name="URL" value="EditEnquiry.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Enquiry">
+		<param name="Local" value="DeleteEnquiry.html">
+		<param name="URL" value="DeleteEnquiry.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Enquiry">
+		<param name="Local" value="SearchEnquiry.html">
+		<param name="URL" value="SearchEnquiry.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Enquiry Item">
+		<param name="Local" value="AddEditDeleteEnquiryItem.html">
+		<param name="URL" value="AddEditDeleteEnquiryItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Enquiry Term">
+		<param name="Local" value="AddDeleteEnquiryTerm.html">
+		<param name="URL" value="AddDeleteEnquiryTerm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Term">
+		<param name="Local" value="AddEditDeleteEnquiryTerm.html">
+		<param name="URL" value="AddEditDeleteEnquiryTerm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Quotation">
+		<param name="Local" value="Quotation.html">
+		<param name="URL" value="Quotation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Quotation">
+		<param name="Local" value="AddNewQuotation.html">
+		<param name="URL" value="AddNewQuotation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Quotation">
+		<param name="Local" value="EditQuotation.html">
+		<param name="URL" value="EditQuotation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Quotation">
+		<param name="Local" value="DeleteQuotation.html">
+		<param name="URL" value="DeleteQuotation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Quotation">
+		<param name="Local" value="SearchQuotation.html">
+		<param name="URL" value="SearchQuotation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Quotation Item">
+		<param name="Local" value="AddEditDeleteQuotationItem.html">
+		<param name="URL" value="AddEditDeleteQuotationItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Quotation Term">
+		<param name="Local" value="AddEditDeleteQuotationTermList.html">
+		<param name="URL" value="AddEditDeleteQuotationTermList.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Term">
+		<param name="Local" value="AddEditDeleteQuotationTerm.html">
+		<param name="URL" value="AddEditDeleteQuotationTerm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Quotation Charge">
+		<param name="Local" value="AddEditDeleteQuotationCharge.html">
+		<param name="URL" value="AddEditDeleteQuotationCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Charge">
+		<param name="Local" value="AddEditDeleteQuotation.html">
+		<param name="URL" value="AddEditDeleteQuotation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Sales Order">
+		<param name="Local" value="SalesOrder.html">
+		<param name="URL" value="SalesOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Sales Order">
+		<param name="Local" value="AddNewSalesOrder.html">
+		<param name="URL" value="AddNewSalesOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Sales Order">
+		<param name="Local" value="EditSalesOrder.html">
+		<param name="URL" value="EditSalesOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Sales Order">
+		<param name="Local" value="DeleteSalesOrder.html">
+		<param name="URL" value="DeleteSalesOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Sales Order">
+		<param name="Local" value="SearchSalesOrder.html">
+		<param name="URL" value="SearchSalesOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Sales Order Item">
+		<param name="Local" value="AddEditDeleteSalesOrderItem.html">
+		<param name="URL" value="AddEditDeleteSalesOrderItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Sales Order Term">
+		<param name="Local" value="AddEditDeleteSalesOrderTermList.html">
+		<param name="URL" value="AddEditDeleteSalesOrderTermList.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Term">
+		<param name="Local" value="AddEditDeleteSalesOrderTerm.html">
+		<param name="URL" value="AddEditDeleteSalesOrderTerm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Sales Order Charge">
+		<param name="Local" value="AddEditDeleteSalesOrderCharge.html">
+		<param name="URL" value="AddEditDeleteSalesOrderCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Charge">
+		<param name="Local" value="AddEditDeleteSalesOrder.html">
+		<param name="URL" value="AddEditDeleteSalesOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Aircraft">
+		<param name="Local" value="Aircraft.html">
+		<param name="URL" value="Aircraft.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Aircraft">
+		<param name="Local" value="AddNewAircraft.html">
+		<param name="URL" value="AddNewAircraft.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Aircraft">
+		<param name="Local" value="EditAircraft.html">
+		<param name="URL" value="EditAircraft.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Maintenance Invoice">
+		<param name="Local" value="MaintenanceInvoice.html">
+		<param name="URL" value="MaintenanceInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Maintenance Invoice">
+		<param name="Local" value="AddNewMaintenanceInvoice.html">
+		<param name="URL" value="AddNewMaintenanceInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Alternate Part">
+		<param name="Local" value="AlternatePart.html">
+		<param name="URL" value="AlternatePart.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Quarantine-Store Stock">
+		<param name="Local" value="Quarantine.html">
+		<param name="URL" value="Quarantine.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Min Level Items">
+		<param name="Local" value="MinLevelItems.html">
+		<param name="URL" value="MinLevelItems.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Store Balance">
+		<param name="Local" value="StoreBalance.html">
+		<param name="URL" value="StoreBalance.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Expiry Stock Balance">
+		<param name="Local" value="ExpiryStockBalance.html">
+		<param name="URL" value="ExpiryStockBalance.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Curddling Report">
+		<param name="Local" value="CurddlingReport.html">
+		<param name="URL" value="CurddlingReport.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Kit Report">
+		<param name="Local" value="KitReport.html">
+		<param name="URL" value="KitReport.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Aircraftwise Consumption Report">
+		<param name="Local" value="AircraftwiseConsumptionReport.html">
+		<param name="URL" value="AircraftwiseConsumptionReport.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Stock Utilization Report">
+		<param name="Local" value="StockUtilizationReport.html">
+		<param name="URL" value="StockUtilizationReport.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bench Check">
+		<param name="Local" value="BenchCheck.html">
+		<param name="URL" value="BenchCheck.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Part List">
+		<param name="Local" value="PartList.html">
+		<param name="URL" value="PartList.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Order">
+		<param name="Local" value="Order.html">
+		<param name="URL" value="Order.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Receipt">
+		<param name="Local" value="Receipt.html">
+		<param name="URL" value="Receipt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Issue">
+		<param name="Local" value="Issue.html">
+		<param name="URL" value="Issue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Bin-Card">
+		<param name="Local" value="BinCard.html">
+		<param name="URL" value="BinCard.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Alternate Part">
+		<param name="Local" value="AddNewAlternatePart.html">
+		<param name="URL" value="AddNewAlternatePart.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Reports">
+		<param name="Local" value="Reports.html">
+		<param name="URL" value="Reports.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Registers">
+		<param name="Local" value="Registers.html">
+		<param name="URL" value="Registers.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Analysis">
+		<param name="Local" value="Analysis.html">
+		<param name="URL" value="Analysis.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Reminders">
+		<param name="Local" value="Reminders.html">
+		<param name="URL" value="Reminders.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Report">
+		<param name="Local" value="Report.html">
+		<param name="URL" value="Report.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Order Register">
+		<param name="Local" value="OrderRegister.html">
+		<param name="URL" value="OrderRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Receipt Register">
+		<param name="Local" value="ReceiptRegister.html">
+		<param name="URL" value="ReceiptRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Issue Register">
+		<param name="Local" value="IssueRegister.html">
+		<param name="URL" value="IssueRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Maintenance Invoice Register">
+		<param name="Local" value="MaintenanceInvoiceRegister.html">
+		<param name="URL" value="MaintenanceInvoiceRegister.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Order History">
+		<param name="Local" value="OrderHistory.html">
+		<param name="URL" value="OrderHistory.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Valuation Analysis">
+		<param name="Local" value="ValuationAnalysis.html">
+		<param name="URL" value="ValuationAnalysis.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Lead Time Analysis">
+		<param name="Local" value="LeadTimeAnalysis.html">
+		<param name="URL" value="LeadTimeAnalysis.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pending Order">
+		<param name="Local" value="PendingOrder.html">
+		<param name="URL" value="PendingOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pending Payments">
+		<param name="Local" value="PendingPayments.html">
+		<param name="URL" value="PendingPayments.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Pending Returnable">
+		<param name="Local" value="PendingReturnable.html">
+		<param name="URL" value="PendingReturnable.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Alternate Part">
+		<param name="Local" value="DeleteAlternatePart.html">
+		<param name="URL" value="DeleteAlternatePart.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Alternate Part">
+		<param name="Local" value="SearchAlternatePart.html">
+		<param name="URL" value="SearchAlternatePart.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Expiry Date">
+		<param name="Local" value="ExpiryDate.html">
+		<param name="URL" value="ExpiryDate.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Maintenance Invoice">
+		<param name="Local" value="EditMaintenanceInvoice.html">
+		<param name="URL" value="EditMaintenanceInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Maintenance Invoice">
+		<param name="Local" value="DeleteMaintenanceInvoice.html">
+		<param name="URL" value="DeleteMaintenanceInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Maintenace Invoice">
+		<param name="Local" value="SearchMaintenanceInvoice.html">
+		<param name="URL" value="SearchMaintenanceInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Payment">
+		<param name="Local" value="Payment.html">
+		<param name="URL" value="Payment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Payment">
+		<param name="Local" value="AddNewPayment.html">
+		<param name="URL" value="AddNewPayment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Payment">
+		<param name="Local" value="EditPayment.html">
+		<param name="URL" value="EditPayment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Payment">
+		<param name="Local" value="DeletePayment.html">
+		<param name="URL" value="DeletePayment.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Payment Item">
+		<param name="Local" value="AddEditDeletePaymentItem.html">
+		<param name="URL" value="AddEditDeletePaymentItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Receipt Cum Invoice">
+		<param name="Local" value="ReceiptCumInvoice.html">
+		<param name="URL" value="ReceiptCumInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Receipt Cum Invoice">
+		<param name="Local" value="AddNewReceiptCumInvoice.html">
+		<param name="URL" value="AddNewReceiptCumInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Receipt Cum Invoice">
+		<param name="Local" value="EditReceiptCumInvoice.html">
+		<param name="URL" value="EditReceiptCumInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Receipt Cum Invoice">
+		<param name="Local" value="DeleteReceiptCumInvoice.html">
+		<param name="URL" value="DeleteReceiptCumInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Receipt Cum Invoice Item">
+		<param name="Local" value="AddEditDeleteReceiptCumInvoiceItem.html">
+		<param name="URL" value="AddEditDeleteReceiptCumInvoiceItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Receipt Cum Invoice Charge">
+		<param name="Local" value="AddEditDeleteReceiptCumInvoiceCharge.html">
+		<param name="URL" value="AddEditDeleteReceiptCumInvoiceCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Charge">
+		<param name="Local" value="AddEditDeleteReceiptCumInvoiceName.html">
+		<param name="URL" value="AddEditDeleteReceiptCumInvoiceName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Aircraft">
+		<param name="Local" value="DeleteAircraft.html">
+		<param name="URL" value="DeleteAircraft.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Currency">
+		<param name="Local" value="Currency.html">
+		<param name="URL" value="Currency.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Opening Balance">
+		<param name="Local" value="AlternateNumber.html">
+		<param name="URL" value="AlternateNumber.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Opening Balance">
+		<param name="Local" value="AddNewAlternateNumber.html">
+		<param name="URL" value="AddNewAlternateNumber.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Opening Balance">
+		<param name="Local" value="DeleteAlternateNumber.html">
+		<param name="URL" value="DeleteAlternateNumber.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Opening Balance">
+		<param name="Local" value="EditAlternateNumber.html">
+		<param name="URL" value="EditAlternateNumber.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Currency">
+		<param name="Local" value="AddNewCurrency.html">
+		<param name="URL" value="AddNewCurrency.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Currency">
+		<param name="Local" value="EditCurrency.html">
+		<param name="URL" value="EditCurrency.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Currency">
+		<param name="Local" value="DeleteCurrency.html">
+		<param name="URL" value="DeleteCurrency.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Part">
+		<param name="Local" value="Item.html">
+		<param name="URL" value="Item.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Part">
+		<param name="Local" value="SearchItem.html">
+		<param name="URL" value="SearchItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Part">
+		<param name="Local" value="AddNewItem.html">
+		<param name="URL" value="AddNewItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Part">
+		<param name="Local" value="EditItem.html">
+		<param name="URL" value="EditItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Part">
+		<param name="Local" value="DeleteItem.html">
+		<param name="URL" value="DeleteItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Part Details">
+		<param name="Local" value="ItemDetails.html">
+		<param name="URL" value="ItemDetails.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Part Information">
+		<param name="Local" value="ItemInformation.html">
+		<param name="URL" value="ItemInformation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Nomenclature">
+		<param name="Local" value="AddEditDeleteNomenclature.html">
+		<param name="URL" value="AddEditDeleteNomenclature.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Unit">
+		<param name="Local" value="AddEditDeleteUnit.html">
+		<param name="URL" value="AddEditDeleteUnit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/delete Category">
+		<param name="Local" value="AddEditDeleteCategory.html">
+		<param name="URL" value="AddEditDeleteCategory.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Applicable For">
+		<param name="Local" value="ApplicableFor.html">
+		<param name="URL" value="ApplicableFor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Model">
+		<param name="Local" value="AddEditDeleteModel.html">
+		<param name="URL" value="AddEditDeleteModel.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Inspection Kit">
+		<param name="Local" value="Kit.html">
+		<param name="URL" value="Kit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Inspection Kit">
+		<param name="Local" value="SearchKit.html">
+		<param name="URL" value="SearchKit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Inspection Kit">
+		<param name="Local" value="AddNewKit.html">
+		<param name="URL" value="AddNewKit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Inspection Kit">
+		<param name="Local" value="EditKit.html">
+		<param name="URL" value="EditKit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Inspedtion Kit">
+		<param name="Local" value="DeleteKit.html">
+		<param name="URL" value="DeleteKit.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Kit Item">
+		<param name="Local" value="AddEditDeleteKitItem.html">
+		<param name="URL" value="AddEditDeleteKitItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Store">
+		<param name="Local" value="Store.html">
+		<param name="URL" value="Store.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Store">
+		<param name="Local" value="AddNewStore.html">
+		<param name="URL" value="AddNewStore.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Store">
+		<param name="Local" value="EditStore.html">
+		<param name="URL" value="EditStore.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Store">
+		<param name="Local" value="DeleteStore.html">
+		<param name="URL" value="DeleteStore.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Location">
+		<param name="Local" value="AddEditDeleteLocation.html">
+		<param name="URL" value="AddEditDeleteLocation.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Vendor">
+		<param name="Local" value="Vendor.html">
+		<param name="URL" value="Vendor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search vendor">
+		<param name="Local" value="SearchVendor.html">
+		<param name="URL" value="SearchVendor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Vendor">
+		<param name="Local" value="AddNewVendor.html">
+		<param name="URL" value="AddNewVendor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Vendor">
+		<param name="Local" value="EditVendor.html">
+		<param name="URL" value="EditVendor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Vendor">
+		<param name="Local" value="DeleteVendor.html">
+		<param name="URL" value="DeleteVendor.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete City">
+		<param name="Local" value="AddEditDeleteCity.html">
+		<param name="URL" value="AddEditDeleteCity.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Country">
+		<param name="Local" value="AddEditDeleteCountry.html">
+		<param name="URL" value="AddEditDeleteCountry.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Entries">
+		<param name="Local" value="Entries.html">
+		<param name="URL" value="Entries.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Purchase Order">
+		<param name="Local" value="PurchaseOrder.html">
+		<param name="URL" value="PurchaseOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Purchase Order">
+		<param name="Local" value="SearchPurchaseOrder.html">
+		<param name="URL" value="SearchPurchaseOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Purchase Order">
+		<param name="Local" value="AddNewPurchaseOrder.html">
+		<param name="URL" value="AddNewPurchaseOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Purchase Order">
+		<param name="Local" value="EditPurchaseOrder.html">
+		<param name="URL" value="EditPurchaseOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Purchase Order">
+		<param name="Local" value="DeletePurchaseOrder.html">
+		<param name="URL" value="DeletePurchaseOrder.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Order Item">
+		<param name="Local" value="AddEditDeleteOrderItem.html">
+		<param name="URL" value="AddEditDeleteOrderItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Order Term">
+		<param name="Local" value="AddDeleteOrderTerm.html">
+		<param name="URL" value="AddDeleteOrderTerm.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Goods Receipt">
+		<param name="Local" value="GoodsReceipt.html">
+		<param name="URL" value="GoodsReceipt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Goods Receipt">
+		<param name="Local" value="SearchGoodsReceipt.html">
+		<param name="URL" value="SearchGoodsReceipt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Goods Receipt">
+		<param name="Local" value="AddNewGoodsReceipt.html">
+		<param name="URL" value="AddNewGoodsReceipt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Goods Receipt">
+		<param name="Local" value="EditGoodsReceipt.html">
+		<param name="URL" value="EditGoodsReceipt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Goods Receipt">
+		<param name="Local" value="DeleteGoodsReceipt.html">
+		<param name="URL" value="DeleteGoodsReceipt.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Receipt Item">
+		<param name="Local" value="AddEditDeleteReceiptItem.html">
+		<param name="URL" value="AddEditDeleteReceiptItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Goods Issue">
+		<param name="Local" value="GoodsIssue.html">
+		<param name="URL" value="GoodsIssue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Goods Issue">
+		<param name="Local" value="SearchGoodsIssue.html">
+		<param name="URL" value="SearchGoodsIssue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Goods Issue">
+		<param name="Local" value="AddNewGoodsIssue.html">
+		<param name="URL" value="AddNewGoodsIssue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Goods Issue">
+		<param name="Local" value="EditGoodsIssue.html">
+		<param name="URL" value="EditGoodsIssue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Goods Issue">
+		<param name="Local" value="DeleteGoodsIssue.html">
+		<param name="URL" value="DeleteGoodsIssue.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Issue Item">
+		<param name="Local" value="AddEditDeleteIssueItem.html">
+		<param name="URL" value="AddEditDeleteIssueItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Delete Terms">
+		<param name="Local" value="AddDeleteTermsList.html">
+		<param name="URL" value="AddDeleteTermsList.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Purchase Invoice">
+		<param name="Local" value="PurchaseInvoice.html">
+		<param name="URL" value="PurchaseInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Search Purchase Invoice">
+		<param name="Local" value="SearchPurchaseInvoice.html">
+		<param name="URL" value="SearchPurchaseInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add New Purchase Invoice">
+		<param name="Local" value="AddNewPurchaseInvoice.html">
+		<param name="URL" value="AddNewPurchaseInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Edit Purchase Invoice">
+		<param name="Local" value="EditPurchaseInvoice.html">
+		<param name="URL" value="EditPurchaseInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Delete Purchase Invoice">
+		<param name="Local" value="DeletePurchaseInvoice.html">
+		<param name="URL" value="DeletePurchaseInvoice.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Invoice Item">
+		<param name="Local" value="AddEditDeleteInvoiceItem.html">
+		<param name="URL" value="AddEditDeleteInvoiceItem.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Invoice Charge">
+		<param name="Local" value="AddEditDeleteInvoiceCharge.html">
+		<param name="URL" value="AddEditDeleteInvoiceCharge.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="User Manager">
+		<param name="Local" value="UserManager.html">
+		<param name="URL" value="UserManager.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Charge">
+		<param name="Local" value="AddEditDeleteName.html">
+		<param name="URL" value="AddEditDeleteName.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete User">
+		<param name="Local" value="AddEditDeleteUser.html">
+		<param name="URL" value="AddEditDeleteUser.html">
+		</OBJECT>
+	<LI> <OBJECT type="text/sitemap">
+		<param name="Name" value="Add/Edit/Delete Role">
+		<param name="Local" value="AddEditDeleteRole.html">
+		<param name="URL" value="AddEditDeleteRole.html">
+		</OBJECT>
+</UL>
+</BODY>
+</HTML>

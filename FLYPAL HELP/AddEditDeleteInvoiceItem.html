@@ -1,0 +1,111 @@
+<html>
+	<meta content="http://schemas.microsoft.com/intellisense/ie5" name="vs_targetSchema">
+	<LINK href="Styles.css" type="text/css" rel="stylesheet">
+	<body>
+		<IMG src="images\final.jpg" height="40" width="90" align="left"><br>
+		<h4>Add/Edit/Delete Invoice Item</h4>
+		<p>To reach the Invoice Item screen click Entries link, Select Purchase Invoice 
+			link, You get List of Purchase Invoice screen. Click <b>Add New</b> button on 
+			List of Purchase Invoice screen, You get Invoice Details screen. Again click <b>Add</b>
+			button on Invoice Details screen, You get Invoice Item screen.
+		</p>
+		<P><STRONG> How to Add New Invoice Item ?</STRONG></P>
+		<OL type="1">
+			<LI>
+				Enter all the information &amp; click <strong>Ok </strong>button, The record is added successfully in the Invoice Item List.<LI>
+				After adding click <STRONG>Save </STRONG>button on Invoice Details screen to 
+				save the current record.</LI></OL>
+		<P><STRONG>How to Edit The Invoice Item ?</STRONG></P>
+		<OL type="1">
+			<LI>
+				Click <STRONG>Edit </STRONG>
+			link on the selected record, You get Invoice Item screen.
+			<LI>
+				After editing click <strong>Ok </strong>button, The updated record is added in the Invoice Item List.<LI>
+				Again click <STRONG>Save </STRONG>button on Invoice Details screen to save the 
+				current record.</LI></OL>
+		<P><STRONG>How to Delete The Invoice Item ?</STRONG></P>
+		<OL type="1">
+			<LI>
+				Click <STRONG>Remove </STRONG>
+			link on the selected record, You get a message box for confirmation.
+			<LI>
+				Click <STRONG>Yes </STRONG>for deletion &amp; <STRONG>No</STRONG>
+			for cancel the action.
+			<LI>
+				After deleting click <STRONG>Save</STRONG> button to save the current record.
+			</LI>
+		</OL>
+		<P><STRONG>Invoice Item&nbsp;Details screen contains following buttons : </STRONG>
+		</P>
+		<TABLE>
+			<TR>
+				<TH>
+					Button Name</TH>
+				<TH>
+					Action</TH>
+			</TR>
+			<TR>
+				<TD>Ok</TD>
+				<TD>Ok button to save the Invoice Items.</TD>
+			</TR>
+			<TR>
+				<TD>Back</TD>
+				<TD>Back button to return back to the Invoice Details screen.</TD>
+			</TR>
+		</TABLE>
+		<P><STRONG>Invoice Item Details screen contains following fields :</STRONG></P>
+		<TABLE width="600">
+			<TR>
+				<TH width="99">
+					Field Name</TH>
+				<TH width="482">
+					Field Description</TH>
+			</TR>
+			<TR>
+				<TD width="99">Quantity</TD>
+				<TD width="482">It is the balance quantity of that invoice . Quantity is editable 
+					but it never be greater than it's Invoice Balance quantity.
+				</TD>
+			</TR>
+			<TR>
+				<TD width="99">Rate</TD>
+				<TD width="482">You can enter the rate of that invoice item (e.g. 450.50).</TD>
+			</TR>
+			<TR>
+				<TD width="99">Other Charges</TD>
+				<TD width="482">You can enter the other charges of that invoice item (e.g. 2000).</TD>
+			</TR>
+			<TR>
+				<TD width="99">Amount</TD>
+				<TD width="482">Amount= Quantity*Rate + Other Charges (e.g. 
+					10.00*10.00+100.00=200.00).</TD>
+			</TR>
+			<TR>
+				<TD width="99">Effective Rate</TD>
+				<TD width="482">Effective Rate = Rate + ((Total Charges/Total Amount)*Rate).</TD>
+			</TR>
+			<TR>
+				<TD width="99">Remark</TD>
+				<TD width="496">You can enter any remark for this entry in invoice item 
+                screen.</TD>
+			</TR>
+			<TR>
+				<TD width="99">Note</TD>
+				<TD width="496">Any other information associated with that invoice item is entered 
+					in the note.
+				</TD>
+			</TR>
+		</TABLE>
+		<P><B>Note:</B><BR>
+			The fields of <STRONG>Invoice Item &amp; Invoice Item Information</STRONG> are 
+			selected when you click on the <STRONG>Icon</STRONG> of <STRONG>Part No.</STRONG>
+			field, You get List of  Pending Invoice Items screen. Search a particular record 
+			&amp; click <STRONG>Select</STRONG> link, You get Detail information of the 
+			Part. Again click <STRONG>Select </STRONG>link, The information of that part is 
+			added in the Invoice Item screen.
+		</P>
+		<img src="Icon\InvoiceItem.bmp" width="620" height="586">
+		<P><A href="PurchaseInvoice.html">Purchase Invoice</A></P>
+	</body>
+</html>

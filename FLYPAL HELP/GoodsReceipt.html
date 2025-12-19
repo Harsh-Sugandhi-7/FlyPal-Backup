@@ -1,0 +1,145 @@
+<html>
+	<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+	<LINK href="Styles.css" type="text/css" rel="stylesheet">
+	<body>
+		<img src="images\final.JPG" align="left" width="90" height="40"><br>
+		<h4>Goods Receipt</h4>
+		<P>
+			To reach the List of Receipts screen click Entries link, Select Goods Receipt 
+			link, You get List of Receipts screen. You can <b>Add/Edit/Delete/Search</b> Receipt, 
+			Receipt Item information on this screen.</P>
+		<STRONG>What do you want to do?</STRONG>
+		<ul type="disc">
+			<li>
+				<a href="AddNewGoodsReceipt.html">Add New Goods Receipt</a><br>
+			Click on this link to see the information about how to Add New Goods Receipt.
+			<li>
+				<a href="EditGoodsReceipt.html">Edit Goods Receipt</a><br>
+			Click on this link to see the information about how to Edit the Goods Receipt.
+			<li>
+				<a href="DeleteGoodsReceipt.html">Delete Goods Receipt</a><br>
+			Click on this link to see the information about how to Delete the Goods 
+			Receipt.
+			<li>
+				<a href="SearchGoodsReceipt.html">Search Goods Receipt</a><br>
+				Click on this link to see the information about how to Search Goods Receipt.
+			</li>
+		</ul>
+		<p>You can <a href="AddEditDeleteReceiptItem.html">Add/Edit/Delete Receipt Item</a> 
+			information on this screen.
+		</p>
+		<P><STRONG>Receipt Details screen contains following fields :</STRONG></P>
+		<TABLE width="600" height="1">
+			<TR>
+				<TH width="90" height="24">
+					<STRONG>Field Name</STRONG>
+				</TH>
+				<TH width="491" height="24">
+					<STRONG>Field Description</STRONG>
+				</TH>
+			</TR>
+			<TR>
+				<TD width="90" height="24">No.</TD>
+				<TD width="491" height="24">
+					Receipt Number&nbsp;is auto generated (e.g. REC-1999-2000-39).
+				</TD>
+			</TR>
+			<TR>
+				<TD width="90" height="24">Date</TD>
+				<TD width="491" height="24">
+					The date on which the
+					Receipt is being made (e.g. 12-Mar-2006).</TD>
+			</TR>
+			<TR>
+				<TD width="90" height="22">Int. Rec. No.</TD>
+				<TD width="491" height="22">
+					Internal Receipt No. is an optional field where the company can key-in an other 
+					reference number for the current order (e.g. IRN-123).</TD>
+			</TR>
+			<TR>
+				<TD width="90" height="40">Status</TD>
+				<TD width="491" height="40">
+					The status may be Opened, Authorized or Cancelled. You can select the status 
+					from drop down list.
+				</TD>
+			</TR>
+			<TR>
+				<TD width="90" height="24">Name</TD>
+				<TD width="491" height="24">
+					The vendor is one who receive the parts 
+                    against order. You can select the vendor name from drop down 
+                    list (e.g. Indian Oil corporation Ltd).</TD>
+			</TR>
+			<TR>
+				<TD width="90" height="24">
+					DC No.</TD>
+				<TD width="491" height="24">
+					The number through which the supplier has to send the parts 
+                    (e.g. 98-99/206,207,209).</TD>
+			</TR>
+			<TR>
+				<TD width="90" height="24">
+					DC Date</TD>
+				<TD width="491" height="24">
+					The date on which the Delivery Challan is made (e.g. 12-Apr-2005).</TD>
+			</TR>
+		</TABLE>
+		<B>
+			<P></P>
+			<P><STRONG>Receipt Details screen contains following buttons :</STRONG></P>
+			<P></P>
+			<P>
+				<TABLE id="Table2">
+					<TR>
+						<TH style="WIDTH: 85px">
+							<STRONG>Button Name</STRONG>
+						</TH>
+						<TH>
+							<STRONG>Action</STRONG></TH></TR>
+					<TR>
+						<TD style="WIDTH: 85px; HEIGHT: 25px">Add</TD>
+						<TD style="HEIGHT: 25px">Add button for adding new Receipt Items.</TD>
+					</TR>
+					<TR>
+						<TD style="WIDTH: 85px">Save</TD>
+						<TD>Save&nbsp;button to save the receipt information.</TD>
+					</TR>
+					<tr>
+	
+					<TD width="97">Print</TD>
+		
+					<TD width="484">
+				Print button to print the given receipt. We can print the 
+                Receipt 
+                only when it is Authorized.</tr>
+					<TR>
+						<TD style="WIDTH: 85px">
+							Back</TD>
+						<TD>
+							Back&nbsp;button to return back to the List of Receipts screen.</TD>
+					</TR>
+				</TABLE>
+			<p></p>
+		</B>
+        <p><b>Receipt Status :-</b><br>
+		</p>
+		<Ol type="1">
+			<LI>
+				<b>Opened :</b><br>
+			The receipt is saved by default in it's open state. Until it is authorized it 
+			can not be printed. We can edit the receipt in open state only.
+			<LI>
+				<b>Authorized :</b><br>
+			When the receipt is authorized then only we can print it. Once it is authorized 
+			it can not be edit.<LI>
+				<b>Cancelled :</b><br>
+				User can cancel the receipt but it will be saved with Cancelled status. Once it 
+				is cancelled it can not be authorized or edit.
+			</LI>
+		</Ol>
+		<p>&nbsp;<a href="Entries.html">Entries</a>
+		</p>
+		<P></P>
+		<P></P>
+	</body>
+</html>

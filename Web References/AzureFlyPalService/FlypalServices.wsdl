@@ -1,0 +1,3896 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="FlyPalJSONLogin">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RegistrationID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FlyPalJSONLoginResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="Cred" type="tns:Cred" />
+      <s:complexType name="Cred">
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="FlyPalJSONLogout">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DeviceID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="FlyPalJSONLogoutResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="VerifyFlyPalUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VerifyFlyPalUserResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStoreBalanceListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PartName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Store" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsAllPart" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="StoreID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SortedBy" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsCustomerStore" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsValued" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsReceiptNo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsReleaseNoteNo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsSupplierName" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsSupplierInvNo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsSupplierInvDate" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="values" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBatchNo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ConsideredShowInStockOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="PartStatus" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="HighValue" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="RateValue" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="NoApplicability" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOrderInfo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ConsiderGROExpenseValues" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStoreBalanceListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStoreBalanceJSONLite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PartName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Description" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Store" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsAllPart" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="StoreID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsCustomerStore" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsValued" type="s:boolean" />
+            <s:element minOccurs="0" maxOccurs="1" name="Location" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CategoryID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="values" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SupplierID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsBatchNo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="ConsideredShowInStockOnly" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="PartStatus" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsOrderInfo" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsSupplierInfo" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStoreBalanceJSONLiteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSupplierListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSupplierListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCustomerListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCustomerListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStoreListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Name" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStoreListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCategoryListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCategoryListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPartStatuListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPartStatuListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetItemListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetModelListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetModelListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAircraftListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAircraftListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAssemblyListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAssemblyListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetServiceTypeListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServiceTypeListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetInspectionTypeListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInspectionTypeListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetModificationTypeListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetModificationTypeListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDueLimitListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDueLimitListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFlightLogClassificationListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFlightLogClassificationListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDuePeriodWiseJSONLite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AsOnDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mAssemblyID" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsService" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsInspection" type="s:boolean" />
+            <s:element minOccurs="1" maxOccurs="1" name="IsDirective" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDuePeriodWiseJSONLiteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetLogRegisterJSONLite">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="mAssemblyID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FlightClassificationName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="AssemblyTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetLogRegisterJSONLiteResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetDistinctWOTextListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetDistinctWOTextListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetWOStatusListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWOStatusListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetWOJobTypeListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWOJobTypeListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetrptWOSummaryListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CustomerID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Text" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="No" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="RegNo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ModelName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SerialNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="WOStatusID" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="WOJobTypeID" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetrptWOSummaryListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetEmployeeListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetEmployeeListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPlaceListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPlaceListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCityListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCityListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetCountryListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetCountryListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetStateListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetStateListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUnscheduledAssembliesRemovalsListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AsOnDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RegNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnscheduledAssembliesRemovalsListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetPrematureComponentFailureListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AsOnDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RegNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetPrematureComponentFailureListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMELSnagCorrectiveActionListNewJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RegNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMELSnagCorrectiveActionListNewJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMachineMaintenanceListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="FromDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ToDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RegNo" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMachineMaintenanceListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetATAListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetATAListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetSubATAListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetSubATAListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMELSnagPartListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineID" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMELSnagPartListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUnitListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUnitListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetFuelTypeListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFuelTypeListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetMELListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetMELListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetInstalledAssemblyListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="MachineID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="LogDate" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetInstalledAssemblyListJSONResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetItemTagListJSON">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Username" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AccessLog" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="BarcodeNosString" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetItemTagListJSONResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetItemTagListJSONResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="FlyPalJSONLoginSoapIn">
+    <wsdl:part name="parameters" element="tns:FlyPalJSONLogin" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLoginSoapOut">
+    <wsdl:part name="parameters" element="tns:FlyPalJSONLoginResponse" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLoginCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLogoutSoapIn">
+    <wsdl:part name="parameters" element="tns:FlyPalJSONLogout" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLogoutSoapOut">
+    <wsdl:part name="parameters" element="tns:FlyPalJSONLogoutResponse" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLogoutCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="VerifyFlyPalUserSoapIn">
+    <wsdl:part name="parameters" element="tns:VerifyFlyPalUser" />
+  </wsdl:message>
+  <wsdl:message name="VerifyFlyPalUserSoapOut">
+    <wsdl:part name="parameters" element="tns:VerifyFlyPalUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="VerifyFlyPalUserCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStoreBalanceListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStoreBalanceListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceJSONLiteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStoreBalanceJSONLite" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceJSONLiteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStoreBalanceJSONLiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceJSONLiteCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSupplierListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSupplierListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCustomerListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCustomerListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStoreListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStoreListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCategoryListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCategoryListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetPartStatuListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPartStatuListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetPartStatuListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPartStatuListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPartStatuListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetModelListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetModelListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetModelListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetModelListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetModelListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAircraftListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAircraftListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAssemblyListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAssemblyListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceTypeListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServiceTypeListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceTypeListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServiceTypeListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceTypeListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetInspectionTypeListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInspectionTypeListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetInspectionTypeListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInspectionTypeListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInspectionTypeListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetModificationTypeListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetModificationTypeListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetModificationTypeListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetModificationTypeListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetModificationTypeListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetDueLimitListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDueLimitListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetDueLimitListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDueLimitListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDueLimitListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetFlightLogClassificationListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFlightLogClassificationListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetFlightLogClassificationListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFlightLogClassificationListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFlightLogClassificationListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetDuePeriodWiseJSONLiteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDuePeriodWiseJSONLite" />
+  </wsdl:message>
+  <wsdl:message name="GetDuePeriodWiseJSONLiteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDuePeriodWiseJSONLiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDuePeriodWiseJSONLiteCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetLogRegisterJSONLiteSoapIn">
+    <wsdl:part name="parameters" element="tns:GetLogRegisterJSONLite" />
+  </wsdl:message>
+  <wsdl:message name="GetLogRegisterJSONLiteSoapOut">
+    <wsdl:part name="parameters" element="tns:GetLogRegisterJSONLiteResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetLogRegisterJSONLiteCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetDistinctWOTextListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetDistinctWOTextListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetDistinctWOTextListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetDistinctWOTextListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetDistinctWOTextListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetWOStatusListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWOStatusListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetWOStatusListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWOStatusListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWOStatusListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetWOJobTypeListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWOJobTypeListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetWOJobTypeListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWOJobTypeListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWOJobTypeListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetrptWOSummaryListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetrptWOSummaryListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetrptWOSummaryListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetrptWOSummaryListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetrptWOSummaryListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetEmployeeListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetEmployeeListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetPlaceListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPlaceListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetPlaceListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPlaceListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPlaceListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetCityListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCityListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetCityListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCityListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCityListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetCountryListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetCountryListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetCountryListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetCountryListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetCountryListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetStateListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetStateListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetStateListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetStateListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetStateListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetUnscheduledAssembliesRemovalsListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnscheduledAssembliesRemovalsListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetUnscheduledAssembliesRemovalsListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnscheduledAssembliesRemovalsListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnscheduledAssembliesRemovalsListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetPrematureComponentFailureListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetPrematureComponentFailureListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetPrematureComponentFailureListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetPrematureComponentFailureListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetPrematureComponentFailureListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagCorrectiveActionListNewJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMELSnagCorrectiveActionListNewJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagCorrectiveActionListNewJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMELSnagCorrectiveActionListNewJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagCorrectiveActionListNewJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineMaintenanceListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMachineMaintenanceListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineMaintenanceListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMachineMaintenanceListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineMaintenanceListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetATAListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetATAListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetATAListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetATAListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetATAListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetSubATAListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetSubATAListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetSubATAListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetSubATAListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetSubATAListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagPartListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMELSnagPartListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagPartListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMELSnagPartListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagPartListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUnitListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUnitListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetFuelTypeListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFuelTypeListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetFuelTypeListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFuelTypeListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFuelTypeListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetMELListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetMELListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetMELListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetMELListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetMELListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetInstalledAssemblyListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetInstalledAssemblyListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetInstalledAssemblyListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetInstalledAssemblyListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetInstalledAssemblyListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="GetItemTagListJSONSoapIn">
+    <wsdl:part name="parameters" element="tns:GetItemTagListJSON" />
+  </wsdl:message>
+  <wsdl:message name="GetItemTagListJSONSoapOut">
+    <wsdl:part name="parameters" element="tns:GetItemTagListJSONResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetItemTagListJSONCred">
+    <wsdl:part name="Cred" element="tns:Cred" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLoginHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="RegistrationID" type="s:string" />
+    <wsdl:part name="DeviceType" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLoginHttpGetOut" />
+  <wsdl:message name="FlyPalJSONLogoutHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLogoutHttpGetOut" />
+  <wsdl:message name="VerifyFlyPalUserHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyFlyPalUserHttpGetOut" />
+  <wsdl:message name="GetStoreBalanceListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="PartName" type="s:string" />
+    <wsdl:part name="Description" type="s:string" />
+    <wsdl:part name="Store" type="s:string" />
+    <wsdl:part name="IsAllPart" type="s:string" />
+    <wsdl:part name="StoreID" type="s:string" />
+    <wsdl:part name="CustomerID" type="s:string" />
+    <wsdl:part name="SortedBy" type="s:string" />
+    <wsdl:part name="ModelID" type="s:string" />
+    <wsdl:part name="IsCustomerStore" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="IsValued" type="s:string" />
+    <wsdl:part name="IsReceiptNo" type="s:string" />
+    <wsdl:part name="IsReleaseNoteNo" type="s:string" />
+    <wsdl:part name="IsSupplierName" type="s:string" />
+    <wsdl:part name="IsSupplierInvNo" type="s:string" />
+    <wsdl:part name="IsSupplierInvDate" type="s:string" />
+    <wsdl:part name="Location" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="values" type="s:string" />
+    <wsdl:part name="SupplierID" type="s:string" />
+    <wsdl:part name="IsBatchNo" type="s:string" />
+    <wsdl:part name="ConsideredShowInStockOnly" type="s:string" />
+    <wsdl:part name="PartStatus" type="s:string" />
+    <wsdl:part name="HighValue" type="s:string" />
+    <wsdl:part name="RateValue" type="s:string" />
+    <wsdl:part name="NoApplicability" type="s:string" />
+    <wsdl:part name="IsOrderInfo" type="s:string" />
+    <wsdl:part name="ConsiderGROExpenseValues" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceListJSONHttpGetOut" />
+  <wsdl:message name="GetStoreBalanceJSONLiteHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="PartName" type="s:string" />
+    <wsdl:part name="Description" type="s:string" />
+    <wsdl:part name="Store" type="s:string" />
+    <wsdl:part name="IsAllPart" type="s:string" />
+    <wsdl:part name="StoreID" type="s:string" />
+    <wsdl:part name="IsCustomerStore" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="IsValued" type="s:string" />
+    <wsdl:part name="Location" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="values" type="s:string" />
+    <wsdl:part name="SupplierID" type="s:string" />
+    <wsdl:part name="IsBatchNo" type="s:string" />
+    <wsdl:part name="ConsideredShowInStockOnly" type="s:string" />
+    <wsdl:part name="PartStatus" type="s:string" />
+    <wsdl:part name="IsOrderInfo" type="s:string" />
+    <wsdl:part name="IsSupplierInfo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceJSONLiteHttpGetOut" />
+  <wsdl:message name="GetSupplierListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="Name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierListJSONHttpGetOut" />
+  <wsdl:message name="GetCustomerListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="Name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListJSONHttpGetOut" />
+  <wsdl:message name="GetStoreListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="Name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreListJSONHttpGetOut" />
+  <wsdl:message name="GetCategoryListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryListJSONHttpGetOut" />
+  <wsdl:message name="GetPartStatuListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPartStatuListJSONHttpGetOut" />
+  <wsdl:message name="GetItemListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListJSONHttpGetOut" />
+  <wsdl:message name="GetModelListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetModelListJSONHttpGetOut" />
+  <wsdl:message name="GetAircraftListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftListJSONHttpGetOut" />
+  <wsdl:message name="GetAssemblyListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyListJSONHttpGetOut" />
+  <wsdl:message name="GetServiceTypeListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceTypeListJSONHttpGetOut" />
+  <wsdl:message name="GetInspectionTypeListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInspectionTypeListJSONHttpGetOut" />
+  <wsdl:message name="GetModificationTypeListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetModificationTypeListJSONHttpGetOut" />
+  <wsdl:message name="GetDueLimitListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDueLimitListJSONHttpGetOut" />
+  <wsdl:message name="GetFlightLogClassificationListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlightLogClassificationListJSONHttpGetOut" />
+  <wsdl:message name="GetDuePeriodWiseJSONLiteHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="AsOnDate" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="mAssemblyID" type="s:string" />
+    <wsdl:part name="IsService" type="s:string" />
+    <wsdl:part name="IsInspection" type="s:string" />
+    <wsdl:part name="IsDirective" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDuePeriodWiseJSONLiteHttpGetOut" />
+  <wsdl:message name="GetLogRegisterJSONLiteHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="mAssemblyID" type="s:string" />
+    <wsdl:part name="FlightClassificationName" type="s:string" />
+    <wsdl:part name="AssemblyTypeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogRegisterJSONLiteHttpGetOut" />
+  <wsdl:message name="GetDistinctWOTextListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDistinctWOTextListJSONHttpGetOut" />
+  <wsdl:message name="GetWOStatusListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWOStatusListJSONHttpGetOut" />
+  <wsdl:message name="GetWOJobTypeListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWOJobTypeListJSONHttpGetOut" />
+  <wsdl:message name="GetrptWOSummaryListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="CustomerID" type="s:string" />
+    <wsdl:part name="Text" type="s:string" />
+    <wsdl:part name="No" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+    <wsdl:part name="ModelName" type="s:string" />
+    <wsdl:part name="SerialNo" type="s:string" />
+    <wsdl:part name="WOStatusID" type="s:string" />
+    <wsdl:part name="WOJobTypeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetrptWOSummaryListJSONHttpGetOut" />
+  <wsdl:message name="GetEmployeeListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeListJSONHttpGetOut" />
+  <wsdl:message name="GetPlaceListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPlaceListJSONHttpGetOut" />
+  <wsdl:message name="GetCityListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityListJSONHttpGetOut" />
+  <wsdl:message name="GetCountryListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCountryListJSONHttpGetOut" />
+  <wsdl:message name="GetStateListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStateListJSONHttpGetOut" />
+  <wsdl:message name="GetUnscheduledAssembliesRemovalsListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="AsOnDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnscheduledAssembliesRemovalsListJSONHttpGetOut" />
+  <wsdl:message name="GetPrematureComponentFailureListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="AsOnDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPrematureComponentFailureListJSONHttpGetOut" />
+  <wsdl:message name="GetMELSnagCorrectiveActionListNewJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagCorrectiveActionListNewJSONHttpGetOut" />
+  <wsdl:message name="GetMachineMaintenanceListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineMaintenanceListJSONHttpGetOut" />
+  <wsdl:message name="GetATAListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetATAListJSONHttpGetOut" />
+  <wsdl:message name="GetSubATAListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSubATAListJSONHttpGetOut" />
+  <wsdl:message name="GetMELSnagPartListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="LogDate" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagPartListJSONHttpGetOut" />
+  <wsdl:message name="GetUnitListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitListJSONHttpGetOut" />
+  <wsdl:message name="GetFuelTypeListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFuelTypeListJSONHttpGetOut" />
+  <wsdl:message name="GetMELListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMELListJSONHttpGetOut" />
+  <wsdl:message name="GetInstalledAssemblyListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="LogDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInstalledAssemblyListJSONHttpGetOut" />
+  <wsdl:message name="GetItemTagListJSONHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="BarcodeNosString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemTagListJSONHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLoginHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="RegistrationID" type="s:string" />
+    <wsdl:part name="DeviceType" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLoginHttpPostOut" />
+  <wsdl:message name="FlyPalJSONLogoutHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="DeviceID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="FlyPalJSONLogoutHttpPostOut" />
+  <wsdl:message name="VerifyFlyPalUserHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="VerifyFlyPalUserHttpPostOut" />
+  <wsdl:message name="GetStoreBalanceListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="PartName" type="s:string" />
+    <wsdl:part name="Description" type="s:string" />
+    <wsdl:part name="Store" type="s:string" />
+    <wsdl:part name="IsAllPart" type="s:string" />
+    <wsdl:part name="StoreID" type="s:string" />
+    <wsdl:part name="CustomerID" type="s:string" />
+    <wsdl:part name="SortedBy" type="s:string" />
+    <wsdl:part name="ModelID" type="s:string" />
+    <wsdl:part name="IsCustomerStore" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="IsValued" type="s:string" />
+    <wsdl:part name="IsReceiptNo" type="s:string" />
+    <wsdl:part name="IsReleaseNoteNo" type="s:string" />
+    <wsdl:part name="IsSupplierName" type="s:string" />
+    <wsdl:part name="IsSupplierInvNo" type="s:string" />
+    <wsdl:part name="IsSupplierInvDate" type="s:string" />
+    <wsdl:part name="Location" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="values" type="s:string" />
+    <wsdl:part name="SupplierID" type="s:string" />
+    <wsdl:part name="IsBatchNo" type="s:string" />
+    <wsdl:part name="ConsideredShowInStockOnly" type="s:string" />
+    <wsdl:part name="PartStatus" type="s:string" />
+    <wsdl:part name="HighValue" type="s:string" />
+    <wsdl:part name="RateValue" type="s:string" />
+    <wsdl:part name="NoApplicability" type="s:string" />
+    <wsdl:part name="IsOrderInfo" type="s:string" />
+    <wsdl:part name="ConsiderGROExpenseValues" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceListJSONHttpPostOut" />
+  <wsdl:message name="GetStoreBalanceJSONLiteHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="PartName" type="s:string" />
+    <wsdl:part name="Description" type="s:string" />
+    <wsdl:part name="Store" type="s:string" />
+    <wsdl:part name="IsAllPart" type="s:string" />
+    <wsdl:part name="StoreID" type="s:string" />
+    <wsdl:part name="IsCustomerStore" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="IsValued" type="s:string" />
+    <wsdl:part name="Location" type="s:string" />
+    <wsdl:part name="CategoryID" type="s:string" />
+    <wsdl:part name="values" type="s:string" />
+    <wsdl:part name="SupplierID" type="s:string" />
+    <wsdl:part name="IsBatchNo" type="s:string" />
+    <wsdl:part name="ConsideredShowInStockOnly" type="s:string" />
+    <wsdl:part name="PartStatus" type="s:string" />
+    <wsdl:part name="IsOrderInfo" type="s:string" />
+    <wsdl:part name="IsSupplierInfo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreBalanceJSONLiteHttpPostOut" />
+  <wsdl:message name="GetSupplierListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="Name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSupplierListJSONHttpPostOut" />
+  <wsdl:message name="GetCustomerListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="Name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCustomerListJSONHttpPostOut" />
+  <wsdl:message name="GetStoreListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="Name" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStoreListJSONHttpPostOut" />
+  <wsdl:message name="GetCategoryListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCategoryListJSONHttpPostOut" />
+  <wsdl:message name="GetPartStatuListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPartStatuListJSONHttpPostOut" />
+  <wsdl:message name="GetItemListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemListJSONHttpPostOut" />
+  <wsdl:message name="GetModelListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetModelListJSONHttpPostOut" />
+  <wsdl:message name="GetAircraftListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAircraftListJSONHttpPostOut" />
+  <wsdl:message name="GetAssemblyListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetAssemblyListJSONHttpPostOut" />
+  <wsdl:message name="GetServiceTypeListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetServiceTypeListJSONHttpPostOut" />
+  <wsdl:message name="GetInspectionTypeListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInspectionTypeListJSONHttpPostOut" />
+  <wsdl:message name="GetModificationTypeListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetModificationTypeListJSONHttpPostOut" />
+  <wsdl:message name="GetDueLimitListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDueLimitListJSONHttpPostOut" />
+  <wsdl:message name="GetFlightLogClassificationListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFlightLogClassificationListJSONHttpPostOut" />
+  <wsdl:message name="GetDuePeriodWiseJSONLiteHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="AsOnDate" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="mAssemblyID" type="s:string" />
+    <wsdl:part name="IsService" type="s:string" />
+    <wsdl:part name="IsInspection" type="s:string" />
+    <wsdl:part name="IsDirective" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDuePeriodWiseJSONLiteHttpPostOut" />
+  <wsdl:message name="GetLogRegisterJSONLiteHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="mAssemblyID" type="s:string" />
+    <wsdl:part name="FlightClassificationName" type="s:string" />
+    <wsdl:part name="AssemblyTypeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetLogRegisterJSONLiteHttpPostOut" />
+  <wsdl:message name="GetDistinctWOTextListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetDistinctWOTextListJSONHttpPostOut" />
+  <wsdl:message name="GetWOStatusListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWOStatusListJSONHttpPostOut" />
+  <wsdl:message name="GetWOJobTypeListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWOJobTypeListJSONHttpPostOut" />
+  <wsdl:message name="GetrptWOSummaryListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="CustomerID" type="s:string" />
+    <wsdl:part name="Text" type="s:string" />
+    <wsdl:part name="No" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+    <wsdl:part name="ModelName" type="s:string" />
+    <wsdl:part name="SerialNo" type="s:string" />
+    <wsdl:part name="WOStatusID" type="s:string" />
+    <wsdl:part name="WOJobTypeID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetrptWOSummaryListJSONHttpPostOut" />
+  <wsdl:message name="GetEmployeeListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetEmployeeListJSONHttpPostOut" />
+  <wsdl:message name="GetPlaceListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPlaceListJSONHttpPostOut" />
+  <wsdl:message name="GetCityListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCityListJSONHttpPostOut" />
+  <wsdl:message name="GetCountryListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetCountryListJSONHttpPostOut" />
+  <wsdl:message name="GetStateListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetStateListJSONHttpPostOut" />
+  <wsdl:message name="GetUnscheduledAssembliesRemovalsListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="AsOnDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnscheduledAssembliesRemovalsListJSONHttpPostOut" />
+  <wsdl:message name="GetPrematureComponentFailureListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="AsOnDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetPrematureComponentFailureListJSONHttpPostOut" />
+  <wsdl:message name="GetMELSnagCorrectiveActionListNewJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagCorrectiveActionListNewJSONHttpPostOut" />
+  <wsdl:message name="GetMachineMaintenanceListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="FromDate" type="s:string" />
+    <wsdl:part name="ToDate" type="s:string" />
+    <wsdl:part name="RegNo" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMachineMaintenanceListJSONHttpPostOut" />
+  <wsdl:message name="GetATAListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetATAListJSONHttpPostOut" />
+  <wsdl:message name="GetSubATAListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetSubATAListJSONHttpPostOut" />
+  <wsdl:message name="GetMELSnagPartListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="LogDate" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMELSnagPartListJSONHttpPostOut" />
+  <wsdl:message name="GetUnitListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetUnitListJSONHttpPostOut" />
+  <wsdl:message name="GetFuelTypeListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetFuelTypeListJSONHttpPostOut" />
+  <wsdl:message name="GetMELListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetMELListJSONHttpPostOut" />
+  <wsdl:message name="GetInstalledAssemblyListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="MachineID" type="s:string" />
+    <wsdl:part name="LogDate" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetInstalledAssemblyListJSONHttpPostOut" />
+  <wsdl:message name="GetItemTagListJSONHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="Username" type="s:string" />
+    <wsdl:part name="Password" type="s:string" />
+    <wsdl:part name="AccessLog" type="s:string" />
+    <wsdl:part name="BarcodeNosString" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetItemTagListJSONHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="FlyPalServicesSoap">
+    <wsdl:operation name="FlyPalJSONLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login To FlyPal System JSON</wsdl:documentation>
+      <wsdl:input message="tns:FlyPalJSONLoginSoapIn" />
+      <wsdl:output message="tns:FlyPalJSONLoginSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FlyPalJSONLogout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Logout to FlyPal System JSON</wsdl:documentation>
+      <wsdl:input message="tns:FlyPalJSONLogoutSoapIn" />
+      <wsdl:output message="tns:FlyPalJSONLogoutSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyFlyPalUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verify FlyPal User</wsdl:documentation>
+      <wsdl:input message="tns:VerifyFlyPalUserSoapIn" />
+      <wsdl:output message="tns:VerifyFlyPalUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store Balance</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreBalanceListJSONSoapIn" />
+      <wsdl:output message="tns:GetStoreBalanceListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store Balance</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreBalanceJSONLiteSoapIn" />
+      <wsdl:output message="tns:GetStoreBalanceJSONLiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Supplier List</wsdl:documentation>
+      <wsdl:input message="tns:GetSupplierListJSONSoapIn" />
+      <wsdl:output message="tns:GetSupplierListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Customer List</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerListJSONSoapIn" />
+      <wsdl:output message="tns:GetCustomerListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store List</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreListJSONSoapIn" />
+      <wsdl:output message="tns:GetStoreListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Category List</wsdl:documentation>
+      <wsdl:input message="tns:GetCategoryListJSONSoapIn" />
+      <wsdl:output message="tns:GetCategoryListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartStatuListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Part Status List</wsdl:documentation>
+      <wsdl:input message="tns:GetPartStatuListJSONSoapIn" />
+      <wsdl:output message="tns:GetPartStatuListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Item List</wsdl:documentation>
+      <wsdl:input message="tns:GetItemListJSONSoapIn" />
+      <wsdl:output message="tns:GetItemListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Model List</wsdl:documentation>
+      <wsdl:input message="tns:GetModelListJSONSoapIn" />
+      <wsdl:output message="tns:GetModelListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Aircraft List</wsdl:documentation>
+      <wsdl:input message="tns:GetAircraftListJSONSoapIn" />
+      <wsdl:output message="tns:GetAircraftListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Assembly List</wsdl:documentation>
+      <wsdl:input message="tns:GetAssemblyListJSONSoapIn" />
+      <wsdl:output message="tns:GetAssemblyListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Service Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetServiceTypeListJSONSoapIn" />
+      <wsdl:output message="tns:GetServiceTypeListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInspectionTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inspection Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetInspectionTypeListJSONSoapIn" />
+      <wsdl:output message="tns:GetInspectionTypeListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModificationTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modification Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetModificationTypeListJSONSoapIn" />
+      <wsdl:output message="tns:GetModificationTypeListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDueLimitListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Due Limits</wsdl:documentation>
+      <wsdl:input message="tns:GetDueLimitListJSONSoapIn" />
+      <wsdl:output message="tns:GetDueLimitListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightLogClassificationListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Flight Log Classification List</wsdl:documentation>
+      <wsdl:input message="tns:GetFlightLogClassificationListJSONSoapIn" />
+      <wsdl:output message="tns:GetFlightLogClassificationListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuePeriodWiseJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Due-Period Wise</wsdl:documentation>
+      <wsdl:input message="tns:GetDuePeriodWiseJSONLiteSoapIn" />
+      <wsdl:output message="tns:GetDuePeriodWiseJSONLiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogRegisterJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Flight Log Book</wsdl:documentation>
+      <wsdl:input message="tns:GetLogRegisterJSONLiteSoapIn" />
+      <wsdl:output message="tns:GetLogRegisterJSONLiteSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistinctWOTextListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Distinct WO Text</wsdl:documentation>
+      <wsdl:input message="tns:GetDistinctWOTextListJSONSoapIn" />
+      <wsdl:output message="tns:GetDistinctWOTextListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOStatusListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Status List</wsdl:documentation>
+      <wsdl:input message="tns:GetWOStatusListJSONSoapIn" />
+      <wsdl:output message="tns:GetWOStatusListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOJobTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Job Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetWOJobTypeListJSONSoapIn" />
+      <wsdl:output message="tns:GetWOJobTypeListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetrptWOSummaryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Summary</wsdl:documentation>
+      <wsdl:input message="tns:GetrptWOSummaryListJSONSoapIn" />
+      <wsdl:output message="tns:GetrptWOSummaryListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Employee List</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeListJSONSoapIn" />
+      <wsdl:output message="tns:GetEmployeeListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Place List</wsdl:documentation>
+      <wsdl:input message="tns:GetPlaceListJSONSoapIn" />
+      <wsdl:output message="tns:GetPlaceListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">City List</wsdl:documentation>
+      <wsdl:input message="tns:GetCityListJSONSoapIn" />
+      <wsdl:output message="tns:GetCityListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Country List</wsdl:documentation>
+      <wsdl:input message="tns:GetCountryListJSONSoapIn" />
+      <wsdl:output message="tns:GetCountryListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">State List</wsdl:documentation>
+      <wsdl:input message="tns:GetStateListJSONSoapIn" />
+      <wsdl:output message="tns:GetStateListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledAssembliesRemovalsListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Unscheduled Assemblies Removals List</wsdl:documentation>
+      <wsdl:input message="tns:GetUnscheduledAssembliesRemovalsListJSONSoapIn" />
+      <wsdl:output message="tns:GetUnscheduledAssembliesRemovalsListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrematureComponentFailureListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Premature Component Failure List</wsdl:documentation>
+      <wsdl:input message="tns:GetPrematureComponentFailureListJSONSoapIn" />
+      <wsdl:output message="tns:GetPrematureComponentFailureListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagCorrectiveActionListNewJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL Snag Corrective Action List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELSnagCorrectiveActionListNewJSONSoapIn" />
+      <wsdl:output message="tns:GetMELSnagCorrectiveActionListNewJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineMaintenanceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Machine Maintenance List</wsdl:documentation>
+      <wsdl:input message="tns:GetMachineMaintenanceListJSONSoapIn" />
+      <wsdl:output message="tns:GetMachineMaintenanceListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetATAListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ATA List</wsdl:documentation>
+      <wsdl:input message="tns:GetATAListJSONSoapIn" />
+      <wsdl:output message="tns:GetATAListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubATAListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sub ATA List</wsdl:documentation>
+      <wsdl:input message="tns:GetSubATAListJSONSoapIn" />
+      <wsdl:output message="tns:GetSubATAListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagPartListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL Snag Part List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELSnagPartListJSONSoapIn" />
+      <wsdl:output message="tns:GetMELSnagPartListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fuel Uplift Unit</wsdl:documentation>
+      <wsdl:input message="tns:GetUnitListJSONSoapIn" />
+      <wsdl:output message="tns:GetUnitListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fuel Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetFuelTypeListJSONSoapIn" />
+      <wsdl:output message="tns:GetFuelTypeListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELListJSONSoapIn" />
+      <wsdl:output message="tns:GetMELListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstalledAssemblyListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Installed Assembly List</wsdl:documentation>
+      <wsdl:input message="tns:GetInstalledAssemblyListJSONSoapIn" />
+      <wsdl:output message="tns:GetInstalledAssemblyListJSONSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTagListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Item Tag List</wsdl:documentation>
+      <wsdl:input message="tns:GetItemTagListJSONSoapIn" />
+      <wsdl:output message="tns:GetItemTagListJSONSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FlyPalServicesHttpGet">
+    <wsdl:operation name="FlyPalJSONLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login To FlyPal System JSON</wsdl:documentation>
+      <wsdl:input message="tns:FlyPalJSONLoginHttpGetIn" />
+      <wsdl:output message="tns:FlyPalJSONLoginHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FlyPalJSONLogout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Logout to FlyPal System JSON</wsdl:documentation>
+      <wsdl:input message="tns:FlyPalJSONLogoutHttpGetIn" />
+      <wsdl:output message="tns:FlyPalJSONLogoutHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyFlyPalUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verify FlyPal User</wsdl:documentation>
+      <wsdl:input message="tns:VerifyFlyPalUserHttpGetIn" />
+      <wsdl:output message="tns:VerifyFlyPalUserHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store Balance</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreBalanceListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetStoreBalanceListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store Balance</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreBalanceJSONLiteHttpGetIn" />
+      <wsdl:output message="tns:GetStoreBalanceJSONLiteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Supplier List</wsdl:documentation>
+      <wsdl:input message="tns:GetSupplierListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetSupplierListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Customer List</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetCustomerListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store List</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetStoreListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Category List</wsdl:documentation>
+      <wsdl:input message="tns:GetCategoryListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetCategoryListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartStatuListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Part Status List</wsdl:documentation>
+      <wsdl:input message="tns:GetPartStatuListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetPartStatuListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Item List</wsdl:documentation>
+      <wsdl:input message="tns:GetItemListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetItemListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Model List</wsdl:documentation>
+      <wsdl:input message="tns:GetModelListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetModelListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Aircraft List</wsdl:documentation>
+      <wsdl:input message="tns:GetAircraftListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetAircraftListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Assembly List</wsdl:documentation>
+      <wsdl:input message="tns:GetAssemblyListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetAssemblyListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Service Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetServiceTypeListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetServiceTypeListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInspectionTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inspection Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetInspectionTypeListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetInspectionTypeListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModificationTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modification Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetModificationTypeListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetModificationTypeListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDueLimitListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Due Limits</wsdl:documentation>
+      <wsdl:input message="tns:GetDueLimitListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetDueLimitListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightLogClassificationListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Flight Log Classification List</wsdl:documentation>
+      <wsdl:input message="tns:GetFlightLogClassificationListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetFlightLogClassificationListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuePeriodWiseJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Due-Period Wise</wsdl:documentation>
+      <wsdl:input message="tns:GetDuePeriodWiseJSONLiteHttpGetIn" />
+      <wsdl:output message="tns:GetDuePeriodWiseJSONLiteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogRegisterJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Flight Log Book</wsdl:documentation>
+      <wsdl:input message="tns:GetLogRegisterJSONLiteHttpGetIn" />
+      <wsdl:output message="tns:GetLogRegisterJSONLiteHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistinctWOTextListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Distinct WO Text</wsdl:documentation>
+      <wsdl:input message="tns:GetDistinctWOTextListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetDistinctWOTextListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOStatusListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Status List</wsdl:documentation>
+      <wsdl:input message="tns:GetWOStatusListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetWOStatusListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOJobTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Job Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetWOJobTypeListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetWOJobTypeListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetrptWOSummaryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Summary</wsdl:documentation>
+      <wsdl:input message="tns:GetrptWOSummaryListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetrptWOSummaryListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Employee List</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetEmployeeListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Place List</wsdl:documentation>
+      <wsdl:input message="tns:GetPlaceListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetPlaceListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">City List</wsdl:documentation>
+      <wsdl:input message="tns:GetCityListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetCityListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Country List</wsdl:documentation>
+      <wsdl:input message="tns:GetCountryListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetCountryListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">State List</wsdl:documentation>
+      <wsdl:input message="tns:GetStateListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetStateListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledAssembliesRemovalsListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Unscheduled Assemblies Removals List</wsdl:documentation>
+      <wsdl:input message="tns:GetUnscheduledAssembliesRemovalsListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetUnscheduledAssembliesRemovalsListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrematureComponentFailureListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Premature Component Failure List</wsdl:documentation>
+      <wsdl:input message="tns:GetPrematureComponentFailureListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetPrematureComponentFailureListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagCorrectiveActionListNewJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL Snag Corrective Action List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELSnagCorrectiveActionListNewJSONHttpGetIn" />
+      <wsdl:output message="tns:GetMELSnagCorrectiveActionListNewJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineMaintenanceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Machine Maintenance List</wsdl:documentation>
+      <wsdl:input message="tns:GetMachineMaintenanceListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetMachineMaintenanceListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetATAListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ATA List</wsdl:documentation>
+      <wsdl:input message="tns:GetATAListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetATAListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubATAListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sub ATA List</wsdl:documentation>
+      <wsdl:input message="tns:GetSubATAListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetSubATAListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagPartListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL Snag Part List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELSnagPartListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetMELSnagPartListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fuel Uplift Unit</wsdl:documentation>
+      <wsdl:input message="tns:GetUnitListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetUnitListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fuel Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetFuelTypeListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetFuelTypeListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetMELListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstalledAssemblyListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Installed Assembly List</wsdl:documentation>
+      <wsdl:input message="tns:GetInstalledAssemblyListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetInstalledAssemblyListJSONHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTagListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Item Tag List</wsdl:documentation>
+      <wsdl:input message="tns:GetItemTagListJSONHttpGetIn" />
+      <wsdl:output message="tns:GetItemTagListJSONHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FlyPalServicesHttpPost">
+    <wsdl:operation name="FlyPalJSONLogin">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Login To FlyPal System JSON</wsdl:documentation>
+      <wsdl:input message="tns:FlyPalJSONLoginHttpPostIn" />
+      <wsdl:output message="tns:FlyPalJSONLoginHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="FlyPalJSONLogout">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Logout to FlyPal System JSON</wsdl:documentation>
+      <wsdl:input message="tns:FlyPalJSONLogoutHttpPostIn" />
+      <wsdl:output message="tns:FlyPalJSONLogoutHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyFlyPalUser">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Verify FlyPal User</wsdl:documentation>
+      <wsdl:input message="tns:VerifyFlyPalUserHttpPostIn" />
+      <wsdl:output message="tns:VerifyFlyPalUserHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store Balance</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreBalanceListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetStoreBalanceListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store Balance</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreBalanceJSONLiteHttpPostIn" />
+      <wsdl:output message="tns:GetStoreBalanceJSONLiteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Supplier List</wsdl:documentation>
+      <wsdl:input message="tns:GetSupplierListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetSupplierListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Customer List</wsdl:documentation>
+      <wsdl:input message="tns:GetCustomerListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetCustomerListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Store List</wsdl:documentation>
+      <wsdl:input message="tns:GetStoreListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetStoreListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Category List</wsdl:documentation>
+      <wsdl:input message="tns:GetCategoryListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetCategoryListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartStatuListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Part Status List</wsdl:documentation>
+      <wsdl:input message="tns:GetPartStatuListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetPartStatuListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Item List</wsdl:documentation>
+      <wsdl:input message="tns:GetItemListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetItemListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Model List</wsdl:documentation>
+      <wsdl:input message="tns:GetModelListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetModelListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Aircraft List</wsdl:documentation>
+      <wsdl:input message="tns:GetAircraftListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetAircraftListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Assembly List</wsdl:documentation>
+      <wsdl:input message="tns:GetAssemblyListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetAssemblyListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Service Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetServiceTypeListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetServiceTypeListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInspectionTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Inspection Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetInspectionTypeListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetInspectionTypeListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetModificationTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Modification Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetModificationTypeListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetModificationTypeListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDueLimitListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Due Limits</wsdl:documentation>
+      <wsdl:input message="tns:GetDueLimitListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetDueLimitListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightLogClassificationListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Flight Log Classification List</wsdl:documentation>
+      <wsdl:input message="tns:GetFlightLogClassificationListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetFlightLogClassificationListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuePeriodWiseJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Due-Period Wise</wsdl:documentation>
+      <wsdl:input message="tns:GetDuePeriodWiseJSONLiteHttpPostIn" />
+      <wsdl:output message="tns:GetDuePeriodWiseJSONLiteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogRegisterJSONLite">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Flight Log Book</wsdl:documentation>
+      <wsdl:input message="tns:GetLogRegisterJSONLiteHttpPostIn" />
+      <wsdl:output message="tns:GetLogRegisterJSONLiteHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistinctWOTextListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Distinct WO Text</wsdl:documentation>
+      <wsdl:input message="tns:GetDistinctWOTextListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetDistinctWOTextListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOStatusListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Status List</wsdl:documentation>
+      <wsdl:input message="tns:GetWOStatusListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetWOStatusListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOJobTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Job Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetWOJobTypeListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetWOJobTypeListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetrptWOSummaryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">WO Summary</wsdl:documentation>
+      <wsdl:input message="tns:GetrptWOSummaryListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetrptWOSummaryListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Employee List</wsdl:documentation>
+      <wsdl:input message="tns:GetEmployeeListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetEmployeeListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Place List</wsdl:documentation>
+      <wsdl:input message="tns:GetPlaceListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetPlaceListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">City List</wsdl:documentation>
+      <wsdl:input message="tns:GetCityListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetCityListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Country List</wsdl:documentation>
+      <wsdl:input message="tns:GetCountryListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetCountryListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">State List</wsdl:documentation>
+      <wsdl:input message="tns:GetStateListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetStateListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledAssembliesRemovalsListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Unscheduled Assemblies Removals List</wsdl:documentation>
+      <wsdl:input message="tns:GetUnscheduledAssembliesRemovalsListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetUnscheduledAssembliesRemovalsListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrematureComponentFailureListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Premature Component Failure List</wsdl:documentation>
+      <wsdl:input message="tns:GetPrematureComponentFailureListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetPrematureComponentFailureListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagCorrectiveActionListNewJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL Snag Corrective Action List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELSnagCorrectiveActionListNewJSONHttpPostIn" />
+      <wsdl:output message="tns:GetMELSnagCorrectiveActionListNewJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineMaintenanceListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Machine Maintenance List</wsdl:documentation>
+      <wsdl:input message="tns:GetMachineMaintenanceListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetMachineMaintenanceListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetATAListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">ATA List</wsdl:documentation>
+      <wsdl:input message="tns:GetATAListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetATAListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubATAListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Sub ATA List</wsdl:documentation>
+      <wsdl:input message="tns:GetSubATAListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetSubATAListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagPartListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL Snag Part List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELSnagPartListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetMELSnagPartListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fuel Uplift Unit</wsdl:documentation>
+      <wsdl:input message="tns:GetUnitListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetUnitListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelTypeListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Fuel Type List</wsdl:documentation>
+      <wsdl:input message="tns:GetFuelTypeListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetFuelTypeListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">MEL List</wsdl:documentation>
+      <wsdl:input message="tns:GetMELListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetMELListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstalledAssemblyListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Installed Assembly List</wsdl:documentation>
+      <wsdl:input message="tns:GetInstalledAssemblyListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetInstalledAssemblyListJSONHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTagListJSON">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Item Tag List</wsdl:documentation>
+      <wsdl:input message="tns:GetItemTagListJSONHttpPostIn" />
+      <wsdl:output message="tns:GetItemTagListJSONHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FlyPalServicesSoap" type="tns:FlyPalServicesSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FlyPalJSONLogin">
+      <soap:operation soapAction="http://tempuri.org/FlyPalJSONLogin" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FlyPalJSONLoginCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FlyPalJSONLogout">
+      <soap:operation soapAction="http://tempuri.org/FlyPalJSONLogout" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:FlyPalJSONLogoutCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyFlyPalUser">
+      <soap:operation soapAction="http://tempuri.org/VerifyFlyPalUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:VerifyFlyPalUserCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetStoreBalanceListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStoreBalanceListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceJSONLite">
+      <soap:operation soapAction="http://tempuri.org/GetStoreBalanceJSONLite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStoreBalanceJSONLiteCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetSupplierListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSupplierListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetCustomerListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCustomerListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetStoreListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStoreListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetCategoryListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCategoryListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartStatuListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetPartStatuListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPartStatuListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetItemListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetItemListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetModelListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetModelListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetAircraftListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAircraftListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetAssemblyListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAssemblyListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetServiceTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetServiceTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInspectionTypeListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetInspectionTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetInspectionTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModificationTypeListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetModificationTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetModificationTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDueLimitListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetDueLimitListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetDueLimitListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightLogClassificationListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetFlightLogClassificationListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFlightLogClassificationListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuePeriodWiseJSONLite">
+      <soap:operation soapAction="http://tempuri.org/GetDuePeriodWiseJSONLite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetDuePeriodWiseJSONLiteCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogRegisterJSONLite">
+      <soap:operation soapAction="http://tempuri.org/GetLogRegisterJSONLite" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetLogRegisterJSONLiteCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistinctWOTextListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetDistinctWOTextListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetDistinctWOTextListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWOStatusListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetWOStatusListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetWOStatusListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWOJobTypeListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetWOJobTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetWOJobTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetrptWOSummaryListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetrptWOSummaryListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetrptWOSummaryListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetEmployeeListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetEmployeeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetPlaceListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPlaceListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetCityListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCityListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetCountryListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetCountryListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetStateListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetStateListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledAssembliesRemovalsListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetUnscheduledAssembliesRemovalsListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetUnscheduledAssembliesRemovalsListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrematureComponentFailureListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetPrematureComponentFailureListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetPrematureComponentFailureListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagCorrectiveActionListNewJSON">
+      <soap:operation soapAction="http://tempuri.org/GetMELSnagCorrectiveActionListNewJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetMELSnagCorrectiveActionListNewJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineMaintenanceListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetMachineMaintenanceListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetMachineMaintenanceListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetATAListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetATAListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetATAListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubATAListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetSubATAListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetSubATAListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagPartListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetMELSnagPartListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetMELSnagPartListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetUnitListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetUnitListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelTypeListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetFuelTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetFuelTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMELListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetMELListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetMELListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstalledAssemblyListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetInstalledAssemblyListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetInstalledAssemblyListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTagListJSON">
+      <soap:operation soapAction="http://tempuri.org/GetItemTagListJSON" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetItemTagListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FlyPalServicesSoap12" type="tns:FlyPalServicesSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="FlyPalJSONLogin">
+      <soap12:operation soapAction="http://tempuri.org/FlyPalJSONLogin" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FlyPalJSONLoginCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="FlyPalJSONLogout">
+      <soap12:operation soapAction="http://tempuri.org/FlyPalJSONLogout" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:FlyPalJSONLogoutCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="VerifyFlyPalUser">
+      <soap12:operation soapAction="http://tempuri.org/VerifyFlyPalUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:VerifyFlyPalUserCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetStoreBalanceListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetStoreBalanceListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceJSONLite">
+      <soap12:operation soapAction="http://tempuri.org/GetStoreBalanceJSONLite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetStoreBalanceJSONLiteCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetSupplierListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSupplierListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetCustomerListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCustomerListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetStoreListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetStoreListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetCategoryListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCategoryListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPartStatuListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetPartStatuListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPartStatuListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetItemListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetItemListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModelListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetModelListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetModelListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetAircraftListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAircraftListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetAssemblyListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAssemblyListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetServiceTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetServiceTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInspectionTypeListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetInspectionTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetInspectionTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetModificationTypeListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetModificationTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetModificationTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDueLimitListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetDueLimitListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetDueLimitListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightLogClassificationListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetFlightLogClassificationListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetFlightLogClassificationListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDuePeriodWiseJSONLite">
+      <soap12:operation soapAction="http://tempuri.org/GetDuePeriodWiseJSONLite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetDuePeriodWiseJSONLiteCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetLogRegisterJSONLite">
+      <soap12:operation soapAction="http://tempuri.org/GetLogRegisterJSONLite" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetLogRegisterJSONLiteCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDistinctWOTextListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetDistinctWOTextListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetDistinctWOTextListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWOStatusListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetWOStatusListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetWOStatusListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWOJobTypeListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetWOJobTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetWOJobTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetrptWOSummaryListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetrptWOSummaryListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetrptWOSummaryListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetEmployeeListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetEmployeeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetPlaceListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPlaceListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetCityListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCityListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetCountryListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetCountryListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetStateListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetStateListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledAssembliesRemovalsListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetUnscheduledAssembliesRemovalsListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetUnscheduledAssembliesRemovalsListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetPrematureComponentFailureListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetPrematureComponentFailureListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetPrematureComponentFailureListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagCorrectiveActionListNewJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetMELSnagCorrectiveActionListNewJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetMELSnagCorrectiveActionListNewJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineMaintenanceListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetMachineMaintenanceListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetMachineMaintenanceListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetATAListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetATAListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetATAListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetSubATAListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetSubATAListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetSubATAListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagPartListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetMELSnagPartListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetMELSnagPartListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetUnitListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetUnitListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelTypeListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetFuelTypeListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetFuelTypeListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetMELListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetMELListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetMELListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetInstalledAssemblyListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetInstalledAssemblyListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetInstalledAssemblyListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTagListJSON">
+      <soap12:operation soapAction="http://tempuri.org/GetItemTagListJSON" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetItemTagListJSONCred" part="Cred" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FlyPalServicesHttpGet" type="tns:FlyPalServicesHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="FlyPalJSONLogin">
+      <http:operation location="/FlyPalJSONLogin" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="FlyPalJSONLogout">
+      <http:operation location="/FlyPalJSONLogout" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyFlyPalUser">
+      <http:operation location="/VerifyFlyPalUser" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceListJSON">
+      <http:operation location="/GetStoreBalanceListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceJSONLite">
+      <http:operation location="/GetStoreBalanceJSONLite" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierListJSON">
+      <http:operation location="/GetSupplierListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListJSON">
+      <http:operation location="/GetCustomerListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreListJSON">
+      <http:operation location="/GetStoreListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListJSON">
+      <http:operation location="/GetCategoryListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartStatuListJSON">
+      <http:operation location="/GetPartStatuListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListJSON">
+      <http:operation location="/GetItemListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelListJSON">
+      <http:operation location="/GetModelListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftListJSON">
+      <http:operation location="/GetAircraftListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyListJSON">
+      <http:operation location="/GetAssemblyListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeListJSON">
+      <http:operation location="/GetServiceTypeListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetInspectionTypeListJSON">
+      <http:operation location="/GetInspectionTypeListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetModificationTypeListJSON">
+      <http:operation location="/GetModificationTypeListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDueLimitListJSON">
+      <http:operation location="/GetDueLimitListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightLogClassificationListJSON">
+      <http:operation location="/GetFlightLogClassificationListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuePeriodWiseJSONLite">
+      <http:operation location="/GetDuePeriodWiseJSONLite" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogRegisterJSONLite">
+      <http:operation location="/GetLogRegisterJSONLite" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistinctWOTextListJSON">
+      <http:operation location="/GetDistinctWOTextListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOStatusListJSON">
+      <http:operation location="/GetWOStatusListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOJobTypeListJSON">
+      <http:operation location="/GetWOJobTypeListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetrptWOSummaryListJSON">
+      <http:operation location="/GetrptWOSummaryListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeListJSON">
+      <http:operation location="/GetEmployeeListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceListJSON">
+      <http:operation location="/GetPlaceListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListJSON">
+      <http:operation location="/GetCityListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryListJSON">
+      <http:operation location="/GetCountryListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListJSON">
+      <http:operation location="/GetStateListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledAssembliesRemovalsListJSON">
+      <http:operation location="/GetUnscheduledAssembliesRemovalsListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrematureComponentFailureListJSON">
+      <http:operation location="/GetPrematureComponentFailureListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagCorrectiveActionListNewJSON">
+      <http:operation location="/GetMELSnagCorrectiveActionListNewJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineMaintenanceListJSON">
+      <http:operation location="/GetMachineMaintenanceListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetATAListJSON">
+      <http:operation location="/GetATAListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubATAListJSON">
+      <http:operation location="/GetSubATAListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagPartListJSON">
+      <http:operation location="/GetMELSnagPartListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitListJSON">
+      <http:operation location="/GetUnitListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelTypeListJSON">
+      <http:operation location="/GetFuelTypeListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELListJSON">
+      <http:operation location="/GetMELListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstalledAssemblyListJSON">
+      <http:operation location="/GetInstalledAssemblyListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTagListJSON">
+      <http:operation location="/GetItemTagListJSON" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FlyPalServicesHttpPost" type="tns:FlyPalServicesHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="FlyPalJSONLogin">
+      <http:operation location="/FlyPalJSONLogin" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="FlyPalJSONLogout">
+      <http:operation location="/FlyPalJSONLogout" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="VerifyFlyPalUser">
+      <http:operation location="/VerifyFlyPalUser" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceListJSON">
+      <http:operation location="/GetStoreBalanceListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreBalanceJSONLite">
+      <http:operation location="/GetStoreBalanceJSONLite" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetSupplierListJSON">
+      <http:operation location="/GetSupplierListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCustomerListJSON">
+      <http:operation location="/GetCustomerListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStoreListJSON">
+      <http:operation location="/GetStoreListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCategoryListJSON">
+      <http:operation location="/GetCategoryListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPartStatuListJSON">
+      <http:operation location="/GetPartStatuListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemListJSON">
+      <http:operation location="/GetItemListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetModelListJSON">
+      <http:operation location="/GetModelListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetAircraftListJSON">
+      <http:operation location="/GetAircraftListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetAssemblyListJSON">
+      <http:operation location="/GetAssemblyListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceTypeListJSON">
+      <http:operation location="/GetServiceTypeListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetInspectionTypeListJSON">
+      <http:operation location="/GetInspectionTypeListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetModificationTypeListJSON">
+      <http:operation location="/GetModificationTypeListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDueLimitListJSON">
+      <http:operation location="/GetDueLimitListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFlightLogClassificationListJSON">
+      <http:operation location="/GetFlightLogClassificationListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDuePeriodWiseJSONLite">
+      <http:operation location="/GetDuePeriodWiseJSONLite" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetLogRegisterJSONLite">
+      <http:operation location="/GetLogRegisterJSONLite" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetDistinctWOTextListJSON">
+      <http:operation location="/GetDistinctWOTextListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOStatusListJSON">
+      <http:operation location="/GetWOStatusListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetWOJobTypeListJSON">
+      <http:operation location="/GetWOJobTypeListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetrptWOSummaryListJSON">
+      <http:operation location="/GetrptWOSummaryListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetEmployeeListJSON">
+      <http:operation location="/GetEmployeeListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPlaceListJSON">
+      <http:operation location="/GetPlaceListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCityListJSON">
+      <http:operation location="/GetCityListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetCountryListJSON">
+      <http:operation location="/GetCountryListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetStateListJSON">
+      <http:operation location="/GetStateListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnscheduledAssembliesRemovalsListJSON">
+      <http:operation location="/GetUnscheduledAssembliesRemovalsListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetPrematureComponentFailureListJSON">
+      <http:operation location="/GetPrematureComponentFailureListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagCorrectiveActionListNewJSON">
+      <http:operation location="/GetMELSnagCorrectiveActionListNewJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMachineMaintenanceListJSON">
+      <http:operation location="/GetMachineMaintenanceListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetATAListJSON">
+      <http:operation location="/GetATAListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetSubATAListJSON">
+      <http:operation location="/GetSubATAListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELSnagPartListJSON">
+      <http:operation location="/GetMELSnagPartListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetUnitListJSON">
+      <http:operation location="/GetUnitListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetFuelTypeListJSON">
+      <http:operation location="/GetFuelTypeListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetMELListJSON">
+      <http:operation location="/GetMELListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetInstalledAssemblyListJSON">
+      <http:operation location="/GetInstalledAssemblyListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetItemTagListJSON">
+      <http:operation location="/GetItemTagListJSON" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FlyPalServices">
+    <wsdl:port name="FlyPalServicesSoap" binding="tns:FlyPalServicesSoap">
+      <soap:address location="https://bytzsoft.in/FlypalServices/FlypalServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FlyPalServicesSoap12" binding="tns:FlyPalServicesSoap12">
+      <soap12:address location="https://bytzsoft.in/FlypalServices/FlypalServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FlyPalServicesHttpGet" binding="tns:FlyPalServicesHttpGet">
+      <http:address location="https://bytzsoft.in/FlypalServices/FlypalServices.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FlyPalServicesHttpPost" binding="tns:FlyPalServicesHttpPost">
+      <http:address location="https://bytzsoft.in/FlypalServices/FlypalServices.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

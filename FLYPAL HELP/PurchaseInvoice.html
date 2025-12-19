@@ -1,0 +1,178 @@
+<html>
+	<meta name="vs_targetSchema" content="http://schemas.microsoft.com/intellisense/ie5">
+	<LINK href="Styles.css" type="text/css" rel="stylesheet">
+	<body>
+		<img src="images\final.JPG" align="left" width="90" height="40"><br>
+		<h4>Purchase Invoice</h4>
+		<P>
+			To reach the List of Purchase Invoice screen click Entries link, Select 
+			Purchase Invoice link, You get List of Purchase Invoice screen. You can 
+			<b>Add/Edit/Delete/Search</b> Invoice, Invoice Item &amp; Invoice Charge information 
+			on this screen.</P>
+		<STRONG>What do you want to do?</STRONG>
+		<ul type="disc">
+			<li>
+				<a href="AddNewPurchaseInvoice.html">Add New Purchase Invoice</a><br>
+			Click on this link to see the information about how to Add New Purchase 
+			Invoice.
+			<li>
+				<a href="EditPurchaseInvoice.html">Edit Purchase Invoice</a><br>
+			Click on this link to see the information about how to Edit the Purchase 
+			Invoice.
+			<li>
+				<a href="DeletePurchaseInvoice.html">Delete Purchase Invoice</a><br>
+			Click on this link to see the information about how to Delete the Purchase 
+			Invoice.
+			<li>
+				<a href="SearchPurchaseInvoice.html">Search Purchase Invoice</a><br>
+				Click on this link to see the information about how to Search Purchase Invoice.
+			</li>
+		</ul>
+		<p>You can <a href="AddEditDeleteInvoiceItem.html">Add/Edit/Delete Invoice Item</a> 
+			| <a href="AddEditDeleteInvoiceCharge.html">Add/Edit/Delete Invoice Charge</a> |
+			<a href="AddEditDeleteName.html">Add/Edit/Delete Charge</a> on this screen.</p>
+		<P><STRONG>Invoice Details screen contains following fields :</STRONG></P>
+		<TABLE width="600">
+			<TR>
+				<TH width="134">
+					<STRONG>Field Name</STRONG>
+				</TH>
+				<TH width="447">
+					<STRONG>Field Description</STRONG>
+				</TH>
+			</TR>
+			<TR>
+				<TD width="134">
+					No.</TD>
+				<TD width="447">
+					Invoice Number is auto generated (e.g. INV-1999-2000-6).
+				</TD>
+			</TR>
+			<TR>
+				<TD width="134">
+					Date</TD>
+				<TD width="447">
+					The date on which the
+					Invoice is being made (e.g. 04-May-2006).
+				</TD>
+			</TR>
+			<tr>
+				<TD width="134">Status</TD>
+				<TD width="447">
+					The status may be Opened, Authorized or Cancelled. You can select the status 
+					from drop down list.
+				</TD>
+			</tr>
+			<TR>
+				<TD width="134">Name</TD>
+				<TD width="447">
+					Vendor means to whom the invoice is made. You can select the vendor name from 
+					drop down list (e.g. Indian Oil corporation Ltd).</TD>
+			</TR>
+			<TR>
+				<TD width="134">Invoice No.</TD>
+				<TD width="447">
+					It is the suppliers invoice number (e.g. ENP/DA/01).</TD>
+			</TR>
+			<TR>
+				<TD width="134">Date</TD>
+				<TD width="447">
+					Invoice date is the suppliers invoice date (e.g. 11-Aug-2004).</TD>
+			</TR>
+			<TR>
+				<TD width="134">
+					Currency</TD>
+				<TD width="447">
+					It is the name of currency (e.g. Rupees).
+				</TD>
+			</TR>
+			<TR>
+				<TD width="134">
+					Factor</TD>
+				<TD width="447">
+					It is the factor of that selected currency (e.g. 1.00).</TD>
+			</TR>
+			<TR>
+				<TD width="134">
+					Total</TD>
+				<TD width="447">
+					Total=Quantity*Rate + Other Charges (e.g. 10.00*10.00+100.00=200.00).</TD>
+			</TR>
+			<TR>
+				<TD width="134">
+					Total Other Charges</TD>
+				<TD width="447">
+					Total other charges depends on invoice charge. Total Other 
+					Charges=Total*Percentage/100 (e.g. 150.00*2.00/100.00=3.00).</TD>
+			</TR>
+			<TR>
+				<TD width="134">
+					Grand Total</TD>
+				<TD width="447">
+					Grand Total=Total + Total Other Charges (e.g. 6131.00+1930.00=8061.00).</TD>
+			</TR>
+			<tr>
+				<TD width="134">
+					Remark</TD>
+				<TD width="447">
+					You can enter any remark for this entry in the invoice.</TD>
+			</tr>
+		</TABLE>
+		<B>
+			<P></P>
+			<P><STRONG>Invoice Details screen contains following buttons :</STRONG></P>
+			<P></P>
+			<P>
+				<TABLE id="Table2" width="600">
+					<TR>
+						<TH width="97">
+							<STRONG>Button Name</STRONG>
+						</TH>
+						<TH width="484">
+							<STRONG>Action</STRONG></TH></TR>
+					<TR>
+						<TD width="97">Add</TD>
+						<TD width="484">
+							Add button for adding new Invoice Items.</TD>
+					</TR>
+					<TR>
+						<TD width="97">Add</TD>
+						<TD width="484">Add  button for adding the Charge in the Invoice Charge List.</TD>
+					</TR>
+					<TR>
+						<TD width="97">
+							Save</TD>
+						<TD width="484">Save button to save the Purchase Invoice.</TD>
+					</TR>
+					<tr>
+		
+					<TD width="97">Print</TD>
+					<TD width="484">
+				Print button to print the given Invoice. We can print the 
+                Invoice 
+                only when it is Authorized.</STRONG></tr>
+					<TR>
+						<TD width="97">Back</TD>
+						<TD width="484">
+					Back button to return back to the List of Purchase Invoice screen.</TABLE>
+			<p></p>
+		</B>
+        <p><b>Invoice Status :-</b><br>
+		</p>
+		<Ol type="1">
+			<LI>
+				<b>Opened :</b><br>
+			The invoice is saved by default in it's open state. Until it is authorized it 
+			can not be printed. We can edit the invoice in open state only.
+			<LI>
+				<b>Authorized :</b><br>
+			When the invoice is authorized then only we can print it. Once it is authorize 
+			it can not be edit.<LI>
+				<b>Cancelled :</b><br>
+				User can cancel the invoice but it will be saved with cancelled status. Once it 
+				is cancelled it can not be authorized or edit.
+			</LI>
+		</Ol>
+		<p><a href="Entries.html">Entries</a></p>
+	</body>
+</html>

@@ -1,0 +1,516 @@
+<VisualStudioProject>
+    <VisualBasic
+        ProjectType = "Local"
+        ProductVersion = "7.10.3077"
+        SchemaVersion = "2.0"
+        ProjectGuid = "{1A3D733E-A611-47B2-8973-C87A5721F215}"
+    >
+        <Build>
+            <Settings
+                ApplicationIcon = ""
+                AssemblyKeyContainerName = ""
+                AssemblyName = "help"
+                AssemblyOriginatorKeyFile = ""
+                AssemblyOriginatorKeyMode = "None"
+                DefaultClientScript = "JScript"
+                DefaultHTMLPageLayout = "Grid"
+                DefaultTargetSchema = "IE50"
+                DelaySign = "false"
+                OutputType = "Library"
+                OptionCompare = "Binary"
+                OptionExplicit = "On"
+                OptionStrict = "Off"
+                RootNamespace = "help"
+                StartupObject = "help.(None)"
+            >
+                <Config
+                    Name = "Debug"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "true"
+                    DefineTrace = "true"
+                    DebugSymbols = "true"
+                    IncrementalBuild = "true"
+                    Optimize = "false"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+                <Config
+                    Name = "Release"
+                    BaseAddress = "285212672"
+                    ConfigurationOverrideFile = ""
+                    DefineConstants = ""
+                    DefineDebug = "false"
+                    DefineTrace = "true"
+                    DebugSymbols = "false"
+                    IncrementalBuild = "false"
+                    Optimize = "true"
+                    OutputPath = "bin\"
+                    RegisterForComInterop = "false"
+                    RemoveIntegerChecks = "false"
+                    TreatWarningsAsErrors = "false"
+                    WarningLevel = "1"
+                />
+            </Settings>
+            <References>
+                <Reference
+                    Name = "System"
+                    AssemblyName = "System"
+                />
+                <Reference
+                    Name = "System.Data"
+                    AssemblyName = "System.Data"
+                />
+                <Reference
+                    Name = "System.Drawing"
+                    AssemblyName = "System.Drawing"
+                />
+                <Reference
+                    Name = "System.XML"
+                    AssemblyName = "System.Xml"
+                />
+                <Reference
+                    Name = "System.Web"
+                    AssemblyName = "System.Web"
+                    HintPath = "..\..\..\..\..\WINDOWS\Microsoft.NET\Framework\v1.1.4322\System.Web.dll"
+                />
+            </References>
+            <Imports>
+                <Import Namespace = "Microsoft.VisualBasic" />
+                <Import Namespace = "System" />
+                <Import Namespace = "System.Collections" />
+                <Import Namespace = "System.Data" />
+                <Import Namespace = "System.Drawing" />
+                <Import Namespace = "System.Web" />
+                <Import Namespace = "System.Web.UI" />
+                <Import Namespace = "System.Web.UI.HtmlControls" />
+                <Import Namespace = "System.Web.UI.WebControls" />
+                <Import Namespace = "System.Configuration" />
+            </Imports>
+        </Build>
+        <Files>
+            <Include>
+                <File
+                    RelPath = "AddDeleteOrderTerm.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddDeleteTermsList.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteCategory.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteCountry.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteGoodsIssueTerm.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteInvoiceCharge.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteInvoiceItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteIssueItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteKitItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteLocation.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteModel.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteName.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteNomenclature.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteOrderItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeletePaymentItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteReceiptCumInvoiceCharge.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteReceiptCumInvoiceItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteReceiptCumInvoiceName.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteReceiptItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteRole.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteTerm.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteUnit.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddEditDeleteUser.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewAircraft.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewAlternateNumber.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewApplicableForModel.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewCurrency.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewGoodsIssue.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewGoodsReceipt.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewKit.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewMaintenanceInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewPayment.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewPurchaseInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewPurchaseOrder.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewReceiptCumInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewStore.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AddNewVendor.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Aircraft.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AlternateNumber.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ApplicableFor.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "AssemblyInfo.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Currency.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteAircraft.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteAlternateNumber.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteApplicableForModel.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteCurrency.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteGoodsIssue.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteGoodsReceipt.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteKit.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteMaintenanceInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeletePayment.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeletePurchaseInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeletePurchaseOrder.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteReceiptCumInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteStore.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "DeleteVendor.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditAircraft.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditAlternateNumber.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditCurrency.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditGoodsIssue.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditGoodsReceipt.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditKit.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditMaintenanceInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditPayment.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditPurchaseInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditPurchaseOrder.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditReceiptCumInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditStore.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "EditVendor.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Entries.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Form1.vb"
+                    SubType = "Code"
+                    BuildAction = "Compile"
+                />
+                <File
+                    RelPath = "Form1.resx"
+                    DependentUpon = "Form1.vb"
+                    BuildAction = "EmbeddedResource"
+                />
+                <File
+                    RelPath = "GoodsIssue.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "GoodsReceipt.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "HardwareRequirment.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Item.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ItemDetails.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ItemInformation.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Kit.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "MaintenanceInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Master.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Payment.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PurchaseInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "PurchaseOrder.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "ReceiptCumInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchGoodsIssue.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchGoodsReceipt.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchItem.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchKit.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchMaintenanceInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchPayment.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchPurchaseInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchPurchaseOrder.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchReceiptCumInvoice.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SearchVendor.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Store.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "SystemRequirment.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "UserManager.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "UsingFlyPal.html"
+                    BuildAction = "Content"
+                />
+                <File
+                    RelPath = "Vendor.html"
+                    BuildAction = "Content"
+                />
+            </Include>
+        </Files>
+    </VisualBasic>
+</VisualStudioProject>
+

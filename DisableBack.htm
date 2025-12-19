@@ -1,0 +1,58 @@
+<script id="clientEventHandlersJS" language="javascript">
+			function openTranDetail()
+			{
+				str = "wfReports.aspx"
+				window.open(str,"",'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+			}
+			function openTranDetail1()
+			{
+				str = "webform1.aspx"
+				window.open(str,"",'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+			}
+			function openDetail()
+			{
+				str = "wfDetail.aspx"
+				window.open(str,"",'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+			}
+			function openChangePassWord()
+			{
+				str = "wfChangePassword1234.aspx?RequestedBy=1&UserID=" & mUserId.ToString
+				window.open(str,"",'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+			}
+		</script>
+<script language=javascript > 
+	<!--
+	javascript:window.history.forward(1); 
+	
+	function show(pageName,buttontype,title,message,page)
+	{
+		//alert(buttontype);
+		var str;
+		var winargs;
+		
+		//alert("in show");
+		
+		winargs = new Array(buttontype,title,message)
+		
+		var winSettings = 'center:yes;resizable:no;help:no;scroll=no;'
+					+ 'status:no;dialogWidth:400px;dialogHeight:200px';
+		
+		
+		str = window.showModalDialog('SHROBox.aspx', winargs, winSettings);
+		
+		//window.open('SHROBox.aspx');
+		
+		//alert("===="+strcmp(str,'undefined'));
+
+		if(str == undefined)
+		{
+			str='-1';
+		}
+		
+		document.location.replace(pageName + '&MsgResult='+str);
+		
+	}
+// -->
+	</script>
+	
+	

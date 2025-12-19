@@ -1,0 +1,239 @@
+﻿<!--16-Feb-2024 Concurrent User implementation by Kalpesh-->
+<script type="text/javascript" src="bootstrap/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="ScrollUpDown_Ajax.js"></script>
+
+
+<script language="javascript">
+
+    $(document).ready(function () {
+
+        //alert('document ready function');
+
+        var CorporateID = '<%= HttpContext.Current.Session("CorporateID") %>';
+        var UserID = '<%= HttpContext.Current.Session("UserId") %>';
+        var UserName = '<%= HttpContext.Current.Session("UserNameForConcurrentLogin") %>';
+        var LoginSessionID = '<%= HttpContext.Current.Session("LoginSession") %>';
+        var IsAllowConcurrentLogin = '<%= HttpContext.Current.Session("IsAllowConcurrentLogin") %>';
+
+        if (IsAllowConcurrentLogin == 'False' && UserName != 'BTPLADMIN') {
+
+            var str = 'https://www.bytzsoft.net/CRSServices/CRSAPPService.asmx/VerifyUserLoginSessionJSON?ProductID=3&CorporateID=' + CorporateID + '&UserID=' + UserID + '&LoginSessionID=' + LoginSessionID;
+
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", str, true);
+
+            xhr.onreadystatechange = function () {
+
+                if (this.readyState == 4 && this.status == 200) {
+
+                    //alert(this.responseText);
+
+                    if (this.responseText == 'False') {
+                        window.location = "logout.aspx";
+                    }
+                }
+            };
+
+            xhr.send();
+        }
+    });
+
+    window.setInterval(function () {
+        myFunction1();
+    }, 20000);
+
+    function myFunction1() {
+
+        //alert('ABC from LocalFucntionAjax.htm');
+
+        //debugger;
+
+        var CorporateID = '<%= HttpContext.Current.Session("CorporateID") %>';
+        var UserID = '<%= HttpContext.Current.Session("UserId") %>';
+        var UserName = '<%= HttpContext.Current.Session("UserNameForConcurrentLogin") %>';
+        var LoginSessionID = '<%= HttpContext.Current.Session("LoginSession") %>';
+        var AllowActiveUsers = '<%= HttpContext.Current.Session("AllowActiveUsers") %>';
+
+        if (AllowActiveUsers > 0 && UserName != 'BTPLADMIN') {
+
+            //var str = 'https://jsonplaceholder.typicode.com/todos/1';
+
+            var str = 'https://www.bytzsoft.net/CRSServices/CRSAPPService.asmx/UpdateUserLoginSessionTimeStampJSON?ProductID=3&CorporateID=' + CorporateID + '&UserID=' + UserID + '&LoginSessionID=' + LoginSessionID;
+
+            let xhr = new XMLHttpRequest();
+            xhr.open("GET", str, true);
+
+            xhr.onreadystatechange = function () {
+
+                if (this.readyState == 4 && this.status == 200) {
+
+                    //alert(this.responseText);
+
+                    if (this.responseText == 'False') {
+                        window.location = "logout.aspx";
+                    }
+                }
+            };
+
+            xhr.send();
+        }
+    }
+
+</script>
+<!--------------------------------------------------------------->
+
+
+<script type="text/javascript" id="scriptsForDisplayingReport">
+
+    function openHelp() {
+        window.open("FlyPalInvHelp/FlyPalHelp.htm", "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function openledgersame1(FileName) {
+        window.open(FileName, "main", "width=auto,height=auto");
+    }
+
+    function openTranDetail() {
+        str = "wfReports.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function openTranDetail1() {
+        str = "webform1.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function displayReportInPDF() {
+        str = "wfReports.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function displayReportInExcel() {
+        str = "wfExportToExcel.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function openModal(FileName) {
+        window.open(FileName, "_top", 'fullscreen=yes,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,directories=no,location=no,width=auto,height=auto');
+    }
+
+    function openledgersame(FileName) {
+        window.open(FileName, "_top", 'fullscreen=yes,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,directories=no,location=no,width=auto,height=auto');
+    }
+
+    function openFile() {
+        str = "wfFileView.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function openFilel() {
+        str = "wfFileView.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function openDetail() {
+        str = "wfDetail.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+    function openPageInSameTab(FileName) {
+        window.open(FileName, "_top", 'fullscreen=yes,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,directories=no,location=no,width=auto,height=auto');
+    }
+
+    function OnResize(txt) {
+        $(txt).animate({ height: txt.scrollHeight }, "fast");
+    }
+
+    function displayReport() {
+        str = "wfReports.aspx";
+        window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+    }
+
+</script>
+
+
+<!-- This Function is for the MessageBox -->
+<script type="text/javascript">
+
+    javascript: window.history.forward(1);
+
+    function show(pageName, buttontype, title, message, page) {
+
+        var str;
+        var winargs;
+        winargs = new Array(buttontype, title, message);
+        //Changed By Utkarsh On 01-Oct-2012 to solve MessageBox Display issue in Firefox
+        var userAgent = navigator.userAgent;
+
+        if (userAgent.indexOf("Firefox") != -1) { //Mozilla Firefox Browse
+
+            var leftoffset = ((screen.width) / 2 - (400 / 2));
+            var topoffset = ((screen.height) / 2 - (250 / 2));
+
+            var winSettings = 'resizable:no;help:no;scroll=no;'
+                + 'status:no;toolbar=0;dialogWidth:400px;dialogHeight:200px;dialogLeft:' + leftoffset + ';dialogTop:' + topoffset + ';';
+        }
+        else {
+
+            var winSettings = 'resizable:no;help:no;scroll=no;'
+                + 'status:no;dialogWidth:400px;dialogHeight:200px';
+        }
+        //End
+
+        $("#MainStyle").attr('href', "<%= HttpContext.Current.Session("StyleSheet") %>");
+
+        str = window.showModalDialog('SHROBox.aspx', winargs, winSettings);
+        if (str == undefined) {
+            str = '-1';
+        }
+
+        document.location.replace(pageName + '&MsgResult=' + str);
+    }
+
+</script>
+
+
+<!-- This Function is for the MessageBox -->
+<!-- Added By Utkarsh FOR Proccessing Status-->
+<script type="text/javascript">
+
+    if ("<%= not HttpContext.Current.Session("StyleSheet") is nothing %>" == "True")
+    {
+        $("#MainStyle").attr('href', "<%= HttpContext.Current.Session("StyleSheet") %>");
+    }
+
+</script>
+
+
+<!--Added By Vikrant For Chrome,FireFox Issue -->
+<script type="text/javascript">
+
+    $('input[type="text"],input[type="password"]').on("keydown", function (event) {
+        return (event.keyCode != 13);
+    });
+
+</script>
+
+
+<!-- 🔄 KeepAlive Script -->
+<!-- 🔄 Hidden KeepAlive Log for Debugging -->
+<script>
+    function keepSessionAlive() {
+        fetch('/KeepAlive.ashx', {
+            method: 'GET',
+            cache: 'no-cache'
+        }).then(response => {
+            if (response.ok) {
+                console.log("KeepAlive sent at " + new Date().toLocaleTimeString());
+                // If you want to show it in your div:
+                // document.getElementById("keepAliveLog").textContent =
+                //    "KeepAlive sent at " + new Date().toLocaleTimeString();
+            }
+        }).catch(error => {
+            console.error('KeepAlive error:', error);
+        });
+    }
+
+    // Call every 5 minutes
+    setInterval(keepSessionAlive, 2 * 60 * 1000);
+</script>

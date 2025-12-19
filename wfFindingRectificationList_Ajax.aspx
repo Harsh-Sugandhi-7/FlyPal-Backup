@@ -1,0 +1,441 @@
+﻿<%@ Page Language="vb" AutoEventWireup="false" CodeBehind="wfFindingRectificationList_Ajax.aspx.vb"
+    Inherits="Flypal.wfFindingRectificationList_Ajax" %>
+
+<%@ Register Assembly="AjaxControlToolkit" Namespace="AjaxControlToolkit" TagPrefix="cc2" %>
+<%@ Register TagPrefix="uc2" TagName="MSGBox" Src="MSGBox.ascx" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <meta http-equiv="x-ua-compatible" content="IE=7,8,9" />
+    <title>Finding Rectification List</title>
+    <link id="MainStyle" type="text/css" rel="stylesheet" />
+    <asp:PlaceHolder runat="server">
+        <!-- #include file= "LocalFunctionAjax.htm" -->
+    </asp:PlaceHolder>
+    <script type="text/javascript">
+        function openledgersame(FileName) {
+            window.open(FileName, "_top", 'fullscreen=yes,toolbar=no,status=no,menubar=no,scrollbars=no,resizable=no,directories=no,location=no,width=auto,height=auto');
+        }
+        function openFile() {
+            str = "wfFileView.aspx"
+            window.open(str, "", 'toolbar=yes,status=yes,scrollbars=yes,titlebar=yes,resizable=yes');
+        }
+
+    </script>
+</head>
+<body bottommargin="5" leftmargin="0" topmargin="5" rightmargin="0" ms_positioning="GridLayout">
+    <form id="form1" runat="server">
+        <asp:ScriptManager AsyncPostBackTimeout="600" ID="ScriptManager1" runat="server"
+            EnablePageMethods="true">
+        </asp:ScriptManager>
+        <asp:UpdatePanel ID="upnlMSGBox" runat="server" UpdateMode="Conditional">
+            <ContentTemplate>
+                <uc2:MSGBox ID="MSGBoxCtrl" runat="server" />
+            </ContentTemplate>
+        </asp:UpdatePanel>
+        <table class="clstablelistout" id="tblmain">
+            <tr>
+                <td>
+                    <asp:Panel ID="pnlMain" runat="server" CssClass="clsPanel1">
+                        <table id="tblLedgerList" class="clstablelistin">
+                            <tr>
+
+                                <td colspan="2" class="clsFormHeader1Newstyle">
+                                <table width="100%">
+                                        <tr>
+                                            <td>
+                                                <asp:UpdatePanel ID="upnlTtitle" runat="server" UpdateMode="Conditional">
+                                                    <ContentTemplate>
+                                                        <asp:Label ID="lblTitle" runat="server" CssClass="clsFormHeader">Finding Rectification</asp:Label>
+                                                    </ContentTemplate>
+                                                </asp:UpdatePanel>
+                                            </td>
+                                            <td align="right">
+                                                <asp:UpdatePanel ID="upnlActionBtnTop" runat="server" UpdateMode="Conditional">
+                                                    <ContentTemplate>
+                                                        <asp:Button ID="btnCloseTop" runat="server" CssClass="clsbtnH clsinfoH"  
+                                                            Text="Close"></asp:Button>
+                                                    </ContentTemplate>
+                                                </asp:UpdatePanel>
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <asp:UpdatePanel ID="upnlValidationsummary2" runat="server" UpdateMode="Conditional">
+                                        <ContentTemplate>
+                                            <asp:ValidationSummary ID="Validationsummary2" runat="server" CssClass="clsValidationSummary"
+                                                HeaderText="Fill Up The Following Fields" ValidationGroup="a"></asp:ValidationSummary>
+                                            <asp:RequiredFieldValidator ID="rfvFromDate" runat="server" CssClass="clsLabelAuto"
+                                                ErrorMessage="From Date Required" ControlToValidate="txtFromDate" Display="None"
+                                                ValidationGroup="a"></asp:RequiredFieldValidator>
+                                            <asp:RequiredFieldValidator ID="rfvToDate" runat="server" ControlToValidate="txtToDate"
+                                                CssClass="clsLabelAuto" Display="None" ErrorMessage="To Date Required" ValidationGroup="a"></asp:RequiredFieldValidator>
+                                            <script type="text/javascript">
+                                                function showTextField() {
+                                                    var SearchIndex = $get("cmbSearch").selectedIndex;
+
+                                                    var txtFromDateobj = document.getElementById("<%= txtFromDate.ClientID %>");
+                                                    var txtToDateobj = document.getElementById("<%= txtToDate.ClientID %>");
+                                                    var lblFromDateobj = document.getElementById("<%= lblFromDate.ClientID %>");
+                                                    var lblToDateobj = document.getElementById("<%= lblToDate.ClientID %>");
+                                                    if (SearchIndex != 1) {
+                                                        txtFromDateobj.style.display = 'none';
+                                                        txtToDateobj.style.display = 'none';
+                                                        lblFromDateobj.style.display = 'none';
+                                                        lblToDateobj.style.display = 'none';
+                                                    }
+                                                    else {
+                                                        var DateIndex = $get("cmbDateRange").selectedIndex;
+                                                        if (DateIndex == 0) {
+                                                            txtFromDateobj.style.display = 'none';
+                                                            txtToDateobj.style.display = 'none';
+                                                            lblFromDateobj.style.display = 'none';
+                                                            lblToDateobj.style.display = 'none';
+                                                        }
+                                                    }
+
+                                                }
+                                            </script>
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <asp:UpdatePanel ID="upnlSearchCriteria" runat="server" UpdateMode="Conditional">
+                                        <ContentTemplate>
+                                          <%--  <fieldset id="Fieldset1" class="clsFieldSet" style="border-width: 1px;">
+                                                <legend id="Legend1" runat="server"><b>Search Criteria</b></legend>--%>
+                                                <table width="100%">
+                                                    <tr>
+                                                        <td>
+                                                            <table id="Table1" cellspacing="0">
+                                                                <tr>
+                                                                    <td></td>
+                                                                    <td>
+                                                                        <asp:DropDownList CssClass="clsTextBoxTagSearchComboNewstyle" ID="cmbSearch" runat="server"   Width="170px"
+                                                                            AutoPostBack="True">
+                                                                            <asp:ListItem Value="0">(All)</asp:ListItem>
+                                                                            <asp:ListItem Value="1">Date Range</asp:ListItem>
+                                                                            <asp:ListItem Value="2">Text</asp:ListItem>
+                                                                        </asp:DropDownList>
+                                                                    </td>
+                                                                    <td>
+                                                                        <asp:DropDownList CssClass="clsTextBoxTagSearchComboNewstyle" ID="cmbDateRange" runat="server"   AutoPostBack="True"
+                                                                            Visible="False">
+                                                                            <asp:ListItem Value="0">(All)</asp:ListItem>
+                                                                            <asp:ListItem Value="1">Last 1 Week</asp:ListItem>
+                                                                            <asp:ListItem Value="2">Last 1 Month</asp:ListItem>
+                                                                            <asp:ListItem Value="3">Last 1 Quarter</asp:ListItem>
+                                                                            <asp:ListItem Value="4">Last 1 Year</asp:ListItem>
+                                                                            <asp:ListItem Value="5">Current Financial Year</asp:ListItem>
+                                                                            <asp:ListItem Value="6">Between Dates</asp:ListItem>
+                                                                        </asp:DropDownList>
+                                                                        <asp:TextBox CssClass="clsTextBoxTagSearch"  ID="txtSearchText" runat="server"  ToolTip="Enter Search Text"
+                                                                            BackColor="White" AutoPostBack="True"></asp:TextBox>
+                                                                    </td>
+                                                                    <td>
+                                                                        <asp:Label ID="lblFromDate" runat="server" CssClass="clsLabelAuto" Width="66px">From Date</asp:Label>
+                                                                    </td>
+                                                                    <td>
+                                                                        <asp:TextBox CssClass="clsTextBoxTagDateSearch" runat="server" ID="txtFromDate"  Width="100px"
+                                                                            ClientIDMode="Static" onchange="ValidateDateText(this,'FromDate_watermarkextender');"
+                                                                            AutoPostBack="True"></asp:TextBox>
+                                                                        <cc2:CalendarExtender ID="txtFromDate_CalendarExtender" runat="server" CssClass="cal_Theme1"
+                                                                            Enabled="true" Format="<%$AppSettings:DateFormat%>" TargetControlID="txtFromDate"></cc2:CalendarExtender>
+                                                                        <cc2:TextBoxWatermarkExtender TargetControlID="txtFromDate" ID="FromDate_watermarkextender"
+                                                                            ClientIDMode="Static" runat="server" WatermarkText="<%$AppSettings:DateFormat%>"
+                                                                            WatermarkCssClass="clsDateTextBox"></cc2:TextBoxWatermarkExtender>
+                                                                        <asp:CustomValidator ID="cvFromDate" runat="server" CssClass="clsLabelAuto" Display="None"
+                                                                            ClientValidationFunction="BetweenDatesValidation" ValidationGroup="a" ErrorMessage="From Date should not be greater than To Date "></asp:CustomValidator>
+                                                                    </td>
+                                                                    <td>
+                                                                        <asp:Label ID="lblToDate" runat="server" CssClass="clsLabelAuto" Width="52px">To Date</asp:Label>
+                                                                    </td>
+                                                                    <td></td>
+                                                                    <td>
+                                                                        <asp:TextBox CssClass="clsTextBoxTagDateSearch"  runat="server" ID="txtToDate"   Width="100px"
+                                                                            ClientIDMode="Static" onchange="ValidateDateText(this,'ToDate_watermarkextender');"
+                                                                            AutoPostBack="True"></asp:TextBox>
+                                                                        <cc2:CalendarExtender ID="txtToDate_CalendarExtender1" runat="server" CssClass="cal_Theme1"
+                                                                            Enabled="true" Format="<%$AppSettings:DateFormat%>" TargetControlID="txtToDate"></cc2:CalendarExtender>
+                                                                        <cc2:TextBoxWatermarkExtender TargetControlID="txtToDate" ID="ToDate_watermarkextender"
+                                                                            ClientIDMode="Static" runat="server" WatermarkText="<%$AppSettings:DateFormat%>"
+                                                                            WatermarkCssClass="clsDateTextBox"></cc2:TextBoxWatermarkExtender>
+                                                                    </td>
+                                                                    <td>
+                                                                        <asp:CheckBox ID="ChkOpenColsed" runat="server" Text='Show With "CLOSED Audit"' AutoPostBack="true" />
+                                                                    </td>
+                                                                </tr>
+                                                            </table>
+                                                        </td>
+                                                        <td align="right">
+                                                            <asp:Button ID="btnFindNow" runat="server" CssClass="clsButton_Ajax" ToolTip="Click to find Audit Execution List as per searching criteria"
+                                                                Text="Find Now" ValidationGroup="a" OnClientClick="DisableValidators();" Visible="False"></asp:Button>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            <%--</fieldset>--%>
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2">
+                                    <asp:UpdatePanel ID="upnlGrid" runat="server" UpdateMode="Conditional">
+                                        <ContentTemplate>
+                                            <table width="100%">
+                                                <tr>
+                                                    <td>
+                                                        <asp:Label ID="lblResult" runat="server" CssClass="clsLabelHeader"> </asp:Label>
+                                                    </td>
+                                                    <td align="right">
+                                                        <%-- <asp:UpdatePanel ID="upnlActionBtnTop" runat="server" UpdateMode="Conditional">
+                                                            <ContentTemplate>
+                                                                <asp:Button ID="btnCloseTop" runat="server" CssClass="clsButton_Ajax" ToolTip="Click to close Audit Execution List screen"
+                                                                    Text="Close"></asp:Button>
+                                                            </ContentTemplate>
+                                                        </asp:UpdatePanel>--%>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td colspan="2">
+                                                        <asp:GridView ID="dgAuditExecution" runat="server" CssClass="clsGridNewStyle" AllowSorting="True"
+                                                            ShowHeaderWhenEmpty="true" PageSize="25" AllowPaging="True" AutoGenerateColumns="False" CellPadding="5" GridLines="Horizontal" >
+                                                            <PagerSettings Mode="NumericFirstLast" FirstPageText="First" LastPageText="Last" />
+                                                            <PagerStyle CssClass="paging" HorizontalAlign="Right" />
+                                                            <AlternatingRowStyle CssClass="clsdgAltItem"></AlternatingRowStyle>
+                                                            <RowStyle CssClass="clsdgItem"></RowStyle>
+                                                           <HeaderStyle BackColor="white" CssClass="clsdgHeader" Font-Bold="True" ForeColor="black"/>
+                                                            <Columns>
+                                                                <asp:BoundField Visible="False" DataField="ID" HeaderText="ID"></asp:BoundField>
+                                                                <asp:BoundField DataField="AuditNo" SortExpression="AuditNo" HeaderText="Audit No.">
+                                                                    <HeaderStyle Wrap="False"  HorizontalAlign="Left"></HeaderStyle>
+                                                                    <ItemStyle Wrap="False"></ItemStyle>
+                                                                </asp:BoundField>
+
+                                                                <asp:BoundField DataField="Description" HeaderText="Description">
+                                                                    <HeaderStyle Wrap="True"  HorizontalAlign="Left"></HeaderStyle>
+                                                                    <ItemStyle Wrap="True"></ItemStyle>
+                                                                </asp:BoundField>
+
+                                                                <asp:BoundField DataField="StartDateFormatted" HeaderText="Start Date">
+                                                                    <HeaderStyle Wrap="False" HorizontalAlign="Left"></HeaderStyle>
+                                                                    <ItemStyle Wrap="False"></ItemStyle>
+                                                                </asp:BoundField>
+                                                                <asp:BoundField DataField="EndDateFormatted" HeaderText="End Date">
+                                                                    <HeaderStyle Wrap="False" HorizontalAlign="Left"></HeaderStyle>
+                                                                    <ItemStyle Wrap="False"></ItemStyle>
+                                                                </asp:BoundField>
+                                                                <asp:BoundField DataField="AuditorName" SortExpression="AuditorName" HeaderText="Lead Auditor">
+                                                                    <HeaderStyle  HorizontalAlign="Left"></HeaderStyle>
+                                                                    <ItemStyle Wrap="False"></ItemStyle>
+                                                                </asp:BoundField>
+                                                                <asp:BoundField DataField="EntityManager" SortExpression="AuditIncharge" HeaderText="Entity Manager">
+                                                                    <HeaderStyle  HorizontalAlign="Left"></HeaderStyle>
+                                                                </asp:BoundField>
+                                                                <asp:BoundField DataField="DesignationName" SortExpression="DesignationName" HeaderText="Designation">
+                                                                    <HeaderStyle  HorizontalAlign="Left"></HeaderStyle>
+                                                                </asp:BoundField>
+                                                                <asp:BoundField DataField="AuditStatusName" SortExpression="AuditStatusName" HeaderText="Audit Status">
+                                                                    <HeaderStyle  HorizontalAlign="Left"></HeaderStyle>
+                                                                    <ItemStyle Wrap="False"></ItemStyle>
+                                                                </asp:BoundField>
+                                                                <asp:BoundField Visible="False" DataField="Reference" SortExpression="Reference"
+                                                                    HeaderText="Reference">
+                                                                    <HeaderStyle  HorizontalAlign="Left"></HeaderStyle>
+                                                                </asp:BoundField>
+                                                                <asp:BoundField Visible="False" DataField="Auditors" SortExpression="Auditors" HeaderText="Auditors">
+                                                                    <HeaderStyle  HorizontalAlign="Left"></HeaderStyle>
+                                                                </asp:BoundField>
+                                                                <%--<asp:ButtonField Text="Edit/View" HeaderText="Edit/View" CommandName="EditRec">
+                                                                    <HeaderStyle HorizontalAlign="Left" />
+                                                                </asp:ButtonField>
+                                                                <asp:ButtonField CommandName="View" HeaderText="View" Text="View">
+                                                                    <HeaderStyle  HorizontalAlign="Left" />
+                                                                </asp:ButtonField>--%>
+                                                                   <asp:TemplateField HeaderStyle-HorizontalAlign="Center" HeaderText="Action" ItemStyle-HorizontalAlign="Center">
+                                                        <%--11--%>
+                                                        <ItemTemplate>
+                                                            <%-- <span id="button">Login</span>--%>
+                                                            <div class="dropdown">
+                                                                <div class="dropdownbtn-content">
+                                                                    <table id="T1" class="clsGridNew_Ajax">
+                                                                        <tr>
+                                                                            <td>
+                                                                                <asp:ImageButton ID="EditView" runat="server" CommandArgument='<%# CType(Container,GridViewRow).RowIndex %>'
+                                                                                    CommandName="EditRec" Style="height: 15px; width: 15px" ImageUrl="~/images/edit.png" />
+                                                                            </td>
+                                                                             
+                                                                             <td>
+                                                                                <asp:ImageButton ID="View" runat="server" CommandArgument='<%# CType(Container, GridViewRow).RowIndex %>'
+                                                                                    CommandName="View" Style="height: 20px; width: 13px" ImageUrl="icons/CLIP01.ICO"
+                                                                                    Visible='<%#  Eval("IsAttachmentAdded")%>' />
+                                                                            </td>
+                                                                        </tr>
+                                                                       
+                                                                    </table>
+                                                                </div>
+                                                                <asp:Image ID="lnkArrow" ImageUrl="~/images/Arrowup.png" runat="server" CssClass="clsActionbtn"
+                                                                    Style="cursor: pointer" />
+                                                            </div>
+                                                        </ItemTemplate>
+                                                        <HeaderStyle HorizontalAlign="Center" />
+                                                        <ItemStyle HorizontalAlign="Center" />
+                                                    </asp:TemplateField>
+                                                                <asp:BoundField DataField="IsAttachmentAdded" HeaderStyle-CssClass="hideGridColumn"
+                                                                    HeaderText="IsAttachmentAdded" ItemStyle-CssClass="hideGridColumn"></asp:BoundField>
+                                                            </Columns>
+                                                        </asp:GridView>
+                                                    </td>
+                                                </tr>
+                                            </table>
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" align="right">
+                                    <asp:UpdatePanel ID="upnlActionBtn" runat="server" UpdateMode="Conditional">
+                                        <ContentTemplate>
+                                            <asp:Button ID="btnClose" runat="server" CssClass="clsButton_Ajax" ToolTip="close Audit Closing List screen"
+                                                Text="Close" Visible="false"></asp:Button>
+                                        </ContentTemplate>
+                                    </asp:UpdatePanel>
+                                </td>
+                            </tr>
+                        </table>
+                    </asp:Panel>
+                </td>
+            </tr>
+        </table>
+        <asp:UpdateProgress ID="AjaxLoader" DisplayAfter="200" ClientIDMode="Static" DynamicLayout="false"
+            runat="server">
+            <ProgressTemplate>
+                <div class="clsAjaxLoader" style="height: 100%; width: 100%; left: 0; position: fixed; background-color: #000000; top: 0; z-index: 99999;">
+                </div>
+                <div style="position: fixed; top: 50%; left: 50%; margin-left: -27px; margin-top: -27px; z-index: 100000;">
+                    <div class="ext-el-mask-msg x-mask-loading">
+                        <div class="clsLoad_ajax">
+                            <asp:Image ID="Image1" runat="server" ImageUrl="~/images/Loader.gif" ImageAlign="Middle"
+                                Height="48px" Width="48px" />
+                        </div>
+                    </div>
+                </div>
+            </ProgressTemplate>
+        </asp:UpdateProgress>
+        <script type="text/javascript">
+
+            //From Date -To Date validation
+            function BetweenDatesValidation(source, args) {
+                args.IsValid = false;
+                var fromdate = $("#txtFromDate").val();
+                var todate = $("#txtToDate").val();
+                if (!todate) {
+                    rfvToDate.isvalid = false;
+                    return;
+                }
+                if (!fromdate) {
+                    rfvFromDate.isvalid = false;
+                    return;
+                }
+                var param = { 'FromDate': fromdate, 'ToDate': todate };
+                $.ajax({
+                    type: "POST",
+                    url: "BetweenDateValidationHandler.ashx",
+                    cache: false,
+                    data: param,
+                    async: false,
+                    beforeSend: OnBeforeSnd,
+                    success: onSuces,
+                    error: onErr
+                });
+
+                function onSuces(result) {
+                    $get("AjaxLoader").style.visibility = 'hidden';
+                    if (result == "True") {
+                        args.IsValid = true;
+                        return;
+                    }
+
+                }
+
+                function onErr(result) {
+                    $get("AjaxLoader").style.visibility = 'hidden';
+                    source.errormessage = result;
+                    return;
+                }
+                function OnBeforeSnd() {
+                    $get("AjaxLoader").style.visibility = 'visible';
+                }
+
+            }
+
+            //Date validations
+            function ValidateDateText(elem, extenderid) {
+
+                var datevalue = $(elem).val();
+                var params = { 'Date': datevalue, 'SetDefault': 'true' };
+                $.ajax({
+                    type: "POST",
+                    url: "DateValidationHandler.ashx",
+                    cache: false,
+                    async: false,
+                    data: params,
+                    beforeSend: OnBeforeSend,
+                    success: onSuccess,
+                    error: onError
+                });
+                return false;
+                function onSuccess(result) {
+                    $(elem).removeClass('ac_loading');
+                    $(elem).val(result);
+                    $find(extenderid).set_Text(result);
+                }
+
+                function onError(result) {
+                    $(elem).removeClass('ac_loading');
+                    $(elem).val('');
+                    $find(extenderid).set_Text('');
+                }
+                function OnBeforeSend() {
+                    $(elem).addClass('ac_loading');
+                }
+            }
+        </script>
+        <script type="text/javascript">
+            Sys.WebForms.PageRequestManager.getInstance().add_pageLoaded(function () {
+                showTextField();
+            });
+
+
+
+        </script>
+    </form>
+    <script type="text/javascript">
+        function DisableValidators() {
+            var SearchIndex = $get("cmbSearch").selectedIndex;
+            if (SearchIndex == 1) {
+                var DateIndex = $get("cmbDateRange").selectedIndex;
+                if (DateIndex == 6) {
+                    return true;
+                }
+            }
+            ToDo:
+            {
+                for (i = 0; i < Page_Validators.length; i++) {
+                    if (Page_Validators[i].validationGroup == "a") {
+                        ValidatorEnable(Page_Validators[i], false);
+                    }
+                }
+                document.getElementById("<%= Validationsummary2.ClientID %>").style.display = 'none';
+
+
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,97 @@
+<html>
+<head>
+  <script language="javascript">
+  <!--
+  function CloseNav() {
+    if ((top.right.location == null) || (top.right.location == undefined) || (typeof(top.right.location.href) != "string") || (top.right.location.href == ""))
+      top.location="FlyPalInventoryHelp.html";
+    else
+      top.location=top.right.location;
+  }
+
+  function GetFrameWidth() { 
+    var x = 300; 
+    if (self.innerHeight) // all except Explorer 
+	x = self.innerWidth; 
+    else if (document.documentElement && document.documentElement.clientHeight) // Explorer 6 Strict Mode 
+	x = document.documentElement.clientWidth; 
+    else if (document.body) // other Explorers 
+	x = document.body.clientWidth; 
+    return(x); 
+  } 
+
+  function GetFrameHeight() { 
+    var y = 400; 
+    if (self.innerHeight) // all except Explorer 
+      y = self.innerHeight; 
+    else if (document.documentElement && document.documentElement.clientWidth) // Explorer 6 Strict Mode 
+      y = document.documentElement.clientHeight; 
+    else if (document.body) // other Explorers 
+      y = document.body.clientHeight; 
+    return(y); 
+  } 
+
+  function resizeSearch() {
+    var searchDiv = document.getElementById("searchcontainer");
+    var xTop = searchDiv.offsetTop;
+    searchDiv.style.width = GetFrameWidth() - 10; //5px either side 
+    var HH = GetFrameHeight(); 
+    if (HH -  xTop > 0)
+      searchDiv.style.height = HH -  xTop;
+  }
+  function DocOnLoad() {
+    resizeSearch();
+  }
+  -->
+  </script>
+
+
+  <style>
+  .docstyle
+  {
+    font-size: 85%;
+    font-family: verdana,arial,sans-serif;
+  }
+  </style>
+
+</head>
+
+<body id="docBody" BGCOLOR="buttonface" style="color: Black; margin:5px 0px 0px 0px;" onload="DocOnLoad()" onresize="resizeSearch()">
+
+
+<div style="display: inline; white-space: nowrap; margin: 0px 0px 0px 5px;">
+<input
+ TYPE="button" VALUE="CONTENT" ONCLICK="javascript:location='hh_toc.htm';"
+ NAME="HelpTopics"><input
+ TYPE="button" VALUE="INDEX" ONCLICK="javascript:location='hh_index.htm';"
+ NAME="Index"><input
+ TYPE="button" VALUE="SEARCH" ONCLICK="javascript:location='hh_search.htm';"
+ NAME="Search" style=" color: #1E90FF;">&nbsp;&nbsp;<input
+ TYPE="button" VALUE="X" ONCLICK="javascript:CloseNav()"
+ NAME="Close">
+</div>
+
+<div id="searchcontainer" style="margin: 0px 0px 0px 0px; padding: 11px 5px 0px 5px;">
+
+<center>
+<!-- SiteSearch Google -->
+<FORM method=GET action="http://www.bytzsoft.com" target="right">
+<input type=hidden name=ie value=iso-8859-1>
+<input type=hidden name=oe value=iso-8859-1>
+<A HREF="http://www.bytzsoft.com/" target="right">
+<IMG SRC="Images\bytz.jpg" border="0" ALT="Bytzsoft"></A><br>
+<P>Type your keyword here</P>
+<INPUT TYPE=text name=q size=31 maxlength=255 value="">
+<INPUT type=submit name=btnG VALUE="Search">
+<font size=-1>
+<input type=hidden name=domains value="www.google.com"><br>
+<input type=radio name=sitesearch value=""> Google
+<input type=radio name=sitesearch value="www.google.com" checked> www.bytzsoft.com <br>
+</font>
+</FORM>
+<!-- SiteSearch Google -->
+</center>
+
+</div>
+</body>
+</html>

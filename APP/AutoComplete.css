@@ -1,0 +1,51 @@
+﻿body {
+}
+
+/*  For AutoComplete Extender*/
+        .ac_results_li
+        {
+            margin-left: 0px;
+            padding: 0px 0px 0px 2px;
+            cursor: default;
+            display: block; /*  	if width will be 100% horizontal scrollbar will apear  	when scroll mode will be used 	*/ /*width: 100%;menu*/
+            font-family: Verdana;
+            font-size: 8pt; /*  	it is very important, if line-height not setted or setted  	in relative units scroll will be broken in firefox 	*/
+            line-height: 15pt;
+            overflow: hidden;
+        }
+        .ac_results_Main
+        {
+            padding: 0px;
+            margin-left: 0px;
+            padding-left: 0px;
+            border: 1px solid black;
+            background-color: white;
+            z-index: 99999;
+            margin-top: 0px;
+            overflow: auto;
+            max-height: 300px;
+        }
+        
+        .ac_over_Main
+        {
+            color: White;
+            background-color: #0198e1;
+            font-family: Verdana;
+            font-size: 8pt;
+            margin-left: 0px;
+            padding: 0px 0px 0px 2px;
+            line-height: 15pt;
+        }
+        .ac_results_Main_New
+        {
+            padding: 0px;
+            margin-left: 0px;
+            padding-left: 0px;
+            border: 0px;
+            background-color: inherit;
+            z-index: 99999;
+            margin-top: 0px;
+            overflow: auto;
+            max-height: 300px;
+        }
+        /*End*/

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://localhost/FlyPalNPS/FlyPalNPSService" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://localhost/FlyPalNPS/FlyPalNPSService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://localhost/FlyPalNPS/FlyPalNPSService">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitFeedBack">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CorporateID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="ClientName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ProductID" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="mDate" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Suggestion" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="NPS" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="IPAddress" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitFeedBackResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubmitFeedBackResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFeedBackSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitFeedBack" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFeedBackSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitFeedBackResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFeedBackHttpGetIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="ClientName" type="s:string" />
+    <wsdl:part name="ProductID" type="s:string" />
+    <wsdl:part name="mDate" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Suggestion" type="s:string" />
+    <wsdl:part name="NPS" type="s:string" />
+    <wsdl:part name="IPAddress" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFeedBackHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFeedBackHttpPostIn">
+    <wsdl:part name="CorporateID" type="s:string" />
+    <wsdl:part name="ClientName" type="s:string" />
+    <wsdl:part name="ProductID" type="s:string" />
+    <wsdl:part name="mDate" type="s:string" />
+    <wsdl:part name="UserName" type="s:string" />
+    <wsdl:part name="Suggestion" type="s:string" />
+    <wsdl:part name="NPS" type="s:string" />
+    <wsdl:part name="IPAddress" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SubmitFeedBackHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:portType name="FlyPalNPSServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitFeedBack">
+      <wsdl:input message="tns:SubmitFeedBackSoapIn" />
+      <wsdl:output message="tns:SubmitFeedBackSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FlyPalNPSServiceHttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitFeedBack">
+      <wsdl:input message="tns:SubmitFeedBackHttpGetIn" />
+      <wsdl:output message="tns:SubmitFeedBackHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="FlyPalNPSServiceHttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitFeedBack">
+      <wsdl:input message="tns:SubmitFeedBackHttpPostIn" />
+      <wsdl:output message="tns:SubmitFeedBackHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="FlyPalNPSServiceSoap" type="tns:FlyPalNPSServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://localhost/FlyPalNPS/FlyPalNPSService/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitFeedBack">
+      <soap:operation soapAction="http://localhost/FlyPalNPS/FlyPalNPSService/SubmitFeedBack" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FlyPalNPSServiceSoap12" type="tns:FlyPalNPSServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://localhost/FlyPalNPS/FlyPalNPSService/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitFeedBack">
+      <soap12:operation soapAction="http://localhost/FlyPalNPS/FlyPalNPSService/SubmitFeedBack" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FlyPalNPSServiceHttpGet" type="tns:FlyPalNPSServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitFeedBack">
+      <http:operation location="/SubmitFeedBack" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="FlyPalNPSServiceHttpPost" type="tns:FlyPalNPSServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitFeedBack">
+      <http:operation location="/SubmitFeedBack" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="FlyPalNPSService">
+    <wsdl:port name="FlyPalNPSServiceSoap" binding="tns:FlyPalNPSServiceSoap">
+      <soap:address location="http://localhost/FlyPalNPSApp/FlyPalNPSService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FlyPalNPSServiceSoap12" binding="tns:FlyPalNPSServiceSoap12">
+      <soap12:address location="http://localhost/FlyPalNPSApp/FlyPalNPSService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FlyPalNPSServiceHttpGet" binding="tns:FlyPalNPSServiceHttpGet">
+      <http:address location="http://localhost/FlyPalNPSApp/FlyPalNPSService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="FlyPalNPSServiceHttpPost" binding="tns:FlyPalNPSServiceHttpPost">
+      <http:address location="http://localhost/FlyPalNPSApp/FlyPalNPSService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

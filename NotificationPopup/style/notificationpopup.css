@@ -1,0 +1,94 @@
+﻿#msg1
+{
+	top: 0px;
+	left: 180px;/*-20px*/
+	position:fixed;
+    width: 950px;
+    height: 580px;
+    
+    border: solid 1px black;
+    margin: 0px 0px 0px 20px;
+    background-color:white;
+    display:none;
+    font-size:13px;
+    position:absolute;
+    z-index:200000;
+}
+
+#msgcontainer {
+	position:absolute;
+	top:-5px;
+	left:200px;
+	height:26px;
+	z-index:1;
+	}
+#msgcontainer .contact {
+    top:-5px;
+	width:100%;
+	left:0px;
+	cursor:pointer;
+}
+
+#container {
+    width: 100px;
+  
+    position: relative;
+}
+
+#navi, 
+#infoi {
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#infoii {
+    width: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#infoi {
+    top:4px;
+    z-index: 10;
+}
+#infoii {
+    top:4px;
+    z-index: 10;
+}
+#backgroundPopup{
+	display:none; 
+	position:fixed; 
+	_position:absolute; 
+	height:100%; width:100%; 
+	top:0; left:0;
+	background:#000; 
+	z-index:11;
+}
+
+#modal .modaltop
+{
+	width: 99%;
+    background-color: Transparent;
+    background-image: url(img/bg.gif);
+    background-repeat: repeat-x;
+    padding: 2px;
+    color: #ffffff;
+    text-align: right;
+}
+#modal .modaltitle
+{
+    padding: 4px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #15428B;
+    float: left;
+}
+
+#modal .modalbody
+{
+    padding: 8px;
+    text-align: left;
+}
